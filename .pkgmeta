@@ -1,0 +1,19 @@
+# BigWigs packager settings. The repository root is the add-on folder, so the zip
+# holds one VulcanRunBook/ folder; everything dev-only is left out.
+package-as: VulcanRunBook
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+ignore:
+  - tests
+  - ci
+  - audits
+  - AUDIT_REPORT.md
+  - media-src
+  - .luacheckrc
+  - .github
+  - .pkgmeta
+  - .gitignore
+  - .gitattributes

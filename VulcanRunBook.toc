@@ -1,0 +1,22 @@
+## Interface: 16001
+## Title: Vulcan RunBook
+## Notes: Dungeon run log: clear times, boss splits, deaths, drops, gold and XP per run, instance cap, duo sync. Display only - no automation.
+## Author: Tavlius
+## Version: @project-version@
+## IconTexture: Interface\AddOns\VulcanRunBook\Media\icon
+## AddonCompartmentFunc: VulcanRunBook_OnAddonCompartmentClick
+## SavedVariables: VulcanRunBookDB
+## SavedVariablesPerCharacter: VulcanRunBookCharDB
+
+Util.lua
+Libs\LibDeflate\LibDeflate.lua
+Data.lua
+Run.lua
+Track.lua
+Sync.lua
+Group.lua
+UI.lua
+History.lua
+Export.lua
+Persist.lua
+Commands.lua

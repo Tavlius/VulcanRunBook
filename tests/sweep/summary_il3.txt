@@ -1,0 +1,61 @@
+total 600 {'killed': 381, 'survived': 219}
+## per file
+Commands.lua  n= 48 killed= 35 survived= 13 timeout=0  survival=27%
+Data.lua      n= 96 killed= 61 survived= 35 timeout=0  survival=36%
+Export.lua    n= 24 killed= 15 survived=  9 timeout=0  survival=38%
+History.lua   n= 36 killed=  8 survived= 28 timeout=0  survival=78%
+Run.lua       n=114 killed= 73 survived= 41 timeout=0  survival=36%
+Sync.lua      n= 96 killed= 64 survived= 32 timeout=0  survival=33%
+Track.lua     n=114 killed= 78 survived= 36 timeout=0  survival=32%
+UI.lua        n= 24 killed= 13 survived= 11 timeout=0  survival=46%
+Util.lua      n= 48 killed= 34 survived= 14 timeout=0  survival=29%
+## per operator
+ANDOR    n=131 survived= 35 (27%)
+ASSDEL   n= 40 survived= 13 (32%)
+IFFALSE  n= 74 survived= 32 (43%)
+IFNEG    n= 63 survived=  9 (14%)
+IFTRUE   n= 60 survived= 22 (37%)
+NUM      n=123 survived= 75 (61%)
+REL      n= 57 survived= 19 (33%)
+RETDEL   n= 52 survived= 14 (27%)
+## per function (n>=3 or any survivor), sorted by survivors
+Commands.lua  Check                            n= 5 survived= 3
+Commands.lua  ns.HasAuctionator                n= 5 survived= 3
+Export.lua    BuildCopyFrame                   n= 3 survived= 3
+Run.lua       Finish                           n= 3 survived= 3
+Run.lua       ns.TooManyInstances              n= 3 survived= 3
+Sync.lua      <top>                            n= 3 survived= 3
+Sync.lua      CanSend                          n= 3 survived= 3
+Commands.lua  Delete                           n= 5 survived= 2
+Commands.lua  Report                           n= 5 survived= 2
+Data.lua      FixEntryBy                       n= 2 survived= 2
+Data.lua      FixLite                          n= 2 survived= 2
+Data.lua      ns.DungeonStats                  n= 2 survived= 2
+Data.lua      ns.LastOwnRun                    n= 2 survived= 2
+Export.lua    ns.CSVRow                        n= 3 survived= 2
+Export.lua    ns.ShowCopy                      n= 4 survived= 2
+History.lua   <top>                            n= 2 survived= 2
+History.lua   DiffText                         n= 2 survived= 2
+History.lua   Fill                             n= 2 survived= 2
+History.lua   Rates                            n= 2 survived= 2
+History.lua   Row                              n= 2 survived= 2
+History.lua   Wrap                             n= 2 survived= 2
+History.lua   add                              n= 2 survived= 2
+History.lua   ns.DungeonLines                  n= 2 survived= 2
+History.lua   ns.HistoryShown                  n= 2 survived= 2
+History.lua   ns.RenderHistory                 n= 2 survived= 2
+History.lua   ns.ToggleHistory                 n= 2 survived= 2
+Run.lua       IsMultiWing                      n= 2 survived= 2
+Run.lua       MoveFrom                         n= 3 survived= 2
+Run.lua       Resume                           n= 2 survived= 2
+Run.lua       StartsFresh                      n= 2 survived= 2
+Run.lua       Tick                             n= 3 survived= 2
+Run.lua       ns.ManualEnd                     n= 3 survived= 2
+Run.lua       ns.MoveSince                     n= 2 survived= 2
+Run.lua       ns.RememberCopy                  n= 2 survived= 2
+Run.lua       ns.RunSummary                    n= 2 survived= 2
+Run.lua       ns.SplitAtResume                 n= 2 survived= 2
+Run.lua       ns.Zoning                        n= 2 survived= 2
+Sync.lua      EarlierRun                       n= 3 survived= 2
+Sync.lua      HANDLERS.R                       n= 3 survived= 2
+Sync.lua      HANDLERS.S                       n= 3 survived= 2

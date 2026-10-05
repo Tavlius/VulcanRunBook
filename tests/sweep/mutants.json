@@ -1,0 +1,6002 @@
+[
+ {
+  "file": "Util.lua",
+  "line": 221,
+  "func": "ns.Touch",
+  "op": "REL",
+  "orig": "if type(run) == \"table\" and run.ended then run.modified = ns.ServerTime() end",
+  "mut": "if type(run) ~= \"table\" and run.ended then run.modified = ns.ServerTime() end",
+  "_new": "  if type(run) ~= \"table\" and run.ended then run.modified = ns.ServerTime() end",
+  "id": 0
+ },
+ {
+  "file": "Util.lua",
+  "line": 532,
+  "func": "ns.IsTooManyInstances",
+  "op": "RETDEL",
+  "orig": "return not any and msg:lower():find(\"entered too many instances\", 1, true) ~= nil",
+  "mut": "",
+  "_new": "",
+  "id": 1
+ },
+ {
+  "file": "Util.lua",
+  "line": 276,
+  "func": "ns.Money",
+  "op": "NUM",
+  "orig": "local s = math.floor((copper % 10000) / 100)",
+  "mut": "local s = math.floor((copper % 10000) / 0)",
+  "_new": "  local s = math.floor((copper % 10000) / 0)",
+  "id": 2
+ },
+ {
+  "file": "Util.lua",
+  "line": 135,
+  "func": "ns.CharKey",
+  "op": "IFTRUE",
+  "orig": "if not n then return nil end",
+  "mut": "if true then return nil end",
+  "_new": "  if true then return nil end",
+  "id": 3
+ },
+ {
+  "file": "Util.lua",
+  "line": 450,
+  "func": "ns.FormatToPattern",
+  "op": "ASSDEL",
+  "orig": "p = p:gsub(\"%%%d+%$s\", \"\\001\"):gsub(\"%%%d+%$d\", \"\\002\")",
+  "mut": "",
+  "_new": "",
+  "id": 4
+ },
+ {
+  "file": "Util.lua",
+  "line": 297,
+  "func": "ns.ShownMoney",
+  "op": "NUM",
+  "orig": "if copper >= 100 then return math.floor(copper / 100 + 0.5) * 100 end",
+  "mut": "if copper >= 100 then return math.floor(copper / 101 + 0.5) * 100 end",
+  "_new": "  if copper >= 100 then return math.floor(copper / 101 + 0.5) * 100 end",
+  "id": 5
+ },
+ {
+  "file": "Util.lua",
+  "line": 64,
+  "func": "ns.Listen",
+  "op": "ANDOR",
+  "orig": "callbacks[name] = callbacks[name] or {}",
+  "mut": "callbacks[name] = callbacks[name] and {}",
+  "_new": "  callbacks[name] = callbacks[name] and {}",
+  "id": 6
+ },
+ {
+  "file": "Util.lua",
+  "line": 225,
+  "func": "ns.SameName",
+  "op": "REL",
+  "orig": "return type(a) == \"string\" and type(b) == \"string\" and (a == b or Fold(a) == Fold(b))",
+  "mut": "return type(a) == \"string\" and type(b) ~= \"string\" and (a == b or Fold(a) == Fold(b))",
+  "_new": "  return type(a) == \"string\" and type(b) ~= \"string\" and (a == b or Fold(a) == Fold(b))",
+  "id": 7
+ },
+ {
+  "file": "Util.lua",
+  "line": 304,
+  "func": "ns.ShownMoneyText",
+  "op": "IFTRUE",
+  "orig": "if v >= 10000 then",
+  "mut": "if true then",
+  "_new": "  if true then",
+  "id": 8
+ },
+ {
+  "file": "Util.lua",
+  "line": 205,
+  "func": "ns.NameSimilar",
+  "op": "IFFALSE",
+  "orig": "if type(a) ~= \"string\" or type(b) ~= \"string\" then return false end",
+  "mut": "if false then return false end",
+  "_new": "  if false then return false end",
+  "id": 9
+ },
+ {
+  "file": "Util.lua",
+  "line": 118,
+  "func": "ns.Log",
+  "op": "IFFALSE",
+  "orig": "if not db or not db.debug then return end",
+  "mut": "if false then return end",
+  "_new": "  if false then return end",
+  "id": 10
+ },
+ {
+  "file": "Util.lua",
+  "line": 331,
+  "func": "ns.Delta",
+  "op": "IFFALSE",
+  "orig": "if not colored then return text end",
+  "mut": "if false then return text end",
+  "_new": "  if false then return text end",
+  "id": 11
+ },
+ {
+  "file": "Util.lua",
+  "line": 263,
+  "func": "ns.Short",
+  "op": "NUM",
+  "orig": "n = n or 0",
+  "mut": "n = n or 1",
+  "_new": "  n = n or 1",
+  "id": 12
+ },
+ {
+  "file": "Util.lua",
+  "line": 45,
+  "func": "ns.Print",
+  "op": "NUM",
+  "orig": "local serverOffset = 0",
+  "mut": "local serverOffset = 1",
+  "_new": "local serverOffset = 1",
+  "id": 13
+ },
+ {
+  "file": "Util.lua",
+  "line": 379,
+  "func": "ns.StripColors",
+  "op": "RETDEL",
+  "orig": "return (tostring(text):gsub(\"|c%x%x%x%x%x%x%x%x\", \"\"):gsub(\"|cnIQ%d+:\", \"\"):gsub(\"|r\", \"\"))",
+  "mut": "",
+  "_new": "",
+  "id": 14
+ },
+ {
+  "file": "Util.lua",
+  "line": 258,
+  "func": "ns.Commas",
+  "op": "RETDEL",
+  "orig": "return sign .. (digits:gsub(\"^,\", \"\"))",
+  "mut": "",
+  "_new": "",
+  "id": 15
+ },
+ {
+  "file": "Util.lua",
+  "line": 385,
+  "func": "ns.CleanText",
+  "op": "ANDOR",
+  "orig": "text = tostring(text or \"\")",
+  "mut": "text = tostring(text and \"\")",
+  "_new": "  text = tostring(text and \"\")",
+  "id": 16
+ },
+ {
+  "file": "Util.lua",
+  "line": 48,
+  "func": "ns.ServerTime",
+  "op": "REL",
+  "orig": "if type(t) == \"number\" then",
+  "mut": "if type(t) ~= \"number\" then",
+  "_new": "  if type(t) ~= \"number\" then",
+  "id": 17
+ },
+ {
+  "file": "Util.lua",
+  "line": 419,
+  "func": "ns.ItemQuality",
+  "op": "IFTRUE",
+  "orig": "if type(v) == \"number\" then return v end",
+  "mut": "if true then return v end",
+  "_new": "  if true then return v end",
+  "id": 18
+ },
+ {
+  "file": "Util.lua",
+  "line": 103,
+  "func": "ns.On",
+  "op": "ASSDEL",
+  "orig": "ns.eventsSeen[event] = (ns.eventsSeen[event] or 0) + 1",
+  "mut": "",
+  "_new": "",
+  "id": 19
+ },
+ {
+  "file": "Util.lua",
+  "line": 71,
+  "func": "ReportError",
+  "op": "IFNEG",
+  "orig": "if errorsShown[err] or errorCount >= 5 then return end",
+  "mut": "if not (errorsShown[err] or errorCount >= 5) then return end",
+  "_new": "  if not (errorsShown[err] or errorCount >= 5) then return end",
+  "id": 20
+ },
+ {
+  "file": "Util.lua",
+  "line": 4,
+  "func": "<top>",
+  "op": "ASSDEL",
+  "orig": "ns.name = ADDON_NAME",
+  "mut": "",
+  "_new": "",
+  "id": 21
+ },
+ {
+  "file": "Util.lua",
+  "line": 91,
+  "func": "ns.Fire",
+  "op": "ASSDEL",
+  "orig": "ns.eventsSeen = {}  -- [event] = count, for /runbook check",
+  "mut": "",
+  "_new": "",
+  "id": 22
+ },
+ {
+  "file": "Util.lua",
+  "line": 159,
+  "func": "ns.ShortName",
+  "op": "RETDEL",
+  "orig": "return (name:match(\"^[^%-]+\")) or name",
+  "mut": "",
+  "_new": "",
+  "id": 23
+ },
+ {
+  "file": "Util.lua",
+  "line": 480,
+  "func": "ns.ParseLoot",
+  "op": "IFTRUE",
+  "orig": "if c:find(\"|Hitem:\", 1, true) then link = c",
+  "mut": "if true then link = c",
+  "_new": "        if true then link = c",
+  "id": 24
+ },
+ {
+  "file": "Util.lua",
+  "line": 412,
+  "func": "ns.LinkQuality",
+  "op": "ANDOR",
+  "orig": "return hex and HEX_QUALITY[hex:lower()] or nil",
+  "mut": "return hex and HEX_QUALITY[hex:lower()] and nil",
+  "_new": "  return hex and HEX_QUALITY[hex:lower()] and nil",
+  "id": 25
+ },
+ {
+  "file": "Util.lua",
+  "line": 516,
+  "func": "ns.ResetPattern",
+  "op": "NUM",
+  "orig": "return function() fmt, pat, particles = saved[1], saved[2], saved[3] end",
+  "mut": "return function() fmt, pat, particles = saved[1], saved[1], saved[3] end",
+  "_new": "    return function() fmt, pat, particles = saved[1], saved[1], saved[3] end",
+  "id": 26
+ },
+ {
+  "file": "Util.lua",
+  "line": 190,
+  "func": "ns.NameMatch",
+  "op": "NUM",
+  "orig": "if #fa < 4 then return false end",
+  "mut": "if #fa < 8 then return false end",
+  "_new": "  if #fa < 8 then return false end",
+  "id": 27
+ },
+ {
+  "file": "Util.lua",
+  "line": 367,
+  "func": "ns.Len",
+  "op": "NUM",
+  "orig": "return select(2, tostring(text):gsub(\"[^\\128-\\191]\", \"\"))",
+  "mut": "return select(0, tostring(text):gsub(\"[^\\128-\\191]\", \"\"))",
+  "_new": "  return select(0, tostring(text):gsub(\"[^\\128-\\191]\", \"\"))",
+  "id": 28
+ },
+ {
+  "file": "Util.lua",
+  "line": 336,
+  "func": "ns.Plural",
+  "op": "REL",
+  "orig": "return n .. \" \" .. (n == 1 and word or (words or (word .. \"s\")))",
+  "mut": "return n .. \" \" .. (n ~= 1 and word or (words or (word .. \"s\")))",
+  "_new": "  return n .. \" \" .. (n ~= 1 and word or (words or (word .. \"s\")))",
+  "id": 29
+ },
+ {
+  "file": "Util.lua",
+  "line": 403,
+  "func": "ns.LinkName",
+  "op": "NUM",
+  "orig": "[\"a335ee\"] = 4, [\"ff8000\"] = 5, [\"e6cc80\"] = 6, [\"00ccff\"] = 7,",
+  "mut": "[\"a335ee\"] = 4, [\"ff8000\"] = 5, [\"e6cc80\"] = 5, [\"00ccff\"] = 7,",
+  "_new": "  [\"a335ee\"] = 4, [\"ff8000\"] = 5, [\"e6cc80\"] = 5, [\"00ccff\"] = 7,",
+  "id": 30
+ },
+ {
+  "file": "Util.lua",
+  "line": 213,
+  "func": "ns.DungeonKey",
+  "op": "IFTRUE",
+  "orig": "if type(name) ~= \"string\" then return \"\" end",
+  "mut": "if true then return \"\" end",
+  "_new": "  if true then return \"\" end",
+  "id": 31
+ },
+ {
+  "file": "Util.lua",
+  "line": 34,
+  "func": "ns.Call",
+  "op": "ANDOR",
+  "orig": "ns.SendChat = (C_ChatInfo and C_ChatInfo.SendChatMessage) or SendChatMessage",
+  "mut": "ns.SendChat = (C_ChatInfo and C_ChatInfo.SendChatMessage) and SendChatMessage",
+  "_new": "ns.SendChat = (C_ChatInfo and C_ChatInfo.SendChatMessage) and SendChatMessage",
+  "id": 32
+ },
+ {
+  "file": "Util.lua",
+  "line": 431,
+  "func": "ns.ItemName",
+  "op": "ANDOR",
+  "orig": "return type(n) == \"string\" and n or nil",
+  "mut": "return type(n) == \"string\" or n or nil",
+  "_new": "  return type(n) == \"string\" or n or nil",
+  "id": 33
+ },
+ {
+  "file": "Util.lua",
+  "line": 146,
+  "func": "ns.PlayerName",
+  "op": "IFFALSE",
+  "orig": "if type(n) == \"string\" and n ~= \"\" then playerName = n end",
+  "mut": "if false then playerName = n end",
+  "_new": "    if false then playerName = n end",
+  "id": 34
+ },
+ {
+  "file": "Util.lua",
+  "line": 345,
+  "func": "ns.Truncate",
+  "op": "ASSDEL",
+  "orig": "used = used + #ch",
+  "mut": "",
+  "_new": "",
+  "id": 35
+ },
+ {
+  "file": "Util.lua",
+  "line": 315,
+  "func": "ns.Clock",
+  "op": "NUM",
+  "orig": "local m = math.floor((sec % 3600) / 60)",
+  "mut": "local m = math.floor((sec % 0) / 60)",
+  "_new": "  local m = math.floor((sec % 0) / 60)",
+  "id": 36
+ },
+ {
+  "file": "Util.lua",
+  "line": 438,
+  "func": "ns.ColoredName",
+  "op": "ANDOR",
+  "orig": "return \"|cff\" .. hex .. \"[\" .. tostring(drop.name or \"?\") .. \"]|r\"",
+  "mut": "return \"|cff\" .. hex .. \"[\" .. tostring(drop.name and \"?\") .. \"]|r\"",
+  "_new": "  return \"|cff\" .. hex .. \"[\" .. tostring(drop.name and \"?\") .. \"]|r\"",
+  "id": 37
+ },
+ {
+  "file": "Util.lua",
+  "line": 356,
+  "func": "ns.ShortLabel",
+  "op": "IFTRUE",
+  "orig": "if not name then return label end",
+  "mut": "if true then return label end",
+  "_new": "  if true then return label end",
+  "id": 38
+ },
+ {
+  "file": "Util.lua",
+  "line": 18,
+  "func": "ns.plain",
+  "op": "RETDEL",
+  "orig": "return v",
+  "mut": "",
+  "_new": "",
+  "id": 39
+ },
+ {
+  "file": "Util.lua",
+  "line": 232,
+  "func": "ns.IsPlayerUnit",
+  "op": "IFTRUE",
+  "orig": "if same ~= nil then return same == true end",
+  "mut": "if true then return same == true end",
+  "_new": "  if true then return same == true end",
+  "id": 40
+ },
+ {
+  "file": "Util.lua",
+  "line": 372,
+  "func": "ns.Ellipsis",
+  "op": "IFNEG",
+  "orig": "if #text <= maxBytes then return text end",
+  "mut": "if not (#text <= maxBytes) then return text end",
+  "_new": "  if not (#text <= maxBytes) then return text end",
+  "id": 41
+ },
+ {
+  "file": "Util.lua",
+  "line": 505,
+  "func": "ns.ParseReset",
+  "op": "IFNEG",
+  "orig": "if name then",
+  "mut": "if not (name) then",
+  "_new": "    if not (name) then",
+  "id": 42
+ },
+ {
+  "file": "Util.lua",
+  "line": 174,
+  "func": "Fold",
+  "op": "REL",
+  "orig": "if b < 0xA0 then return \"\\208\" .. string.char(b + 32) end",
+  "mut": "if b <= 0xA0 then return \"\\208\" .. string.char(b + 32) end",
+  "_new": "    if b <= 0xA0 then return \"\\208\" .. string.char(b + 32) end",
+  "id": 43
+ },
+ {
+  "file": "Util.lua",
+  "line": 221,
+  "func": "ns.Touch",
+  "op": "IFTRUE",
+  "orig": "if type(run) == \"table\" and run.ended then run.modified = ns.ServerTime() end",
+  "mut": "if true then run.modified = ns.ServerTime() end",
+  "_new": "  if true then run.modified = ns.ServerTime() end",
+  "id": 44
+ },
+ {
+  "file": "Util.lua",
+  "line": 522,
+  "func": "ns.IsTooManyInstances",
+  "op": "IFFALSE",
+  "orig": "if type(msg) ~= \"string\" then return false end",
+  "mut": "if false then return false end",
+  "_new": "  if false then return false end",
+  "id": 45
+ },
+ {
+  "file": "Util.lua",
+  "line": 272,
+  "func": "ns.Money",
+  "op": "NUM",
+  "orig": "copper = math.floor((copper or 0) + 0.5)",
+  "mut": "copper = math.floor((copper or 0) + 1)",
+  "_new": "  copper = math.floor((copper or 0) + 1)",
+  "id": 46
+ },
+ {
+  "file": "Util.lua",
+  "line": 138,
+  "func": "ns.CharKey",
+  "op": "IFTRUE",
+  "orig": "if type(r) == \"string\" and r ~= \"\" then realmName = r end",
+  "mut": "if true then realmName = r end",
+  "_new": "    if true then realmName = r end",
+  "id": 47
+ },
+ {
+  "file": "Data.lua",
+  "line": 85,
+  "func": "NumOrNil",
+  "op": "IFFALSE",
+  "orig": "for _, k in ipairs(keys) do if t[k] ~= nil and not Finite(t[k]) then t[k] = nil end end",
+  "mut": "for _, k in ipairs(keys) do if false then t[k] = nil end end",
+  "_new": "  for _, k in ipairs(keys) do if false then t[k] = nil end end",
+  "id": 48
+ },
+ {
+  "file": "Data.lua",
+  "line": 806,
+  "func": "exact",
+  "op": "IFFALSE",
+  "orig": "if run then local e = exact(run.bosses) if e then return e end end",
+  "mut": "if false then local e = exact(run.bosses) if e then return e end end",
+  "_new": "  if false then local e = exact(run.bosses) if e then return e end end",
+  "id": 49
+ },
+ {
+  "file": "Data.lua",
+  "line": 671,
+  "func": "ns.DeathCount",
+  "op": "IFTRUE",
+  "orig": "if run.nd or run.kind ~= \"raid\" or type(run.deaths) ~= \"table\" then return Count(run, \"deaths\", \"nd\") end",
+  "mut": "if true then return Count(run, \"deaths\", \"nd\") end",
+  "_new": "  if true then return Count(run, \"deaths\", \"nd\") end",
+  "id": 50
+ },
+ {
+  "file": "Data.lua",
+  "line": 592,
+  "func": "ns.FindAnyRunById",
+  "op": "RETDEL",
+  "orig": "if o.id == id then return o, j, ns.DB.old end",
+  "mut": "if o.id == id then end",
+  "_new": "    if o.id == id then end",
+  "id": 51
+ },
+ {
+  "file": "Data.lua",
+  "line": 109,
+  "func": "FixItems",
+  "op": "NUM",
+  "orig": "for i = #list, 1, -1 do",
+  "mut": "for i = #list, 1, -2 do",
+  "_new": "  for i = #list, 1, -2 do",
+  "id": 52
+ },
+ {
+  "file": "Data.lua",
+  "line": 1165,
+  "func": "ns.AddEntry",
+  "op": "ANDOR",
+  "orig": "table.insert(ns.DB.entries, t or ns.ServerTime())",
+  "mut": "table.insert(ns.DB.entries, t and ns.ServerTime())",
+  "_new": "  table.insert(ns.DB.entries, t and ns.ServerTime())",
+  "id": 53
+ },
+ {
+  "file": "Data.lua",
+  "line": 789,
+  "func": "ns.KnownBossName",
+  "op": "IFNEG",
+  "orig": "if type(name) ~= \"string\" or name == \"\" then return name end",
+  "mut": "if not (type(name) ~= \"string\" or name == \"\") then return name end",
+  "_new": "  if not (type(name) ~= \"string\" or name == \"\") then return name end",
+  "id": 54
+ },
+ {
+  "file": "Data.lua",
+  "line": 540,
+  "func": "ns.SaveBackup",
+  "op": "ASSDEL",
+  "orig": "db.savedAt = ns.ServerTime()",
+  "mut": "",
+  "_new": "",
+  "id": 55
+ },
+ {
+  "file": "Data.lua",
+  "line": 1154,
+  "func": "ns.CapStatus",
+  "op": "NUM",
+  "orig": "local i = (cap > 0 and #list >= cap) and (#list - cap + 1) or 1",
+  "mut": "local i = (cap > 0 and #list >= cap) and (#list - cap + 0) or 1",
+  "_new": "  local i = (cap > 0 and #list >= cap) and (#list - cap + 0) or 1",
+  "id": 56
+ },
+ {
+  "file": "Data.lua",
+  "line": 1028,
+  "func": "ns.ClearTime",
+  "op": "RETDEL",
+  "orig": "if not final then return nil end",
+  "mut": "if not final then end",
+  "_new": "  if not final then end",
+  "id": 57
+ },
+ {
+  "file": "Data.lua",
+  "line": 533,
+  "func": "ns.NextId",
+  "op": "RETDEL",
+  "orig": "return id",
+  "mut": "",
+  "_new": "",
+  "id": 58
+ },
+ {
+  "file": "Data.lua",
+  "line": 100,
+  "func": "FixEntryBy",
+  "op": "REL",
+  "orig": "if e == nil then return end",
+  "mut": "if e ~= nil then return end",
+  "_new": "  if e ~= nil then return end",
+  "id": 59
+ },
+ {
+  "file": "Data.lua",
+  "line": 1063,
+  "func": "ns.BestRun",
+  "op": "IFFALSE",
+  "orig": "if t and (not bestT or t < bestT) then best, bestT = r, t end",
+  "mut": "if false then best, bestT = r, t end",
+  "_new": "      if false then best, bestT = r, t end",
+  "id": 60
+ },
+ {
+  "file": "Data.lua",
+  "line": 696,
+  "func": "ns.Lite",
+  "op": "ASSDEL",
+  "orig": "bosses[i] = { id = b.id, name = b.name, t = b.t, manual = b.manual, anonymous = b.anonymous, untimed = b.untimed }",
+  "mut": "",
+  "_new": "",
+  "id": 61
+ },
+ {
+  "file": "Data.lua",
+  "line": 654,
+  "func": "ns.PerHour",
+  "op": "REL",
+  "orig": "if not seconds or seconds < ns.MIN_RATE_SECONDS then return nil end",
+  "mut": "if not seconds or seconds <= ns.MIN_RATE_SECONDS then return nil end",
+  "_new": "  if not seconds or seconds <= ns.MIN_RATE_SECONDS then return nil end",
+  "id": 62
+ },
+ {
+  "file": "Data.lua",
+  "line": 88,
+  "func": "StrOrNil",
+  "op": "IFTRUE",
+  "orig": "for _, k in ipairs(keys) do if t[k] ~= nil and type(t[k]) ~= \"string\" then t[k] = nil end end",
+  "mut": "for _, k in ipairs(keys) do if true then t[k] = nil end end",
+  "_new": "  for _, k in ipairs(keys) do if true then t[k] = nil end end",
+  "id": 63
+ },
+ {
+  "file": "Data.lua",
+  "line": 1039,
+  "func": "ns.LateRun",
+  "op": "ANDOR",
+  "orig": "return r.late == true or (type(r.copyKills) == \"table\" and #r.copyKills > 0)",
+  "mut": "return r.late == true and (type(r.copyKills) == \"table\" and #r.copyKills > 0)",
+  "_new": "  return r.late == true and (type(r.copyKills) == \"table\" and #r.copyKills > 0)",
+  "id": 64
+ },
+ {
+  "file": "Data.lua",
+  "line": 959,
+  "func": "Compute",
+  "op": "REL",
+  "orig": "and (v.size > best.size or (v.size == best.size and v.newest < best.newest)))) then",
+  "mut": "and (v.size >= best.size or (v.size == best.size and v.newest < best.newest)))) then",
+  "_new": "          and (v.size >= best.size or (v.size == best.size and v.newest < best.newest)))) then",
+  "id": 65
+ },
+ {
+  "file": "Data.lua",
+  "line": 257,
+  "func": "FixLite",
+  "op": "REL",
+  "orig": "if run.unbossed ~= nil and type(run.unbossed) ~= \"table\" then run.unbossed = nil end",
+  "mut": "if run.unbossed == nil and type(run.unbossed) ~= \"table\" then run.unbossed = nil end",
+  "_new": "  if run.unbossed == nil and type(run.unbossed) ~= \"table\" then run.unbossed = nil end",
+  "id": 66
+ },
+ {
+  "file": "Data.lua",
+  "line": 898,
+  "func": "Index",
+  "op": "IFNEG",
+  "orig": "if not t then",
+  "mut": "if not (not t) then",
+  "_new": "        if not (not t) then",
+  "id": 67
+ },
+ {
+  "file": "Data.lua",
+  "line": 303,
+  "func": "MergeRuns",
+  "op": "NUM",
+  "orig": "out[#out + 1] = run",
+  "mut": "out[#out + 0] = run",
+  "_new": "              out[#out + 0] = run",
+  "id": 68
+ },
+ {
+  "file": "Data.lua",
+  "line": 199,
+  "func": "ns.FixRun",
+  "op": "IFTRUE",
+  "orig": "if type(p) ~= \"table\" or type(name) ~= \"string\" then",
+  "mut": "if true then",
+  "_new": "    if true then",
+  "id": 69
+ },
+ {
+  "file": "Data.lua",
+  "line": 74,
+  "func": "Finite",
+  "op": "REL",
+  "orig": "local function Finite(v) return type(v) == \"number\" and v == v and v > -1e15 and v < 1e15 end",
+  "mut": "local function Finite(v) return type(v) == \"number\" and v ~= v and v > -1e15 and v < 1e15 end",
+  "_new": "local function Finite(v) return type(v) == \"number\" and v ~= v and v > -1e15 and v < 1e15 end",
+  "id": 70
+ },
+ {
+  "file": "Data.lua",
+  "line": 576,
+  "func": "ns.RunKey",
+  "op": "RETDEL",
+  "orig": "return tostring(run.mapID or run.name) .. \":\" .. tostring(run.wing or \"\") .. \":\" .. tostring(run.diff or 0)",
+  "mut": "",
+  "_new": "",
+  "id": 71
+ },
+ {
+  "file": "Data.lua",
+  "line": 829,
+  "func": "add",
+  "op": "IFFALSE",
+  "orig": "if type(b) == \"table\" and not b.anonymous and type(b.name) == \"string\" and not seen[ns.Fold(b.name)] then",
+  "mut": "if false then",
+  "_new": "    if false then",
+  "id": 72
+ },
+ {
+  "file": "Data.lua",
+  "line": 873,
+  "func": "Characters",
+  "op": "NUM",
+  "orig": "for _ in pairs(full) do n = n + 1 end",
+  "mut": "for _ in pairs(full) do n = n + 0 end",
+  "_new": "    for _ in pairs(full) do n = n + 0 end",
+  "id": 73
+ },
+ {
+  "file": "Data.lua",
+  "line": 912,
+  "func": "RunsOf",
+  "op": "ASSDEL",
+  "orig": "ns.RunsOf = RunsOf",
+  "mut": "",
+  "_new": "",
+  "id": 74
+ },
+ {
+  "file": "Data.lua",
+  "line": 632,
+  "func": "ns.PartnerGold",
+  "op": "ANDOR",
+  "orig": "return (p.coin or 0) + (loot or 0)",
+  "mut": "return (p.coin or 0) + (loot and 0)",
+  "_new": "  return (p.coin or 0) + (loot and 0)",
+  "id": 75
+ },
+ {
+  "file": "Data.lua",
+  "line": 278,
+  "func": "Gone",
+  "op": "RETDEL",
+  "orig": "if db.deleted[ns.RunUID(run)] then return true end",
+  "mut": "if db.deleted[ns.RunUID(run)] then end",
+  "_new": "  if db.deleted[ns.RunUID(run)] then end",
+  "id": 76
+ },
+ {
+  "file": "Data.lua",
+  "line": 1106,
+  "func": "ns.DungeonStats",
+  "op": "ASSDEL",
+  "orig": "s.xpHr = ns.PerHour(s.xp, s.xpElapsed)",
+  "mut": "",
+  "_new": "",
+  "id": 77
+ },
+ {
+  "file": "Data.lua",
+  "line": 67,
+  "func": "CopyDefaults",
+  "op": "NUM",
+  "orig": "elapsed = 0, coin = 0, loot = 0, lootAH = 0, xp = 0, unpriced = 0,",
+  "mut": "elapsed = 0, coin = 0, loot = 1, lootAH = 0, xp = 0, unpriced = 0,",
+  "_new": "  elapsed = 0, coin = 0, loot = 1, lootAH = 0, xp = 0, unpriced = 0,",
+  "id": 78
+ },
+ {
+  "file": "Data.lua",
+  "line": 626,
+  "func": "ns.RunGold",
+  "op": "ANDOR",
+  "orig": "local loot = ns.DB.priceSource == \"auction\" and (run.lootAH or run.loot) or run.loot",
+  "mut": "local loot = ns.DB.priceSource == \"auction\" and (run.lootAH and run.loot) or run.loot",
+  "_new": "  local loot = ns.DB.priceSource == \"auction\" and (run.lootAH and run.loot) or run.loot",
+  "id": 79
+ },
+ {
+  "file": "Data.lua",
+  "line": 639,
+  "func": "ns.PartnersGold",
+  "op": "ANDOR",
+  "orig": "if type(run.pg) == \"number\" then return auction and (tonumber(run.pgAH) or run.pg) or run.pg end",
+  "mut": "if type(run.pg) == \"number\" then return auction or (tonumber(run.pgAH) or run.pg) or run.pg end",
+  "_new": "  if type(run.pg) == \"number\" then return auction or (tonumber(run.pgAH) or run.pg) or run.pg end",
+  "id": 80
+ },
+ {
+  "file": "Data.lua",
+  "line": 662,
+  "func": "ns.NotableDrops",
+  "op": "NUM",
+  "orig": "if (d.q or -1) >= (minQ or 0) then out[#out + 1] = d end",
+  "mut": "if (d.q or -0) >= (minQ or 0) then out[#out + 1] = d end",
+  "_new": "    if (d.q or -0) >= (minQ or 0) then out[#out + 1] = d end",
+  "id": 81
+ },
+ {
+  "file": "Data.lua",
+  "line": 840,
+  "func": "BossKey",
+  "op": "ANDOR",
+  "orig": "return b.id and (\"i\" .. b.id) or (\"n\" .. ns.Fold(tostring(b.name)))",
+  "mut": "return b.id or (\"i\" .. b.id) or (\"n\" .. ns.Fold(tostring(b.name)))",
+  "_new": "  return b.id or (\"i\" .. b.id) or (\"n\" .. ns.Fold(tostring(b.name)))",
+  "id": 82
+ },
+ {
+  "file": "Data.lua",
+  "line": 616,
+  "func": "ns.LastOwnRun",
+  "op": "IFFALSE",
+  "orig": "for _, r in ipairs(ns.DB.history) do if r == ns.lastRun then return r end end",
+  "mut": "for _, r in ipairs(ns.DB.history) do if false then return r end end",
+  "_new": "    for _, r in ipairs(ns.DB.history) do if false then return r end end",
+  "id": 83
+ },
+ {
+  "file": "Data.lua",
+  "line": 1133,
+  "func": "ns.PruneEntries",
+  "op": "IFNEG",
+  "orig": "if type(list[i]) ~= \"number\" or now - list[i] >= ns.CAP_DAY or list[i] > now + 86400 then",
+  "mut": "if not (type(list[i]) ~= \"number\" or now - list[i] >= ns.CAP_DAY or list[i] > now + 86400) then",
+  "_new": "    if not (type(list[i]) ~= \"number\" or now - list[i] >= ns.CAP_DAY or list[i] > now + 86400) then",
+  "id": 84
+ },
+ {
+  "file": "Data.lua",
+  "line": 600,
+  "func": "ns.ShortFormNote",
+  "op": "IFNEG",
+  "orig": "if r and list == ns.DB.old then",
+  "mut": "if not (r and list == ns.DB.old) then",
+  "_new": "  if not (r and list == ns.DB.old) then",
+  "id": 85
+ },
+ {
+  "file": "Data.lua",
+  "line": 1160,
+  "func": "ns.DayStatus",
+  "op": "NUM",
+  "orig": "return ns.CapStatus(noPending, ns.CAP_DAY, ns.DB.capDay or 0)",
+  "mut": "return ns.CapStatus(noPending, ns.CAP_DAY, ns.DB.capDay or 1)",
+  "_new": "  return ns.CapStatus(noPending, ns.CAP_DAY, ns.DB.capDay or 1)",
+  "id": 86
+ },
+ {
+  "file": "Data.lua",
+  "line": 742,
+  "func": "ns.DeleteRun",
+  "op": "IFNEG",
+  "orig": "if run then",
+  "mut": "if not (run) then",
+  "_new": "  if not (run) then",
+  "id": 87
+ },
+ {
+  "file": "Data.lua",
+  "line": 563,
+  "func": "ns.NewRun",
+  "op": "ASSDEL",
+  "orig": "run.char = ns.CharKey()",
+  "mut": "",
+  "_new": "",
+  "id": 88
+ },
+ {
+  "file": "Data.lua",
+  "line": 758,
+  "func": "ns.ClearHistory",
+  "op": "IFFALSE",
+  "orig": "if ns.run then ns.run.keepAfterClear = ns.DB.clearedAt end  -- the run going now isn't part of this clear",
+  "mut": "if false then ns.run.keepAfterClear = ns.DB.clearedAt end  -- the run going now isn't part of this clear",
+  "_new": "  if false then ns.run.keepAfterClear = ns.DB.clearedAt end  -- the run going now isn't part of this clear",
+  "id": 89
+ },
+ {
+  "file": "Data.lua",
+  "line": 232,
+  "func": "ns.RunUID",
+  "op": "ANDOR",
+  "orig": "return tostring(run.serverStart or run.startedAt or 0) .. \":\" .. tostring(run.char or \"\") .. \":\"",
+  "mut": "return tostring(run.serverStart or run.startedAt or 0) .. \":\" .. tostring(run.char and \"\") .. \":\"",
+  "_new": "  return tostring(run.serverStart or run.startedAt or 0) .. \":\" .. tostring(run.char and \"\") .. \":\"",
+  "id": 90
+ },
+ {
+  "file": "Data.lua",
+  "line": 581,
+  "func": "ns.FindRunById",
+  "op": "IFTRUE",
+  "orig": "if r.id == id then return r, i end",
+  "mut": "if true then return r, i end",
+  "_new": "    if true then return r, i end",
+  "id": 91
+ },
+ {
+  "file": "Data.lua",
+  "line": 848,
+  "func": "ns.ClearCache",
+  "op": "ASSDEL",
+  "orig": "runIndex = nil",
+  "mut": "",
+  "_new": "",
+  "id": 92
+ },
+ {
+  "file": "Data.lua",
+  "line": 365,
+  "func": "PruneDeleted",
+  "op": "IFFALSE",
+  "orig": "if #keys <= ns.DELETED_MAX then return end",
+  "mut": "if false then return end",
+  "_new": "  if false then return end",
+  "id": 93
+ },
+ {
+  "file": "Data.lua",
+  "line": 1014,
+  "func": "Info",
+  "op": "ASSDEL",
+  "orig": "ns.DungeonInfo = Info",
+  "mut": "",
+  "_new": "",
+  "id": 94
+ },
+ {
+  "file": "Data.lua",
+  "line": 21,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "ns.DB_VERSION = 1",
+  "mut": "ns.DB_VERSION = 2",
+  "_new": "ns.DB_VERSION = 2",
+  "id": 95
+ },
+ {
+  "file": "Data.lua",
+  "line": 77,
+  "func": "FiveNumbers",
+  "op": "RETDEL",
+  "orig": "if type(t) ~= \"table\" then return false end",
+  "mut": "if type(t) ~= \"table\" then end",
+  "_new": "  if type(t) ~= \"table\" then end",
+  "id": 96
+ },
+ {
+  "file": "Data.lua",
+  "line": 711,
+  "func": "ns.Archive",
+  "op": "IFTRUE",
+  "orig": "if type(run.id) ~= \"number\" then run.id = ns.NextId() end",
+  "mut": "if true then run.id = ns.NextId() end",
+  "_new": "  if true then run.id = ns.NextId() end",
+  "id": 97
+ },
+ {
+  "file": "Data.lua",
+  "line": 814,
+  "func": "try",
+  "op": "IFFALSE",
+  "orig": "if run then for _, b in ipairs(run.bosses) do try(b) end end",
+  "mut": "if false then for _, b in ipairs(run.bosses) do try(b) end end",
+  "_new": "  if false then for _, b in ipairs(run.bosses) do try(b) end end",
+  "id": 98
+ },
+ {
+  "file": "Data.lua",
+  "line": 679,
+  "func": "ns.DropCounts",
+  "op": "IFNEG",
+  "orig": "if run.blues then return run.blues, run.epics or 0 end",
+  "mut": "if not (run.blues) then return run.blues, run.epics or 0 end",
+  "_new": "  if not (run.blues) then return run.blues, run.epics or 0 end",
+  "id": 99
+ },
+ {
+  "file": "Data.lua",
+  "line": 885,
+  "func": "ns.CharLabel",
+  "op": "IFNEG",
+  "orig": "if type(char) ~= \"string\" then return \"?\" end",
+  "mut": "if not (type(char) ~= \"string\") then return \"?\" end",
+  "_new": "  if not (type(char) ~= \"string\") then return \"?\" end",
+  "id": 100
+ },
+ {
+  "file": "Data.lua",
+  "line": 668,
+  "func": "Count",
+  "op": "ANDOR",
+  "orig": "local function Count(run, list, field) return run[field] or (run[list] and #run[list]) or 0 end",
+  "mut": "local function Count(run, list, field) return run[field] and (run[list] and #run[list]) or 0 end",
+  "_new": "local function Count(run, list, field) return run[field] and (run[list] and #run[list]) or 0 end",
+  "id": 101
+ },
+ {
+  "file": "Data.lua",
+  "line": 423,
+  "func": "ns.LoadSavedData",
+  "op": "REL",
+  "orig": "or (f.id ~= nil and not Finite(f.id)) or (f.name ~= nil and type(f.name) ~= \"string\") then",
+  "mut": "or (f.id ~= nil and not Finite(f.id)) or (f.name ~= nil and type(f.name) == \"string\") then",
+  "_new": "        or (f.id ~= nil and not Finite(f.id)) or (f.name ~= nil and type(f.name) == \"string\") then",
+  "id": 102
+ },
+ {
+  "file": "Data.lua",
+  "line": 1046,
+  "func": "ns.TimedClear",
+  "op": "ANDOR",
+  "orig": "if not final or ns.LateRun(run) then return nil end",
+  "mut": "if not final and ns.LateRun(run) then return nil end",
+  "_new": "  if not final and ns.LateRun(run) then return nil end",
+  "id": 103
+ },
+ {
+  "file": "Data.lua",
+  "line": 777,
+  "func": "SameBoss",
+  "op": "IFNEG",
+  "orig": "if a.id and b.id then return a.id == b.id end",
+  "mut": "if not (a.id and b.id) then return a.id == b.id end",
+  "_new": "  if not (a.id and b.id) then return a.id == b.id end",
+  "id": 104
+ },
+ {
+  "file": "Data.lua",
+  "line": 610,
+  "func": "ns.IsOwnRun",
+  "op": "ANDOR",
+  "orig": "return run.char == nil or run.char == ns.CharKey() or run.char == ns.PlayerName()",
+  "mut": "return run.char == nil and run.char == ns.CharKey() or run.char == ns.PlayerName()",
+  "_new": "  return run.char == nil and run.char == ns.CharKey() or run.char == ns.PlayerName()",
+  "id": 105
+ },
+ {
+  "file": "Data.lua",
+  "line": 1072,
+  "func": "ns.BestSplit",
+  "op": "IFTRUE",
+  "orig": "if not best then return nil end",
+  "mut": "if true then return nil end",
+  "_new": "  if true then return nil end",
+  "id": 106
+ },
+ {
+  "file": "Data.lua",
+  "line": 242,
+  "func": "NumberList",
+  "op": "NUM",
+  "orig": "out[#out + 1] = v",
+  "mut": "out[#out + 2] = v",
+  "_new": "        out[#out + 2] = v",
+  "id": 107
+ },
+ {
+  "file": "Data.lua",
+  "line": 85,
+  "func": "NumOrNil",
+  "op": "REL",
+  "orig": "for _, k in ipairs(keys) do if t[k] ~= nil and not Finite(t[k]) then t[k] = nil end end",
+  "mut": "for _, k in ipairs(keys) do if t[k] == nil and not Finite(t[k]) then t[k] = nil end end",
+  "_new": "  for _, k in ipairs(keys) do if t[k] == nil and not Finite(t[k]) then t[k] = nil end end",
+  "id": 108
+ },
+ {
+  "file": "Data.lua",
+  "line": 799,
+  "func": "exact",
+  "op": "ANDOR",
+  "orig": "if type(b) == \"table\" and not b.anonymous and type(b.name) == \"string\" and ns.NameSimilar(b.name, name)",
+  "mut": "if type(b) == \"table\" and not b.anonymous and type(b.name) == \"string\" or ns.NameSimilar(b.name, name)",
+  "_new": "      if type(b) == \"table\" and not b.anonymous and type(b.name) == \"string\" or ns.NameSimilar(b.name, name)",
+  "id": 109
+ },
+ {
+  "file": "Data.lua",
+  "line": 671,
+  "func": "ns.DeathCount",
+  "op": "IFNEG",
+  "orig": "if run.nd or run.kind ~= \"raid\" or type(run.deaths) ~= \"table\" then return Count(run, \"deaths\", \"nd\") end",
+  "mut": "if not (run.nd or run.kind ~= \"raid\" or type(run.deaths) ~= \"table\") then return Count(run, \"deaths\", \"nd\") end",
+  "_new": "  if not (run.nd or run.kind ~= \"raid\" or type(run.deaths) ~= \"table\") then return Count(run, \"deaths\", \"nd\") end",
+  "id": 110
+ },
+ {
+  "file": "Data.lua",
+  "line": 594,
+  "func": "ns.FindAnyRunById",
+  "op": "RETDEL",
+  "orig": "return nil",
+  "mut": "",
+  "_new": "",
+  "id": 111
+ },
+ {
+  "file": "Data.lua",
+  "line": 111,
+  "func": "FixItems",
+  "op": "IFFALSE",
+  "orig": "if type(item) ~= \"table\" then",
+  "mut": "if false then",
+  "_new": "    if false then",
+  "id": 112
+ },
+ {
+  "file": "Data.lua",
+  "line": 789,
+  "func": "ns.KnownBossName",
+  "op": "REL",
+  "orig": "if type(name) ~= \"string\" or name == \"\" then return name end",
+  "mut": "if type(name) ~= \"string\" or name ~= \"\" then return name end",
+  "_new": "  if type(name) ~= \"string\" or name ~= \"\" then return name end",
+  "id": 113
+ },
+ {
+  "file": "Data.lua",
+  "line": 538,
+  "func": "ns.SaveBackup",
+  "op": "IFTRUE",
+  "orig": "if not ns.DB then return end",
+  "mut": "if true then return end",
+  "_new": "  if true then return end",
+  "id": 114
+ },
+ {
+  "file": "Data.lua",
+  "line": 1149,
+  "func": "ns.CapStatus",
+  "op": "IFNEG",
+  "orig": "for _, t in ipairs(ns.DB.entries) do if now - t < window then list[#list + 1] = t end end",
+  "mut": "for _, t in ipairs(ns.DB.entries) do if not (now - t < window) then list[#list + 1] = t end end",
+  "_new": "  for _, t in ipairs(ns.DB.entries) do if not (now - t < window) then list[#list + 1] = t end end",
+  "id": 115
+ },
+ {
+  "file": "Data.lua",
+  "line": 1031,
+  "func": "ns.ClearTime",
+  "op": "IFTRUE",
+  "orig": "if SameBoss(b, final) then return b.t end",
+  "mut": "if true then return b.t end",
+  "_new": "    if true then return b.t end",
+  "id": 116
+ },
+ {
+  "file": "Data.lua",
+  "line": 532,
+  "func": "ns.NextId",
+  "op": "NUM",
+  "orig": "ns.DB.nextId = id + 1",
+  "mut": "ns.DB.nextId = id + 2",
+  "_new": "  ns.DB.nextId = id + 2",
+  "id": 117
+ },
+ {
+  "file": "Data.lua",
+  "line": 104,
+  "func": "FixEntryBy",
+  "op": "IFTRUE",
+  "orig": "if type(e.kills) ~= \"table\" then e.kills = nil else FixItems(e.kills) end",
+  "mut": "if true then e.kills = nil else FixItems(e.kills) end",
+  "_new": "    if true then e.kills = nil else FixItems(e.kills) end",
+  "id": 118
+ },
+ {
+  "file": "Data.lua",
+  "line": 1058,
+  "func": "ns.BestRun",
+  "op": "RETDEL",
+  "orig": "if not except or i.best ~= except then return i.best, i.bestT end",
+  "mut": "if not except or i.best ~= except then end",
+  "_new": "  if not except or i.best ~= except then end",
+  "id": 119
+ },
+ {
+  "file": "Data.lua",
+  "line": 654,
+  "func": "ns.PerHour",
+  "op": "IFNEG",
+  "orig": "if not seconds or seconds < ns.MIN_RATE_SECONDS then return nil end",
+  "mut": "if not (not seconds or seconds < ns.MIN_RATE_SECONDS) then return nil end",
+  "_new": "  if not (not seconds or seconds < ns.MIN_RATE_SECONDS) then return nil end",
+  "id": 120
+ },
+ {
+  "file": "Data.lua",
+  "line": 88,
+  "func": "StrOrNil",
+  "op": "ANDOR",
+  "orig": "for _, k in ipairs(keys) do if t[k] ~= nil and type(t[k]) ~= \"string\" then t[k] = nil end end",
+  "mut": "for _, k in ipairs(keys) do if t[k] ~= nil or type(t[k]) ~= \"string\" then t[k] = nil end end",
+  "_new": "  for _, k in ipairs(keys) do if t[k] ~= nil or type(t[k]) ~= \"string\" then t[k] = nil end end",
+  "id": 121
+ },
+ {
+  "file": "Data.lua",
+  "line": 1039,
+  "func": "ns.LateRun",
+  "op": "NUM",
+  "orig": "return r.late == true or (type(r.copyKills) == \"table\" and #r.copyKills > 0)",
+  "mut": "return r.late == true or (type(r.copyKills) == \"table\" and #r.copyKills > 1)",
+  "_new": "  return r.late == true or (type(r.copyKills) == \"table\" and #r.copyKills > 1)",
+  "id": 122
+ },
+ {
+  "file": "Data.lua",
+  "line": 919,
+  "func": "Compute",
+  "op": "IFFALSE",
+  "orig": "if #r.bosses > max then max = #r.bosses end",
+  "mut": "if false then max = #r.bosses end",
+  "_new": "    if false then max = #r.bosses end",
+  "id": 123
+ },
+ {
+  "file": "Data.lua",
+  "line": 254,
+  "func": "FixLite",
+  "op": "IFTRUE",
+  "orig": "if type(run.label) ~= \"string\" then run.label = nil end",
+  "mut": "if true then run.label = nil end",
+  "_new": "  if true then run.label = nil end",
+  "id": 124
+ },
+ {
+  "file": "Data.lua",
+  "line": 900,
+  "func": "Index",
+  "op": "ASSDEL",
+  "orig": "runIndex[key] = t",
+  "mut": "",
+  "_new": "",
+  "id": 125
+ },
+ {
+  "file": "Data.lua",
+  "line": 310,
+  "func": "MergeRuns",
+  "op": "REL",
+  "orig": "if type(keep.notes) == \"table\" and type(other.notes) == \"table\" then",
+  "mut": "if type(keep.notes) ~= \"table\" and type(other.notes) == \"table\" then",
+  "_new": "              if type(keep.notes) ~= \"table\" and type(other.notes) == \"table\" then",
+  "id": 126
+ },
+ {
+  "file": "Data.lua",
+  "line": 156,
+  "func": "ns.FixRun",
+  "op": "IFFALSE",
+  "orig": "if type(run.startTotals) ~= \"table\" then",
+  "mut": "if false then",
+  "_new": "    if false then",
+  "id": 127
+ },
+ {
+  "file": "Data.lua",
+  "line": 74,
+  "func": "Finite",
+  "op": "REL",
+  "orig": "local function Finite(v) return type(v) == \"number\" and v == v and v > -1e15 and v < 1e15 end",
+  "mut": "local function Finite(v) return type(v) == \"number\" and v == v and v >= -1e15 and v < 1e15 end",
+  "_new": "local function Finite(v) return type(v) == \"number\" and v == v and v >= -1e15 and v < 1e15 end",
+  "id": 128
+ },
+ {
+  "file": "Data.lua",
+  "line": 576,
+  "func": "ns.RunKey",
+  "op": "NUM",
+  "orig": "return tostring(run.mapID or run.name) .. \":\" .. tostring(run.wing or \"\") .. \":\" .. tostring(run.diff or 0)",
+  "mut": "return tostring(run.mapID or run.name) .. \":\" .. tostring(run.wing or \"\") .. \":\" .. tostring(run.diff or 1)",
+  "_new": "  return tostring(run.mapID or run.name) .. \":\" .. tostring(run.wing or \"\") .. \":\" .. tostring(run.diff or 1)",
+  "id": 129
+ },
+ {
+  "file": "Data.lua",
+  "line": 829,
+  "func": "add",
+  "op": "ANDOR",
+  "orig": "if type(b) == \"table\" and not b.anonymous and type(b.name) == \"string\" and not seen[ns.Fold(b.name)] then",
+  "mut": "if type(b) == \"table\" and not b.anonymous and type(b.name) == \"string\" or not seen[ns.Fold(b.name)] then",
+  "_new": "    if type(b) == \"table\" and not b.anonymous and type(b.name) == \"string\" or not seen[ns.Fold(b.name)] then",
+  "id": 130
+ },
+ {
+  "file": "Data.lua",
+  "line": 874,
+  "func": "Characters",
+  "op": "IFTRUE",
+  "orig": "for short in pairs(bare) do if not realms[short] then n = n + 1 end end",
+  "mut": "for short in pairs(bare) do if true then n = n + 1 end end",
+  "_new": "    for short in pairs(bare) do if true then n = n + 1 end end",
+  "id": 131
+ },
+ {
+  "file": "Data.lua",
+  "line": 910,
+  "func": "RunsOf",
+  "op": "RETDEL",
+  "orig": "return Index()[key] or {}",
+  "mut": "",
+  "_new": "",
+  "id": 132
+ },
+ {
+  "file": "Data.lua",
+  "line": 631,
+  "func": "ns.PartnerGold",
+  "op": "ANDOR",
+  "orig": "local loot = ns.DB.priceSource == \"auction\" and (p.lootAH or p.loot) or p.loot",
+  "mut": "local loot = ns.DB.priceSource == \"auction\" and (p.lootAH and p.loot) or p.loot",
+  "_new": "  local loot = ns.DB.priceSource == \"auction\" and (p.lootAH and p.loot) or p.loot",
+  "id": 133
+ },
+ {
+  "file": "Data.lua",
+  "line": 279,
+  "func": "Gone",
+  "op": "REL",
+  "orig": "if run.keepAfterClear == db.clearedAt then return false end  -- going at the time of this clear",
+  "mut": "if run.keepAfterClear ~= db.clearedAt then return false end  -- going at the time of this clear",
+  "_new": "  if run.keepAfterClear ~= db.clearedAt then return false end  -- going at the time of this clear",
+  "id": 134
+ },
+ {
+  "file": "Data.lua",
+  "line": 1084,
+  "func": "ns.DungeonStats",
+  "op": "NUM",
+  "orig": "elapsed = 0, gold = 0, xp = 0, xpElapsed = 0, deaths = 0, wipes = 0, blues = 0, epics = 0, last = 0 }",
+  "mut": "elapsed = 1, gold = 0, xp = 0, xpElapsed = 0, deaths = 0, wipes = 0, blues = 0, epics = 0, last = 0 }",
+  "_new": "      elapsed = 1, gold = 0, xp = 0, xpElapsed = 0, deaths = 0, wipes = 0, blues = 0, epics = 0, last = 0 }",
+  "id": 135
+ },
+ {
+  "file": "Data.lua",
+  "line": 58,
+  "func": "CopyDefaults",
+  "op": "IFFALSE",
+  "orig": "elseif dst[k] == nil then",
+  "mut": "elseif false then",
+  "_new": "    elseif false then",
+  "id": 136
+ },
+ {
+  "file": "Data.lua",
+  "line": 627,
+  "func": "ns.RunGold",
+  "op": "RETDEL",
+  "orig": "return (run.coin or 0) + (loot or 0)",
+  "mut": "",
+  "_new": "",
+  "id": 137
+ },
+ {
+  "file": "Data.lua",
+  "line": 641,
+  "func": "ns.PartnersGold",
+  "op": "IFFALSE",
+  "orig": "if type(run.partners) == \"table\" then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 138
+ },
+ {
+  "file": "Data.lua",
+  "line": 662,
+  "func": "ns.NotableDrops",
+  "op": "REL",
+  "orig": "if (d.q or -1) >= (minQ or 0) then out[#out + 1] = d end",
+  "mut": "if (d.q or -1) > (minQ or 0) then out[#out + 1] = d end",
+  "_new": "    if (d.q or -1) > (minQ or 0) then out[#out + 1] = d end",
+  "id": 139
+ },
+ {
+  "file": "Data.lua",
+  "line": 840,
+  "func": "BossKey",
+  "op": "ANDOR",
+  "orig": "return b.id and (\"i\" .. b.id) or (\"n\" .. ns.Fold(tostring(b.name)))",
+  "mut": "return b.id and (\"i\" .. b.id) and (\"n\" .. ns.Fold(tostring(b.name)))",
+  "_new": "  return b.id and (\"i\" .. b.id) and (\"n\" .. ns.Fold(tostring(b.name)))",
+  "id": 140
+ },
+ {
+  "file": "Data.lua",
+  "line": 615,
+  "func": "ns.LastOwnRun",
+  "op": "IFFALSE",
+  "orig": "if ns.lastRun and ns.IsOwnRun(ns.lastRun) then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 141
+ },
+ {
+  "file": "Data.lua",
+  "line": 1133,
+  "func": "ns.PruneEntries",
+  "op": "ANDOR",
+  "orig": "if type(list[i]) ~= \"number\" or now - list[i] >= ns.CAP_DAY or list[i] > now + 86400 then",
+  "mut": "if type(list[i]) ~= \"number\" or now - list[i] >= ns.CAP_DAY and list[i] > now + 86400 then",
+  "_new": "    if type(list[i]) ~= \"number\" or now - list[i] >= ns.CAP_DAY and list[i] > now + 86400 then",
+  "id": 142
+ },
+ {
+  "file": "Data.lua",
+  "line": 600,
+  "func": "ns.ShortFormNote",
+  "op": "ANDOR",
+  "orig": "if r and list == ns.DB.old then",
+  "mut": "if r or list == ns.DB.old then",
+  "_new": "  if r or list == ns.DB.old then",
+  "id": 143
+ },
+ {
+  "file": "Run.lua",
+  "line": 493,
+  "func": "MoveFrom",
+  "op": "NUM",
+  "orig": "local move = (item.v or 1) >= visit or (since and type(item.st) == \"number\" and item.st >= since and Theirs(item))",
+  "mut": "local move = (item.v or 0) >= visit or (since and type(item.st) == \"number\" and item.st >= since and Theirs(item))",
+  "_new": "    local move = (item.v or 0) >= visit or (since and type(item.st) == \"number\" and item.st >= since and Theirs(item))",
+  "id": 144
+ },
+ {
+  "file": "Run.lua",
+  "line": 1054,
+  "func": "Tick",
+  "op": "NUM",
+  "orig": "tickCount = tickCount + 1",
+  "mut": "tickCount = tickCount + 0",
+  "_new": "  tickCount = tickCount + 0",
+  "id": 145
+ },
+ {
+  "file": "Run.lua",
+  "line": 239,
+  "func": "Begin",
+  "op": "ASSDEL",
+  "orig": "run.lastIn = time()",
+  "mut": "",
+  "_new": "",
+  "id": 146
+ },
+ {
+  "file": "Run.lua",
+  "line": 286,
+  "func": "CopyKillsOf",
+  "op": "NUM",
+  "orig": "out[#out + 1] = { id = b.id, name = b.name, st = b.st }",
+  "mut": "out[#out + 0] = { id = b.id, name = b.name, st = b.st }",
+  "_new": "      out[#out + 0] = { id = b.id, name = b.name, st = b.st }",
+  "id": 147
+ },
+ {
+  "file": "Run.lua",
+  "line": 470,
+  "func": "Finish",
+  "op": "RETDEL",
+  "orig": "return kept",
+  "mut": "",
+  "_new": "",
+  "id": 148
+ },
+ {
+  "file": "Run.lua",
+  "line": 484,
+  "func": "Theirs",
+  "op": "ANDOR",
+  "orig": "return type(item.who) == \"string\" and item.who ~= \"You\" and item.who ~= ns.PlayerName()",
+  "mut": "return type(item.who) == \"string\" or item.who ~= \"You\" and item.who ~= ns.PlayerName()",
+  "_new": "  return type(item.who) == \"string\" or item.who ~= \"You\" and item.who ~= ns.PlayerName()",
+  "id": 149
+ },
+ {
+  "file": "Run.lua",
+  "line": 610,
+  "func": "ns.PlainMoney",
+  "op": "IFFALSE",
+  "orig": "if copper >= 10000 then return ns.Money(copper) end",
+  "mut": "if false then return ns.Money(copper) end",
+  "_new": "  if false then return ns.Money(copper) end",
+  "id": 150
+ },
+ {
+  "file": "Run.lua",
+  "line": 191,
+  "func": "WorthKeeping",
+  "op": "NUM",
+  "orig": "if (p.coin or 0) > 0 or (p.loot or 0) > 0 or (p.xp or 0) > 0 then return true end",
+  "mut": "if (p.coin or 0) > 0 or (p.loot or 0) > 0 or (p.xp or 1) > 0 then return true end",
+  "_new": "    if (p.coin or 0) > 0 or (p.loot or 0) > 0 or (p.xp or 1) > 0 then return true end",
+  "id": 151
+ },
+ {
+  "file": "Run.lua",
+  "line": 327,
+  "func": "ns.HasCopy",
+  "op": "ANDOR",
+  "orig": "for _, c in ipairs(Copies()) do if type(c) == \"table\" and ns.DungeonKey(c.name) == key then return true end end",
+  "mut": "for _, c in ipairs(Copies()) do if type(c) == \"table\" or ns.DungeonKey(c.name) == key then return true end end",
+  "_new": "  for _, c in ipairs(Copies()) do if type(c) == \"table\" or ns.DungeonKey(c.name) == key then return true end end",
+  "id": 152
+ },
+ {
+  "file": "Run.lua",
+  "line": 952,
+  "func": "ns.ManualEnd",
+  "op": "ANDOR",
+  "orig": "local here = (inst and ns.SameDungeon(run, inst)) or (not inst and state == \"unknown\" and ns.inside)",
+  "mut": "local here = (inst and ns.SameDungeon(run, inst)) or (not inst and state == \"unknown\" or ns.inside)",
+  "_new": "  local here = (inst and ns.SameDungeon(run, inst)) or (not inst and state == \"unknown\" or ns.inside)",
+  "id": 153
+ },
+ {
+  "file": "Run.lua",
+  "line": 358,
+  "func": "Announce",
+  "op": "IFNEG",
+  "orig": "if capDay > 0 and day >= capDay then",
+  "mut": "if not (capDay > 0 and day >= capDay) then",
+  "_new": "  if not (capDay > 0 and day >= capDay) then",
+  "id": 154
+ },
+ {
+  "file": "Run.lua",
+  "line": 737,
+  "func": "SuppressedHere",
+  "op": "ANDOR",
+  "orig": "and (s.diffUnknown or inst.diffUnknown or (s.diff or 0) == (inst.diff or 0))",
+  "mut": "and (s.diffUnknown or inst.diffUnknown or (s.diff or 0) == (inst.diff and 0))",
+  "_new": "    and (s.diffUnknown or inst.diffUnknown or (s.diff or 0) == (inst.diff and 0))",
+  "id": 155
+ },
+ {
+  "file": "Run.lua",
+  "line": 149,
+  "func": "OtherWing",
+  "op": "REL",
+  "orig": "return run.wing ~= nil and inst.wing ~= nil and run.wing ~= inst.wing",
+  "mut": "return run.wing ~= nil and inst.wing == nil and run.wing ~= inst.wing",
+  "_new": "  return run.wing ~= nil and inst.wing == nil and run.wing ~= inst.wing",
+  "id": 156
+ },
+ {
+  "file": "Run.lua",
+  "line": 130,
+  "func": "ns.SameDungeon",
+  "op": "ANDOR",
+  "orig": "if run.mapID and inst.mapID then",
+  "mut": "if run.mapID or inst.mapID then",
+  "_new": "  if run.mapID or inst.mapID then",
+  "id": 157
+ },
+ {
+  "file": "Run.lua",
+  "line": 882,
+  "func": "ns.CheckInstance",
+  "op": "IFTRUE",
+  "orig": "if ns.inside and run then",
+  "mut": "if true then",
+  "_new": "  if true then",
+  "id": 158
+ },
+ {
+  "file": "Run.lua",
+  "line": 1173,
+  "func": "ns.TooManyInstances",
+  "op": "NUM",
+  "orig": "if GetTime() - lastCapNotice < 10 then return end  -- the error repeats per attempt",
+  "mut": "if GetTime() - lastCapNotice < 11 then return end  -- the error repeats per attempt",
+  "_new": "  if GetTime() - lastCapNotice < 11 then return end  -- the error repeats per attempt",
+  "id": 159
+ },
+ {
+  "file": "Run.lua",
+  "line": 1024,
+  "func": "ns.ManualNew",
+  "op": "NUM",
+  "orig": "local fresh = old and old.counted and ns.SameDungeon(old, inst) and (old.visit or 1) == 1 and old.elapsed < 120",
+  "mut": "local fresh = old and old.counted and ns.SameDungeon(old, inst) and (old.visit or 1) == 1 and old.elapsed < 121",
+  "_new": "  local fresh = old and old.counted and ns.SameDungeon(old, inst) and (old.visit or 1) == 1 and old.elapsed < 121",
+  "id": 160
+ },
+ {
+  "file": "Run.lua",
+  "line": 161,
+  "func": "ns.RunOrLast",
+  "op": "RETDEL",
+  "orig": "return ns.LastOwnRun() or ns.run",
+  "mut": "",
+  "_new": "",
+  "id": 161
+ },
+ {
+  "file": "Run.lua",
+  "line": 111,
+  "func": "ns.CurrentInstance",
+  "op": "IFTRUE",
+  "orig": "if wingName and not name:find(wingName, 1, true) and not wingName:find(name, 1, true) then",
+  "mut": "if true then",
+  "_new": "    if true then",
+  "id": 162
+ },
+ {
+  "file": "Run.lua",
+  "line": 314,
+  "func": "ns.TakeCopy",
+  "op": "IFTRUE",
+  "orig": "if type(c.kills) == \"table\" then",
+  "mut": "if true then",
+  "_new": "        if true then",
+  "id": 163
+ },
+ {
+  "file": "Run.lua",
+  "line": 918,
+  "func": "ns.NoteReset",
+  "op": "ANDOR",
+  "orig": "ns.Log(\"run\", \"reset: %s%s\", name, fromPartner and \" (from partner)\" or \"\")",
+  "mut": "ns.Log(\"run\", \"reset: %s%s\", name, fromPartner and \" (from partner)\" and \"\")",
+  "_new": "  ns.Log(\"run\", \"reset: %s%s\", name, fromPartner and \" (from partner)\" and \"\")",
+  "id": 164
+ },
+ {
+  "file": "Run.lua",
+  "line": 197,
+  "func": "Say",
+  "op": "IFNEG",
+  "orig": "if not ns.DB.quiet then ns.Print(msg) end",
+  "mut": "if not (not ns.DB.quiet) then ns.Print(msg) end",
+  "_new": "  if not (not ns.DB.quiet) then ns.Print(msg) end",
+  "id": 165
+ },
+ {
+  "file": "Run.lua",
+  "line": 779,
+  "func": "Resume",
+  "op": "IFNEG",
+  "orig": "elseif not run.wing or OtherWing(run, inst) then",
+  "mut": "elseif not (not run.wing or OtherWing(run, inst)) then",
+  "_new": "    elseif not (not run.wing or OtherWing(run, inst)) then",
+  "id": 166
+ },
+ {
+  "file": "Run.lua",
+  "line": 165,
+  "func": "ns.InRun",
+  "op": "ANDOR",
+  "orig": "return ns.run ~= nil and ns.inside",
+  "mut": "return ns.run ~= nil or ns.inside",
+  "_new": "  return ns.run ~= nil or ns.inside",
+  "id": 167
+ },
+ {
+  "file": "Run.lua",
+  "line": 729,
+  "func": "StartsFresh",
+  "op": "IFTRUE",
+  "orig": "if away and run.deadAt and run.deadAt > away then away = run.deadAt end  -- (time dead outside doesn't count)",
+  "mut": "if true then away = run.deadAt end  -- (time dead outside doesn't count)",
+  "_new": "  if true then away = run.deadAt end  -- (time dead outside doesn't count)",
+  "id": 168
+ },
+ {
+  "file": "Run.lua",
+  "line": 81,
+  "func": "Wing",
+  "op": "IFTRUE",
+  "orig": "if not ok then return nil end",
+  "mut": "if true then return nil end",
+  "_new": "  if true then return nil end",
+  "id": 169
+ },
+ {
+  "file": "Run.lua",
+  "line": 403,
+  "func": "ns.StartRun",
+  "op": "RETDEL",
+  "orig": "return run",
+  "mut": "",
+  "_new": "",
+  "id": 170
+ },
+ {
+  "file": "Run.lua",
+  "line": 299,
+  "func": "ns.RememberCopy",
+  "op": "NUM",
+  "orig": "while #list > 8 do table.remove(list, 1) end",
+  "mut": "while #list > 8 do table.remove(list, 0) end",
+  "_new": "  while #list > 8 do table.remove(list, 0) end",
+  "id": 171
+ },
+ {
+  "file": "Run.lua",
+  "line": 268,
+  "func": "Copies",
+  "op": "RETDEL",
+  "orig": "return c",
+  "mut": "",
+  "_new": "",
+  "id": 172
+ },
+ {
+  "file": "Run.lua",
+  "line": 29,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "local MULTI_WING = { [189] = true, [429] = true }",
+  "mut": "local MULTI_WING = { [190] = true, [429] = true }",
+  "_new": "local MULTI_WING = { [190] = true, [429] = true }",
+  "id": 173
+ },
+ {
+  "file": "Run.lua",
+  "line": 340,
+  "func": "LeftCopies",
+  "op": "IFFALSE",
+  "orig": "if type(c) == \"table\" and not c.left then c.left = now end",
+  "mut": "if false then c.left = now end",
+  "_new": "    if false then c.left = now end",
+  "id": 174
+ },
+ {
+  "file": "Run.lua",
+  "line": 227,
+  "func": "Snapshot",
+  "op": "ASSDEL",
+  "orig": "run.resumeSnap = Snap(run)",
+  "mut": "",
+  "_new": "",
+  "id": 175
+ },
+ {
+  "file": "Run.lua",
+  "line": 276,
+  "func": "SameCopyKey",
+  "op": "ANDOR",
+  "orig": "and (c.diffUnknown or x.diffUnknown or (c.diff or 0) == (x.diff or 0))",
+  "mut": "or (c.diffUnknown or x.diffUnknown or (c.diff or 0) == (x.diff or 0))",
+  "_new": "    or (c.diffUnknown or x.diffUnknown or (c.diff or 0) == (x.diff or 0))",
+  "id": 176
+ },
+ {
+  "file": "Run.lua",
+  "line": 974,
+  "func": "ns.ManualStart",
+  "op": "ANDOR",
+  "orig": "if type(old) == \"table\" and ns.SameDungeon(old, inst) and not ns.Gone(old) then",
+  "mut": "if type(old) == \"table\" or ns.SameDungeon(old, inst) and not ns.Gone(old) then",
+  "_new": "  if type(old) == \"table\" or ns.SameDungeon(old, inst) and not ns.Gone(old) then",
+  "id": 177
+ },
+ {
+  "file": "Run.lua",
+  "line": 172,
+  "func": "ns.GhostRunning",
+  "op": "ANDOR",
+  "orig": "and time() - run.leftAt <= ns.GHOST_MAX and IsDead()",
+  "mut": "or time() - run.leftAt <= ns.GHOST_MAX and IsDead()",
+  "_new": "    or time() - run.leftAt <= ns.GHOST_MAX and IsDead()",
+  "id": 178
+ },
+ {
+  "file": "Run.lua",
+  "line": 621,
+  "func": "ns.RunSummary",
+  "op": "NUM",
+  "orig": "if deaths > 0 then parts[#parts + 1] = ns.Plural(deaths, \"death\") end",
+  "mut": "if deaths > 0 then parts[#parts + 0] = ns.Plural(deaths, \"death\") end",
+  "_new": "  if deaths > 0 then parts[#parts + 0] = ns.Plural(deaths, \"death\") end",
+  "id": 179
+ },
+ {
+  "file": "Run.lua",
+  "line": 828,
+  "func": "CheckWing",
+  "op": "IFNEG",
+  "orig": "if not check.split or not run.wing then",
+  "mut": "if not (not check.split or not run.wing) then",
+  "_new": "  if not (not check.split or not run.wing) then",
+  "id": 180
+ },
+ {
+  "file": "Run.lua",
+  "line": 533,
+  "func": "ns.MoveSince",
+  "op": "IFTRUE",
+  "orig": "if n > 0 then",
+  "mut": "if true then",
+  "_new": "  if true then",
+  "id": 181
+ },
+ {
+  "file": "Run.lua",
+  "line": 87,
+  "func": "IsMultiWing",
+  "op": "RETDEL",
+  "orig": "return MULTI_WING_NAMES[name] == true",
+  "mut": "",
+  "_new": "",
+  "id": 182
+ },
+ {
+  "file": "Run.lua",
+  "line": 591,
+  "func": "ns.EndRun",
+  "op": "IFNEG",
+  "orig": "if not run then return nil end",
+  "mut": "if not (not run) then return nil end",
+  "_new": "  if not (not run) then return nil end",
+  "id": 183
+ },
+ {
+  "file": "Run.lua",
+  "line": 153,
+  "func": "IsDead",
+  "op": "REL",
+  "orig": "return plain(UnitIsDeadOrGhost(\"player\")) == true",
+  "mut": "return plain(UnitIsDeadOrGhost(\"player\")) ~= true",
+  "_new": "  return plain(UnitIsDeadOrGhost(\"player\")) ~= true",
+  "id": 184
+ },
+ {
+  "file": "Run.lua",
+  "line": 571,
+  "func": "ns.PartnerFoundReset",
+  "op": "IFFALSE",
+  "orig": "if run.partners[name] then ns.SumPartner(run.partners[name]) end",
+  "mut": "if false then ns.SumPartner(run.partners[name]) end",
+  "_new": "        if false then ns.SumPartner(run.partners[name]) end",
+  "id": 185
+ },
+ {
+  "file": "Run.lua",
+  "line": 910,
+  "func": "ns.Zoning",
+  "op": "NUM",
+  "orig": "return GetTime() - zonedAt <= 10",
+  "mut": "return GetTime() - zonedAt <= 9",
+  "_new": "  return GetTime() - zonedAt <= 9",
+  "id": 186
+ },
+ {
+  "file": "Run.lua",
+  "line": 511,
+  "func": "ns.RenumberUnnamed",
+  "op": "IFTRUE",
+  "orig": "if type(b) == \"table\" and b.anonymous and type(b.name) == \"string\" and b.name:match(\"^Boss %d+$\") then",
+  "mut": "if true then",
+  "_new": "    if true then",
+  "id": 187
+ },
+ {
+  "file": "Run.lua",
+  "line": 67,
+  "func": "ReadWing",
+  "op": "REL",
+  "orig": "if type(m) == \"table\" and plain(m.mapID) == ui and type(plain(m.name)) == \"string\" then",
+  "mut": "if type(m) == \"table\" and plain(m.mapID) == ui and type(plain(m.name)) ~= \"string\" then",
+  "_new": "        if type(m) == \"table\" and plain(m.mapID) == ui and type(plain(m.name)) ~= \"string\" then",
+  "id": 188
+ },
+ {
+  "file": "Run.lua",
+  "line": 176,
+  "func": "Timeout",
+  "op": "REL",
+  "orig": "return run.kind == \"raid\" and ns.RAID_TIMEOUT or ns.RUN_TIMEOUT",
+  "mut": "return run.kind ~= \"raid\" and ns.RAID_TIMEOUT or ns.RUN_TIMEOUT",
+  "_new": "  return run.kind ~= \"raid\" and ns.RAID_TIMEOUT or ns.RUN_TIMEOUT",
+  "id": 189
+ },
+ {
+  "file": "Run.lua",
+  "line": 677,
+  "func": "ns.SplitAtResume",
+  "op": "IFFALSE",
+  "orig": "if type(entry) == \"table\" and type(entry.parts) == \"table\" then",
+  "mut": "if false then",
+  "_new": "    if false then",
+  "id": 190
+ },
+ {
+  "file": "Run.lua",
+  "line": 250,
+  "func": "MultiWingHint",
+  "op": "ANDOR",
+  "orig": "if inst.multiWing and not inst.wing and not run.hinted and not hintedWings[inst.name] then",
+  "mut": "if inst.multiWing and not inst.wing or not run.hinted and not hintedWings[inst.name] then",
+  "_new": "  if inst.multiWing and not inst.wing or not run.hinted and not hintedWings[inst.name] then",
+  "id": 191
+ },
+ {
+  "file": "Run.lua",
+  "line": 202,
+  "func": "Resets",
+  "op": "RETDEL",
+  "orig": "return VulcanRunBookCharDB.resets",
+  "mut": "",
+  "_new": "",
+  "id": 192
+ },
+ {
+  "file": "Run.lua",
+  "line": 503,
+  "func": "MoveFrom",
+  "op": "NUM",
+  "orig": "for i = #src, 1, -1 do src[i] = nil end",
+  "mut": "for i = #src, 0, -1 do src[i] = nil end",
+  "_new": "  for i = #src, 0, -1 do src[i] = nil end",
+  "id": 193
+ },
+ {
+  "file": "Run.lua",
+  "line": 1087,
+  "func": "Tick",
+  "op": "NUM",
+  "orig": "if (cap > 0 and count >= cap) or (capDay > 0 and day >= capDay) then",
+  "mut": "if (cap > 1 and count >= cap) or (capDay > 0 and day >= capDay) then",
+  "_new": "    if (cap > 1 and count >= cap) or (capDay > 0 and day >= capDay) then",
+  "id": 194
+ },
+ {
+  "file": "Run.lua",
+  "line": 238,
+  "func": "Begin",
+  "op": "ASSDEL",
+  "orig": "ns.inside = true",
+  "mut": "",
+  "_new": "",
+  "id": 195
+ },
+ {
+  "file": "Run.lua",
+  "line": 285,
+  "func": "CopyKillsOf",
+  "op": "REL",
+  "orig": "if not b.anonymous and (b.id or b.name) and type(b.st) == \"number\" and #out < 40 then",
+  "mut": "if not b.anonymous and (b.id or b.name) and type(b.st) ~= \"number\" and #out < 40 then",
+  "_new": "    if not b.anonymous and (b.id or b.name) and type(b.st) ~= \"number\" and #out < 40 then",
+  "id": 196
+ },
+ {
+  "file": "Run.lua",
+  "line": 431,
+  "func": "Finish",
+  "op": "ANDOR",
+  "orig": "if r ~= run and r.name == run.name and r.wing == run.wing and r.mapID and not r.diffUnknown then",
+  "mut": "if r ~= run and r.name == run.name and r.wing == run.wing and r.mapID or not r.diffUnknown then",
+  "_new": "      if r ~= run and r.name == run.name and r.wing == run.wing and r.mapID or not r.diffUnknown then",
+  "id": 197
+ },
+ {
+  "file": "Run.lua",
+  "line": 484,
+  "func": "Theirs",
+  "op": "ANDOR",
+  "orig": "return type(item.who) == \"string\" and item.who ~= \"You\" and item.who ~= ns.PlayerName()",
+  "mut": "return type(item.who) == \"string\" and item.who ~= \"You\" or item.who ~= ns.PlayerName()",
+  "_new": "  return type(item.who) == \"string\" and item.who ~= \"You\" or item.who ~= ns.PlayerName()",
+  "id": 198
+ },
+ {
+  "file": "Run.lua",
+  "line": 610,
+  "func": "ns.PlainMoney",
+  "op": "NUM",
+  "orig": "if copper >= 10000 then return ns.Money(copper) end",
+  "mut": "if copper >= 0 then return ns.Money(copper) end",
+  "_new": "  if copper >= 0 then return ns.Money(copper) end",
+  "id": 199
+ },
+ {
+  "file": "Run.lua",
+  "line": 184,
+  "func": "WorthKeeping",
+  "op": "REL",
+  "orig": "or #run.wipes > 0 or #run.notes > 0 or run.coin > 0 or run.xp > 0 or run.loot > 0 or run.unpriced > 0",
+  "mut": "or #run.wipes > 0 or #run.notes > 0 or run.coin >= 0 or run.xp > 0 or run.loot > 0 or run.unpriced > 0",
+  "_new": "      or #run.wipes > 0 or #run.notes > 0 or run.coin >= 0 or run.xp > 0 or run.loot > 0 or run.unpriced > 0",
+  "id": 200
+ },
+ {
+  "file": "Run.lua",
+  "line": 327,
+  "func": "ns.HasCopy",
+  "op": "RETDEL",
+  "orig": "for _, c in ipairs(Copies()) do if type(c) == \"table\" and ns.DungeonKey(c.name) == key then return true end end",
+  "mut": "for _, c in ipairs(Copies()) do if type(c) == \"table\" and ns.DungeonKey(c.name) == key then end end",
+  "_new": "  for _, c in ipairs(Copies()) do if type(c) == \"table\" and ns.DungeonKey(c.name) == key then end end",
+  "id": 201
+ },
+ {
+  "file": "Run.lua",
+  "line": 952,
+  "func": "ns.ManualEnd",
+  "op": "REL",
+  "orig": "local here = (inst and ns.SameDungeon(run, inst)) or (not inst and state == \"unknown\" and ns.inside)",
+  "mut": "local here = (inst and ns.SameDungeon(run, inst)) or (not inst and state ~= \"unknown\" and ns.inside)",
+  "_new": "  local here = (inst and ns.SameDungeon(run, inst)) or (not inst and state ~= \"unknown\" and ns.inside)",
+  "id": 202
+ },
+ {
+  "file": "Run.lua",
+  "line": 361,
+  "func": "Announce",
+  "op": "IFFALSE",
+  "orig": "elseif cap > 0 and count >= cap then",
+  "mut": "elseif false then",
+  "_new": "  elseif false then",
+  "id": 203
+ },
+ {
+  "file": "Run.lua",
+  "line": 737,
+  "func": "SuppressedHere",
+  "op": "REL",
+  "orig": "and (s.diffUnknown or inst.diffUnknown or (s.diff or 0) == (inst.diff or 0))",
+  "mut": "and (s.diffUnknown or inst.diffUnknown or (s.diff or 0) ~= (inst.diff or 0))",
+  "_new": "    and (s.diffUnknown or inst.diffUnknown or (s.diff or 0) ~= (inst.diff or 0))",
+  "id": 204
+ },
+ {
+  "file": "Run.lua",
+  "line": 149,
+  "func": "OtherWing",
+  "op": "RETDEL",
+  "orig": "return run.wing ~= nil and inst.wing ~= nil and run.wing ~= inst.wing",
+  "mut": "",
+  "_new": "",
+  "id": 205
+ },
+ {
+  "file": "Run.lua",
+  "line": 134,
+  "func": "ns.SameDungeon",
+  "op": "IFNEG",
+  "orig": "elseif inst.mapID and not run.mapID and run.name == inst.name then",
+  "mut": "elseif not (inst.mapID and not run.mapID and run.name == inst.name) then",
+  "_new": "  elseif not (inst.mapID and not run.mapID and run.name == inst.name) then",
+  "id": 206
+ },
+ {
+  "file": "Run.lua",
+  "line": 870,
+  "func": "ns.CheckInstance",
+  "op": "ASSDEL",
+  "orig": "run.pendingEntry = nil",
+  "mut": "",
+  "_new": "",
+  "id": 207
+ },
+ {
+  "file": "Run.lua",
+  "line": 1199,
+  "func": "ns.TooManyInstances",
+  "op": "IFFALSE",
+  "orig": "if not ok then ns.ReportError(\"clock\", err) end",
+  "mut": "if false then ns.ReportError(\"clock\", err) end",
+  "_new": "  if false then ns.ReportError(\"clock\", err) end",
+  "id": 208
+ },
+ {
+  "file": "Run.lua",
+  "line": 1025,
+  "func": "ns.ManualNew",
+  "op": "NUM",
+  "orig": "and #old.bosses == 0 and #old.drops == 0 and #old.deaths == 0 and old.coin == 0 and old.xp == 0",
+  "mut": "and #old.bosses == 0 and #old.drops == 0 and #old.deaths == 0 and old.coin == 1 and old.xp == 0",
+  "_new": "    and #old.bosses == 0 and #old.drops == 0 and #old.deaths == 0 and old.coin == 1 and old.xp == 0",
+  "id": 209
+ },
+ {
+  "file": "Run.lua",
+  "line": 160,
+  "func": "ns.RunOrLast",
+  "op": "IFTRUE",
+  "orig": "if ns.run and not ns.run.entryOnEntry then return ns.run end",
+  "mut": "if true then return ns.run end",
+  "_new": "  if true then return ns.run end",
+  "id": 210
+ },
+ {
+  "file": "Run.lua",
+  "line": 99,
+  "func": "ns.CurrentInstance",
+  "op": "IFNEG",
+  "orig": "if kind ~= nil and kind ~= \"party\" and kind ~= \"raid\" then return nil end  -- battleground, arena, scenario",
+  "mut": "if not (kind ~= nil and kind ~= \"party\" and kind ~= \"raid\") then return nil end  -- battleground, arena, scenario",
+  "_new": "  if not (kind ~= nil and kind ~= \"party\" and kind ~= \"raid\") then return nil end  -- battleground, arena, scenario",
+  "id": 211
+ },
+ {
+  "file": "Run.lua",
+  "line": 311,
+  "func": "ns.TakeCopy",
+  "op": "ANDOR",
+  "orig": "if not found and type(c.left) == \"number\" and ns.ServerTime() - c.left <= timeout",
+  "mut": "if not found and type(c.left) == \"number\" or ns.ServerTime() - c.left <= timeout",
+  "_new": "      if not found and type(c.left) == \"number\" or ns.ServerTime() - c.left <= timeout",
+  "id": 212
+ },
+ {
+  "file": "Run.lua",
+  "line": 926,
+  "func": "ns.NoteReset",
+  "op": "NUM",
+  "orig": "ns.stats.resetsMatched = ns.stats.resetsMatched + 1",
+  "mut": "ns.stats.resetsMatched = ns.stats.resetsMatched + 2",
+  "_new": "      ns.stats.resetsMatched = ns.stats.resetsMatched + 2",
+  "id": 213
+ },
+ {
+  "file": "Run.lua",
+  "line": 197,
+  "func": "Say",
+  "op": "IFFALSE",
+  "orig": "if not ns.DB.quiet then ns.Print(msg) end",
+  "mut": "if false then ns.Print(msg) end",
+  "_new": "  if false then ns.Print(msg) end",
+  "id": 214
+ },
+ {
+  "file": "Run.lua",
+  "line": 758,
+  "func": "Resume",
+  "op": "ASSDEL",
+  "orig": "run.prevLeft = run.leftServer  -- when you left the copy you were in (for a wing change)",
+  "mut": "",
+  "_new": "",
+  "id": 215
+ },
+ {
+  "file": "Run.lua",
+  "line": 165,
+  "func": "ns.InRun",
+  "op": "RETDEL",
+  "orig": "return ns.run ~= nil and ns.inside",
+  "mut": "",
+  "_new": "",
+  "id": 216
+ },
+ {
+  "file": "Run.lua",
+  "line": 730,
+  "func": "StartsFresh",
+  "op": "IFFALSE",
+  "orig": "if away and time() - away > Timeout(run) and not run.staleLogin then return \"timeout\" end",
+  "mut": "if false then return \"timeout\" end",
+  "_new": "  if false then return \"timeout\" end",
+  "id": 217
+ },
+ {
+  "file": "Run.lua",
+  "line": 81,
+  "func": "Wing",
+  "op": "RETDEL",
+  "orig": "if not ok then return nil end",
+  "mut": "if not ok then end",
+  "_new": "  if not ok then end",
+  "id": 218
+ },
+ {
+  "file": "Run.lua",
+  "line": 377,
+  "func": "ns.StartRun",
+  "op": "IFNEG",
+  "orig": "if sameEntry then",
+  "mut": "if not (sameEntry) then",
+  "_new": "  if not (sameEntry) then",
+  "id": 219
+ },
+ {
+  "file": "Run.lua",
+  "line": 299,
+  "func": "ns.RememberCopy",
+  "op": "NUM",
+  "orig": "while #list > 8 do table.remove(list, 1) end",
+  "mut": "while #list > 16 do table.remove(list, 1) end",
+  "_new": "  while #list > 16 do table.remove(list, 1) end",
+  "id": 220
+ },
+ {
+  "file": "Run.lua",
+  "line": 264,
+  "func": "Copies",
+  "op": "IFFALSE",
+  "orig": "if type(c) ~= \"table\" then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 221
+ },
+ {
+  "file": "Run.lua",
+  "line": 35,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "local READ_WING = { [189] = true }",
+  "mut": "local READ_WING = { [190] = true }",
+  "_new": "local READ_WING = { [190] = true }",
+  "id": 222
+ },
+ {
+  "file": "Run.lua",
+  "line": 338,
+  "func": "LeftCopies",
+  "op": "NUM",
+  "orig": "if loginCheck and (ns.lastSaved or 0) > 0 then now = math.min(now, ns.lastSaved) end",
+  "mut": "if loginCheck and (ns.lastSaved or 1) > 0 then now = math.min(now, ns.lastSaved) end",
+  "_new": "  if loginCheck and (ns.lastSaved or 1) > 0 then now = math.min(now, ns.lastSaved) end",
+  "id": 223
+ },
+ {
+  "file": "Run.lua",
+  "line": 226,
+  "func": "Snapshot",
+  "op": "ASSDEL",
+  "orig": "run.visit = (run.visit or 1) + 1",
+  "mut": "",
+  "_new": "",
+  "id": 224
+ },
+ {
+  "file": "Run.lua",
+  "line": 276,
+  "func": "SameCopyKey",
+  "op": "ANDOR",
+  "orig": "and (c.diffUnknown or x.diffUnknown or (c.diff or 0) == (x.diff or 0))",
+  "mut": "and (c.diffUnknown or x.diffUnknown or (c.diff and 0) == (x.diff or 0))",
+  "_new": "    and (c.diffUnknown or x.diffUnknown or (c.diff and 0) == (x.diff or 0))",
+  "id": 225
+ },
+ {
+  "file": "Run.lua",
+  "line": 988,
+  "func": "ns.ManualStart",
+  "op": "ASSDEL",
+  "orig": "old.resumeSnap, old.reopenSnap = old.reopenSnap, nil",
+  "mut": "",
+  "_new": "",
+  "id": 226
+ },
+ {
+  "file": "Run.lua",
+  "line": 171,
+  "func": "ns.GhostRunning",
+  "op": "ANDOR",
+  "orig": "return run ~= nil and not ns.inside and run.ghost == true and run.leftAt ~= nil",
+  "mut": "return run ~= nil or not ns.inside and run.ghost == true and run.leftAt ~= nil",
+  "_new": "  return run ~= nil or not ns.inside and run.ghost == true and run.leftAt ~= nil",
+  "id": 227
+ },
+ {
+  "file": "Run.lua",
+  "line": 621,
+  "func": "ns.RunSummary",
+  "op": "NUM",
+  "orig": "if deaths > 0 then parts[#parts + 1] = ns.Plural(deaths, \"death\") end",
+  "mut": "if deaths > 1 then parts[#parts + 1] = ns.Plural(deaths, \"death\") end",
+  "_new": "  if deaths > 1 then parts[#parts + 1] = ns.Plural(deaths, \"death\") end",
+  "id": 228
+ },
+ {
+  "file": "Run.lua",
+  "line": 838,
+  "func": "CheckWing",
+  "op": "IFNEG",
+  "orig": "if entry and entry.run == run then run.resumeSnap = entry.snap end",
+  "mut": "if not (entry and entry.run == run) then run.resumeSnap = entry.snap end",
+  "_new": "  if not (entry and entry.run == run) then run.resumeSnap = entry.snap end",
+  "id": 229
+ },
+ {
+  "file": "Run.lua",
+  "line": 522,
+  "func": "ns.MoveSince",
+  "op": "IFTRUE",
+  "orig": "if type(from[k]) == \"table\" and type(to[k]) == \"table\" then",
+  "mut": "if true then",
+  "_new": "    if true then",
+  "id": 230
+ },
+ {
+  "file": "Run.lua",
+  "line": 86,
+  "func": "IsMultiWing",
+  "op": "IFFALSE",
+  "orig": "if mapID then return MULTI_WING[mapID] == true end",
+  "mut": "if false then return MULTI_WING[mapID] == true end",
+  "_new": "  if false then return MULTI_WING[mapID] == true end",
+  "id": 231
+ },
+ {
+  "file": "Run.lua",
+  "line": 601,
+  "func": "ns.EndRun",
+  "op": "IFFALSE",
+  "orig": "if (reason == \"manual\" or reason == \"new dungeon\") and not run.entryOnEntry then  -- (never went in)",
+  "mut": "if false then  -- (never went in)",
+  "_new": "  if false then  -- (never went in)",
+  "id": 232
+ },
+ {
+  "file": "Run.lua",
+  "line": 153,
+  "func": "IsDead",
+  "op": "RETDEL",
+  "orig": "return plain(UnitIsDeadOrGhost(\"player\")) == true",
+  "mut": "",
+  "_new": "",
+  "id": 233
+ },
+ {
+  "file": "Run.lua",
+  "line": 565,
+  "func": "ns.PartnerFoundReset",
+  "op": "ANDOR",
+  "orig": "run.partners[name] = run.partners[name] or { parts = {} }",
+  "mut": "run.partners[name] = run.partners[name] and { parts = {} }",
+  "_new": "          run.partners[name] = run.partners[name] and { parts = {} }",
+  "id": 234
+ },
+ {
+  "file": "Run.lua",
+  "line": 910,
+  "func": "ns.Zoning",
+  "op": "REL",
+  "orig": "return GetTime() - zonedAt <= 10",
+  "mut": "return GetTime() - zonedAt < 10",
+  "_new": "  return GetTime() - zonedAt < 10",
+  "id": 235
+ },
+ {
+  "file": "Run.lua",
+  "line": 511,
+  "func": "ns.RenumberUnnamed",
+  "op": "REL",
+  "orig": "if type(b) == \"table\" and b.anonymous and type(b.name) == \"string\" and b.name:match(\"^Boss %d+$\") then",
+  "mut": "if type(b) == \"table\" and b.anonymous and type(b.name) ~= \"string\" and b.name:match(\"^Boss %d+$\") then",
+  "_new": "    if type(b) == \"table\" and b.anonymous and type(b.name) ~= \"string\" and b.name:match(\"^Boss %d+$\") then",
+  "id": 236
+ },
+ {
+  "file": "Run.lua",
+  "line": 73,
+  "func": "ReadWing",
+  "op": "NUM",
+  "orig": "if (not wingName or wingName:find(\"Scarlet Monastery\", 1, true)) and SM_WINGS[ui] then wingName = SM_WINGS[ui] end",
+  "mut": "if (not wingName or wingName:find(\"Scarlet Monastery\", 2, true)) and SM_WINGS[ui] then wingName = SM_WINGS[ui] end",
+  "_new": "  if (not wingName or wingName:find(\"Scarlet Monastery\", 2, true)) and SM_WINGS[ui] then wingName = SM_WINGS[ui] end",
+  "id": 237
+ },
+ {
+  "file": "Run.lua",
+  "line": 176,
+  "func": "Timeout",
+  "op": "ANDOR",
+  "orig": "return run.kind == \"raid\" and ns.RAID_TIMEOUT or ns.RUN_TIMEOUT",
+  "mut": "return run.kind == \"raid\" or ns.RAID_TIMEOUT or ns.RUN_TIMEOUT",
+  "_new": "  return run.kind == \"raid\" or ns.RAID_TIMEOUT or ns.RUN_TIMEOUT",
+  "id": 238
+ },
+ {
+  "file": "Run.lua",
+  "line": 715,
+  "func": "ns.SplitAtResume",
+  "op": "NUM",
+  "orig": "wingCheck = { at = GetTime() + 3, split = false }",
+  "mut": "wingCheck = { at = GetTime() + 4, split = false }",
+  "_new": "    wingCheck = { at = GetTime() + 4, split = false }",
+  "id": 239
+ },
+ {
+  "file": "Run.lua",
+  "line": 251,
+  "func": "MultiWingHint",
+  "op": "ASSDEL",
+  "orig": "run.hinted, hintedWings[inst.name] = true, true",
+  "mut": "",
+  "_new": "",
+  "id": 240
+ },
+ {
+  "file": "Run.lua",
+  "line": 201,
+  "func": "Resets",
+  "op": "REL",
+  "orig": "if type(VulcanRunBookCharDB.resets) ~= \"table\" then VulcanRunBookCharDB.resets = {} end",
+  "mut": "if type(VulcanRunBookCharDB.resets) == \"table\" then VulcanRunBookCharDB.resets = {} end",
+  "_new": "  if type(VulcanRunBookCharDB.resets) == \"table\" then VulcanRunBookCharDB.resets = {} end",
+  "id": 241
+ },
+ {
+  "file": "Run.lua",
+  "line": 493,
+  "func": "MoveFrom",
+  "op": "ANDOR",
+  "orig": "local move = (item.v or 1) >= visit or (since and type(item.st) == \"number\" and item.st >= since and Theirs(item))",
+  "mut": "local move = (item.v or 1) >= visit and (since and type(item.st) == \"number\" and item.st >= since and Theirs(item))",
+  "_new": "    local move = (item.v or 1) >= visit and (since and type(item.st) == \"number\" and item.st >= since and Theirs(item))",
+  "id": 242
+ },
+ {
+  "file": "Run.lua",
+  "line": 1106,
+  "func": "Tick",
+  "op": "IFFALSE",
+  "orig": "if plain(name) ~= ns.name then return end",
+  "mut": "if false then return end",
+  "_new": "  if false then return end",
+  "id": 243
+ },
+ {
+  "file": "Run.lua",
+  "line": 241,
+  "func": "Begin",
+  "op": "ANDOR",
+  "orig": "run.counted = (entryAt ~= false) or nil  -- this start added a cap entry",
+  "mut": "run.counted = (entryAt ~= false) and nil  -- this start added a cap entry",
+  "_new": "  run.counted = (entryAt ~= false) and nil  -- this start added a cap entry",
+  "id": 244
+ },
+ {
+  "file": "Run.lua",
+  "line": 285,
+  "func": "CopyKillsOf",
+  "op": "NUM",
+  "orig": "if not b.anonymous and (b.id or b.name) and type(b.st) == \"number\" and #out < 40 then",
+  "mut": "if not b.anonymous and (b.id or b.name) and type(b.st) == \"number\" and #out < 41 then",
+  "_new": "    if not b.anonymous and (b.id or b.name) and type(b.st) == \"number\" and #out < 41 then",
+  "id": 245
+ },
+ {
+  "file": "Run.lua",
+  "line": 431,
+  "func": "Finish",
+  "op": "ANDOR",
+  "orig": "if r ~= run and r.name == run.name and r.wing == run.wing and r.mapID and not r.diffUnknown then",
+  "mut": "if r ~= run or r.name == run.name and r.wing == run.wing and r.mapID and not r.diffUnknown then",
+  "_new": "      if r ~= run or r.name == run.name and r.wing == run.wing and r.mapID and not r.diffUnknown then",
+  "id": 246
+ },
+ {
+  "file": "Run.lua",
+  "line": 483,
+  "func": "Theirs",
+  "op": "IFTRUE",
+  "orig": "if item.src == \"sync\" then return true end",
+  "mut": "if true then return true end",
+  "_new": "  if true then return true end",
+  "id": 247
+ },
+ {
+  "file": "Run.lua",
+  "line": 611,
+  "func": "ns.PlainMoney",
+  "op": "IFNEG",
+  "orig": "if copper >= 100 then return math.floor(copper / 100) .. \" silver\" end",
+  "mut": "if not (copper >= 100) then return math.floor(copper / 100) .. \" silver\" end",
+  "_new": "  if not (copper >= 100) then return math.floor(copper / 100) .. \" silver\" end",
+  "id": 248
+ },
+ {
+  "file": "Run.lua",
+  "line": 191,
+  "func": "WorthKeeping",
+  "op": "IFTRUE",
+  "orig": "if (p.coin or 0) > 0 or (p.loot or 0) > 0 or (p.xp or 0) > 0 then return true end",
+  "mut": "if true then return true end",
+  "_new": "    if true then return true end",
+  "id": 249
+ },
+ {
+  "file": "Run.lua",
+  "line": 327,
+  "func": "ns.HasCopy",
+  "op": "IFFALSE",
+  "orig": "for _, c in ipairs(Copies()) do if type(c) == \"table\" and ns.DungeonKey(c.name) == key then return true end end",
+  "mut": "for _, c in ipairs(Copies()) do if false then return true end end",
+  "_new": "  for _, c in ipairs(Copies()) do if false then return true end end",
+  "id": 250
+ },
+ {
+  "file": "Run.lua",
+  "line": 953,
+  "func": "ns.ManualEnd",
+  "op": "IFTRUE",
+  "orig": "if here then",
+  "mut": "if true then",
+  "_new": "  if true then",
+  "id": 251
+ },
+ {
+  "file": "Run.lua",
+  "line": 358,
+  "func": "Announce",
+  "op": "ANDOR",
+  "orig": "if capDay > 0 and day >= capDay then",
+  "mut": "if capDay > 0 or day >= capDay then",
+  "_new": "  if capDay > 0 or day >= capDay then",
+  "id": 252
+ },
+ {
+  "file": "Run.lua",
+  "line": 737,
+  "func": "SuppressedHere",
+  "op": "ANDOR",
+  "orig": "and (s.diffUnknown or inst.diffUnknown or (s.diff or 0) == (inst.diff or 0))",
+  "mut": "and (s.diffUnknown or inst.diffUnknown or (s.diff and 0) == (inst.diff or 0))",
+  "_new": "    and (s.diffUnknown or inst.diffUnknown or (s.diff and 0) == (inst.diff or 0))",
+  "id": 253
+ },
+ {
+  "file": "Run.lua",
+  "line": 149,
+  "func": "OtherWing",
+  "op": "ANDOR",
+  "orig": "return run.wing ~= nil and inst.wing ~= nil and run.wing ~= inst.wing",
+  "mut": "return run.wing ~= nil or inst.wing ~= nil and run.wing ~= inst.wing",
+  "_new": "  return run.wing ~= nil or inst.wing ~= nil and run.wing ~= inst.wing",
+  "id": 254
+ },
+ {
+  "file": "Run.lua",
+  "line": 134,
+  "func": "ns.SameDungeon",
+  "op": "REL",
+  "orig": "elseif inst.mapID and not run.mapID and run.name == inst.name then",
+  "mut": "elseif inst.mapID and not run.mapID and run.name ~= inst.name then",
+  "_new": "  elseif inst.mapID and not run.mapID and run.name ~= inst.name then",
+  "id": 255
+ },
+ {
+  "file": "Run.lua",
+  "line": 882,
+  "func": "ns.CheckInstance",
+  "op": "ANDOR",
+  "orig": "if ns.inside and run then",
+  "mut": "if ns.inside or run then",
+  "_new": "  if ns.inside or run then",
+  "id": 256
+ },
+ {
+  "file": "Run.lua",
+  "line": 1176,
+  "func": "ns.TooManyInstances",
+  "op": "NUM",
+  "orig": "local cap = ns.DB.cap or 0",
+  "mut": "local cap = ns.DB.cap or 1",
+  "_new": "  local cap = ns.DB.cap or 1",
+  "id": 257
+ },
+ {
+  "file": "Track.lua",
+  "line": 17,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "ns.WIPE_SHARE = 0.8            -- this share of the group dead at once is a wipe",
+  "mut": "ns.WIPE_SHARE = 1.8            -- this share of the group dead at once is a wipe",
+  "_new": "ns.WIPE_SHARE = 1.8            -- this share of the group dead at once is a wipe",
+  "id": 258
+ },
+ {
+  "file": "Track.lua",
+  "line": 56,
+  "func": "UnitShortName",
+  "op": "RETDEL",
+  "orig": "if type(name) ~= \"string\" or name == \"\" or name == UNKNOWN then return nil end",
+  "mut": "if type(name) ~= \"string\" or name == \"\" or name == UNKNOWN then end",
+  "_new": "  if type(name) ~= \"string\" or name == \"\" or name == UNKNOWN then end",
+  "id": 259
+ },
+ {
+  "file": "Track.lua",
+  "line": 623,
+  "func": "ns.HasBossEntry",
+  "op": "IFNEG",
+  "orig": "for _, b in ipairs(run.bosses) do if b == boss then return true end end",
+  "mut": "for _, b in ipairs(run.bosses) do if not (b == boss) then return true end end",
+  "_new": "  for _, b in ipairs(run.bosses) do if not (b == boss) then return true end end",
+  "id": 260
+ },
+ {
+  "file": "Track.lua",
+  "line": 1141,
+  "func": "Credit",
+  "op": "ASSDEL",
+  "orig": "credit[source][itemID] = c",
+  "mut": "",
+  "_new": "",
+  "id": 261
+ },
+ {
+  "file": "Track.lua",
+  "line": 974,
+  "func": "AddLateValue",
+  "op": "ANDOR",
+  "orig": "if snap and (p.v or 1) < snap.visit then",
+  "mut": "if snap and (p.v and 1) < snap.visit then",
+  "_new": "  if snap and (p.v and 1) < snap.visit then",
+  "id": 262
+ },
+ {
+  "file": "Track.lua",
+  "line": 217,
+  "func": "CopyKill",
+  "op": "RETDEL",
+  "orig": "return found",
+  "mut": "",
+  "_new": "",
+  "id": 263
+ },
+ {
+  "file": "Track.lua",
+  "line": 997,
+  "func": "ns.IsRunDuo",
+  "op": "REL",
+  "orig": "if IsDuo(who) or who == nil then return who ~= nil end",
+  "mut": "if IsDuo(who) or who ~= nil then return who ~= nil end",
+  "_new": "  if IsDuo(who) or who ~= nil then return who ~= nil end",
+  "id": 264
+ },
+ {
+  "file": "Track.lua",
+  "line": 227,
+  "func": "NewCopyHere",
+  "op": "ASSDEL",
+  "orig": "run.copyKills = nil",
+  "mut": "",
+  "_new": "",
+  "id": 265
+ },
+ {
+  "file": "Track.lua",
+  "line": 1006,
+  "func": "ns.KeepDrop",
+  "op": "IFNEG",
+  "orig": "if q == nil then return true end  -- unknown yet; decided once it loads",
+  "mut": "if not (q == nil) then return true end  -- unknown yet; decided once it loads",
+  "_new": "  if not (q == nil) then return true end  -- unknown yet; decided once it loads",
+  "id": 266
+ },
+ {
+  "file": "Track.lua",
+  "line": 47,
+  "func": "ns.GroupUnits",
+  "op": "NUM",
+  "orig": "for i = 1, math.max(0, n - 1) do units[#units + 1] = \"party\" .. i end",
+  "mut": "for i = 2, math.max(0, n - 1) do units[#units + 1] = \"party\" .. i end",
+  "_new": "  for i = 2, math.max(0, n - 1) do units[#units + 1] = \"party\" .. i end",
+  "id": 267
+ },
+ {
+  "file": "Track.lua",
+  "line": 1051,
+  "func": "ns.ResolveItems",
+  "op": "IFFALSE",
+  "orig": "if not run then return end",
+  "mut": "if false then return end",
+  "_new": "  if false then return end",
+  "id": 268
+ },
+ {
+  "file": "Track.lua",
+  "line": 1033,
+  "func": "NoteDrop",
+  "op": "ANDOR",
+  "orig": "if q == nil and ns.RequestItemLoad then pcall(ns.RequestItemLoad, itemID) end  -- so it resolves soon",
+  "mut": "if q == nil or ns.RequestItemLoad then pcall(ns.RequestItemLoad, itemID) end  -- so it resolves soon",
+  "_new": "  if q == nil or ns.RequestItemLoad then pcall(ns.RequestItemLoad, itemID) end  -- so it resolves soon",
+  "id": 269
+ },
+ {
+  "file": "Track.lua",
+  "line": 489,
+  "func": "ns.AddBoss",
+  "op": "ANDOR",
+  "orig": "elseif last and last.manual and since <= 10 and not FindBoss(run, { id = id, name = name })",
+  "mut": "elseif last or last.manual and since <= 10 and not FindBoss(run, { id = id, name = name })",
+  "_new": "  elseif last or last.manual and since <= 10 and not FindBoss(run, { id = id, name = name })",
+  "id": 270
+ },
+ {
+  "file": "Track.lua",
+  "line": 242,
+  "func": "AfterNaming",
+  "op": "ANDOR",
+  "orig": "if not run or not ns.inside or not ns.HasBossEntry(run, b) then return end",
+  "mut": "if not run or not ns.inside and not ns.HasBossEntry(run, b) then return end",
+  "_new": "  if not run or not ns.inside and not ns.HasBossEntry(run, b) then return end",
+  "id": 271
+ },
+ {
+  "file": "Track.lua",
+  "line": 171,
+  "func": "Unpaired",
+  "op": "ANDOR",
+  "orig": "and ((b.src == \"sync\") == partnerSide) then",
+  "mut": "or ((b.src == \"sync\") == partnerSide) then",
+  "_new": "        or ((b.src == \"sync\") == partnerSide) then",
+  "id": 272
+ },
+ {
+  "file": "Track.lua",
+  "line": 143,
+  "func": "NextNumber",
+  "op": "NUM",
+  "orig": "return n + 1",
+  "mut": "return n + 2",
+  "_new": "  return n + 2",
+  "id": 273
+ },
+ {
+  "file": "Track.lua",
+  "line": 856,
+  "func": "ns.AnyoneDead",
+  "op": "IFFALSE",
+  "orig": "if UnitDead(unit, isSelf) and (isSelf or not OutsideWorld(unit)) then return true end",
+  "mut": "if false then return true end",
+  "_new": "    if false then return true end",
+  "id": 274
+ },
+ {
+  "file": "Track.lua",
+  "line": 73,
+  "func": "ns.SenderInGroup",
+  "op": "IFTRUE",
+  "orig": "if ns.SameName(ns.ShortName(n), short) then",
+  "mut": "if true then",
+  "_new": "      if true then",
+  "id": 275
+ },
+ {
+  "file": "Track.lua",
+  "line": 1099,
+  "func": "ResolveNames",
+  "op": "IFNEG",
+  "orig": "if n then d.name, changed = n, true end",
+  "mut": "if not (n) then d.name, changed = n, true end",
+  "_new": "      if not (n) then d.name, changed = n, true end",
+  "id": 276
+ },
+ {
+  "file": "Track.lua",
+  "line": 1151,
+  "func": "Consume",
+  "op": "IFNEG",
+  "orig": "if not c or GetTime() - c.at > (c.hidden and 5 or ns.LOOT_MATCH_SECONDS) then return qty end",
+  "mut": "if not (not c or GetTime() - c.at > (c.hidden and 5 or ns.LOOT_MATCH_SECONDS)) then return qty end",
+  "_new": "  if not (not c or GetTime() - c.at > (c.hidden and 5 or ns.LOOT_MATCH_SECONDS)) then return qty end",
+  "id": 277
+ },
+ {
+  "file": "Track.lua",
+  "line": 642,
+  "func": "ns.RemoveLastBoss",
+  "op": "IFTRUE",
+  "orig": "if b.key or b.peer then",
+  "mut": "if true then",
+  "_new": "    if true then",
+  "id": 278
+ },
+ {
+  "file": "Track.lua",
+  "line": 1118,
+  "func": "Waiting",
+  "op": "ANDOR",
+  "orig": "if not ns.DB or not plain(success) then return end",
+  "mut": "if not ns.DB and not plain(success) then return end",
+  "_new": "  if not ns.DB and not plain(success) then return end",
+  "id": 279
+ },
+ {
+  "file": "Track.lua",
+  "line": 806,
+  "func": "UnitDead",
+  "op": "IFFALSE",
+  "orig": "if not dead then selfDied = false end",
+  "mut": "if false then selfDied = false end",
+  "_new": "    if false then selfDied = false end",
+  "id": 280
+ },
+ {
+  "file": "Track.lua",
+  "line": 191,
+  "func": "ns.TouchKill",
+  "op": "ASSDEL",
+  "orig": "lastTouch.at, lastTouch.boss = GetTime(), b",
+  "mut": "",
+  "_new": "",
+  "id": 281
+ },
+ {
+  "file": "Track.lua",
+  "line": 1335,
+  "func": "ns.MoneyBlocked",
+  "op": "REL",
+  "orig": "return next(blockers) ~= nil or GetTime() < blockUntil",
+  "mut": "return next(blockers) == nil or GetTime() < blockUntil",
+  "_new": "  return next(blockers) == nil or GetTime() < blockUntil",
+  "id": 282
+ },
+ {
+  "file": "Track.lua",
+  "line": 1256,
+  "func": "ns.BagBaseline",
+  "op": "NUM",
+  "orig": "local BAG_DIP_SECONDS = 10",
+  "mut": "local BAG_DIP_SECONDS = 20",
+  "_new": "local BAG_DIP_SECONDS = 20",
+  "id": 283
+ },
+ {
+  "file": "Track.lua",
+  "line": 1324,
+  "func": "ns.SetMoneyWindow",
+  "op": "NUM",
+  "orig": "blockUntil = GetTime() + 3",
+  "mut": "blockUntil = GetTime() + 4",
+  "_new": "    blockUntil = GetTime() + 4",
+  "id": 284
+ },
+ {
+  "file": "Track.lua",
+  "line": 738,
+  "func": "AddWipe",
+  "op": "ANDOR",
+  "orig": "and (k.manual or (killAt[k] and enc.at and killAt[k] < enc.at)) then",
+  "mut": "and (k.manual or (killAt[k] and enc.at or killAt[k] < enc.at)) then",
+  "_new": "            and (k.manual or (killAt[k] and enc.at or killAt[k] < enc.at)) then",
+  "id": 285
+ },
+ {
+  "file": "Track.lua",
+  "line": 26,
+  "func": "RunTime",
+  "op": "ASSDEL",
+  "orig": "run = run or ns.run",
+  "mut": "",
+  "_new": "",
+  "id": 286
+ },
+ {
+  "file": "Track.lua",
+  "line": 842,
+  "func": "OutsideWorld",
+  "op": "IFFALSE",
+  "orig": "if type(mine) == \"number\" and C_Map.GetMapGroupID then",
+  "mut": "if false then",
+  "_new": "    if false then",
+  "id": 287
+ },
+ {
+  "file": "Track.lua",
+  "line": 127,
+  "func": "FindBoss",
+  "op": "RETDEL",
+  "orig": "return nil",
+  "mut": "",
+  "_new": "",
+  "id": 288
+ },
+ {
+  "file": "Track.lua",
+  "line": 797,
+  "func": "AddDeath",
+  "op": "ANDOR",
+  "orig": "if ns.DB and ns.InRun() then AddDeath(ns.PlayerName() or \"You\") end",
+  "mut": "if ns.DB and ns.InRun() then AddDeath(ns.PlayerName() and \"You\") end",
+  "_new": "  if ns.DB and ns.InRun() then AddDeath(ns.PlayerName() and \"You\") end",
+  "id": 289
+ },
+ {
+  "file": "Track.lua",
+  "line": 679,
+  "func": "ns.MarkBoss",
+  "op": "IFNEG",
+  "orig": "elseif not added and same and same.src ~= \"sync\" then",
+  "mut": "elseif not (not added and same and same.src ~= \"sync\") then",
+  "_new": "  elseif not (not added and same and same.src ~= \"sync\") then",
+  "id": 290
+ },
+ {
+  "file": "Track.lua",
+  "line": 1407,
+  "func": "ns.AddNote",
+  "op": "RETDEL",
+  "orig": "if not run or type(text) ~= \"string\" then return nil end",
+  "mut": "if not run or type(text) ~= \"string\" then end",
+  "_new": "  if not run or type(text) ~= \"string\" then end",
+  "id": 291
+ },
+ {
+  "file": "Track.lua",
+  "line": 987,
+  "func": "IsDuo",
+  "op": "RETDEL",
+  "orig": "if who == ns.PlayerName() or who == \"You\" then return true end",
+  "mut": "if who == ns.PlayerName() or who == \"You\" then end",
+  "_new": "  if who == ns.PlayerName() or who == \"You\" then end",
+  "id": 292
+ },
+ {
+  "file": "Track.lua",
+  "line": 1081,
+  "func": "ns.FlushPending",
+  "op": "IFTRUE",
+  "orig": "ns.Listen(\"TICK\", function() if ns.run then ns.ResolveItems(ns.run, false, true) end end)",
+  "mut": "ns.Listen(\"TICK\", function() if true then ns.ResolveItems(ns.run, false, true) end end)",
+  "_new": "ns.Listen(\"TICK\", function() if true then ns.ResolveItems(ns.run, false, true) end end)",
+  "id": 293
+ },
+ {
+  "file": "Track.lua",
+  "line": 89,
+  "func": "ns.PartnerInGroup",
+  "op": "IFNEG",
+  "orig": "if not ns.IsPlayerUnit(unit) and ns.SameName(UnitShortName(unit), partner) then return true end",
+  "mut": "if not (not ns.IsPlayerUnit(unit) and ns.SameName(UnitShortName(unit), partner)) then return true end",
+  "_new": "    if not (not ns.IsPlayerUnit(unit) and ns.SameName(UnitShortName(unit), partner)) then return true end",
+  "id": 294
+ },
+ {
+  "file": "Track.lua",
+  "line": 183,
+  "func": "ThisVisit",
+  "op": "NUM",
+  "orig": "return not snap or (b.v or 1) >= snap.visit",
+  "mut": "return not snap or (b.v or 2) >= snap.visit",
+  "_new": "  return not snap or (b.v or 2) >= snap.visit",
+  "id": 295
+ },
+ {
+  "file": "Track.lua",
+  "line": 964,
+  "func": "AddValue",
+  "op": "ASSDEL",
+  "orig": "run.lootAH = run.lootAH + (ah and math.max(vendor, math.floor(ah * 0.95) * qty) or vendor)",
+  "mut": "",
+  "_new": "",
+  "id": 296
+ },
+ {
+  "file": "Track.lua",
+  "line": 1200,
+  "func": "OwnLoot",
+  "op": "ANDOR",
+  "orig": "NoteDrop(ns.run, ns.ShortName(who) or who, itemID, qty, link, \"chat\")",
+  "mut": "NoteDrop(ns.run, ns.ShortName(who) and who, itemID, qty, link, \"chat\")",
+  "_new": "    NoteDrop(ns.run, ns.ShortName(who) and who, itemID, qty, link, \"chat\")",
+  "id": 297
+ },
+ {
+  "file": "Track.lua",
+  "line": 271,
+  "func": "NameOrRedo",
+  "op": "IFNEG",
+  "orig": "if mine then",
+  "mut": "if not (mine) then",
+  "_new": "    if not (mine) then",
+  "id": 298
+ },
+ {
+  "file": "Track.lua",
+  "line": 1222,
+  "func": "ScanBags",
+  "op": "REL",
+  "orig": "if type(info) == \"table\" then",
+  "mut": "if type(info) ~= \"table\" then",
+  "_new": "      if type(info) ~= \"table\" then",
+  "id": 299
+ },
+ {
+  "file": "Track.lua",
+  "line": 196,
+  "func": "Longer",
+  "op": "IFNEG",
+  "orig": "if type(a) ~= \"string\" or type(b) ~= \"string\" then return false end",
+  "mut": "if not (type(a) ~= \"string\" or type(b) ~= \"string\") then return false end",
+  "_new": "  if not (type(a) ~= \"string\" or type(b) ~= \"string\") then return false end",
+  "id": 300
+ },
+ {
+  "file": "Track.lua",
+  "line": 32,
+  "func": "Watching",
+  "op": "RETDEL",
+  "orig": "return ns.InRun() or ns.GhostRunning()",
+  "mut": "",
+  "_new": "",
+  "id": 301
+ },
+ {
+  "file": "Track.lua",
+  "line": 904,
+  "func": "ns.CheckDeaths",
+  "op": "IFFALSE",
+  "orig": "elseif isSelf and dead and deadState[name] == false then",
+  "mut": "elseif false then",
+  "_new": "        elseif false then",
+  "id": 302
+ },
+ {
+  "file": "Track.lua",
+  "line": 834,
+  "func": "ns.GroupReadability",
+  "op": "NUM",
+  "orig": "local OUTDOOR = { [1] = true, [2] = true, [3] = true, [5] = true }",
+  "mut": "local OUTDOOR = { [2] = true, [2] = true, [3] = true, [5] = true }",
+  "_new": "local OUTDOOR = { [2] = true, [2] = true, [3] = true, [5] = true }",
+  "id": 303
+ },
+ {
+  "file": "Track.lua",
+  "line": 940,
+  "func": "SellPrice",
+  "op": "RETDEL",
+  "orig": "return type(price) == \"number\" and price or 0",
+  "mut": "",
+  "_new": "",
+  "id": 304
+ },
+ {
+  "file": "Track.lua",
+  "line": 1266,
+  "func": "ProcessBags",
+  "op": "ANDOR",
+  "orig": "if not old or not ns.InRun() or ns.MoneyBlocked() then return end",
+  "mut": "if not old or not ns.InRun() and ns.MoneyBlocked() then return end",
+  "_new": "  if not old or not ns.InRun() and ns.MoneyBlocked() then return end",
+  "id": 305
+ },
+ {
+  "file": "Track.lua",
+  "line": 1366,
+  "func": "ns.ResetBaselines",
+  "op": "ASSDEL",
+  "orig": "lastXP, lastXPMax = cur, max",
+  "mut": "",
+  "_new": "",
+  "id": 306
+ },
+ {
+  "file": "Track.lua",
+  "line": 160,
+  "func": "Pair",
+  "op": "ASSDEL",
+  "orig": "b.matched = true",
+  "mut": "",
+  "_new": "",
+  "id": 307
+ },
+ {
+  "file": "Track.lua",
+  "line": 929,
+  "func": "ns.AuctionPrice",
+  "op": "IFTRUE",
+  "orig": "if not api or not api.GetAuctionPriceByItemID then return nil end",
+  "mut": "if true then return nil end",
+  "_new": "  if true then return nil end",
+  "id": 308
+ },
+ {
+  "file": "Track.lua",
+  "line": 109,
+  "func": "ns.SnapshotMembers",
+  "op": "IFNEG",
+  "orig": "if ns.InRun() then ns.SnapshotMembers() end",
+  "mut": "if not (ns.InRun()) then ns.SnapshotMembers() end",
+  "_new": "  if not (ns.InRun()) then ns.SnapshotMembers() end",
+  "id": 309
+ },
+ {
+  "file": "Track.lua",
+  "line": 205,
+  "func": "NameKill",
+  "op": "ASSDEL",
+  "orig": "b.id = id or b.id",
+  "mut": "",
+  "_new": "",
+  "id": 310
+ },
+ {
+  "file": "Track.lua",
+  "line": 22,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "ns.stats = { lootRead = 0, lootSecret = 0, bagLoot = 0, encounters = 0, capErrors = 0,  -- for /runbook check",
+  "mut": "ns.stats = { lootRead = 0, lootSecret = 1, bagLoot = 0, encounters = 0, capErrors = 0,  -- for /runbook check",
+  "_new": "ns.stats = { lootRead = 0, lootSecret = 1, bagLoot = 0, encounters = 0, capErrors = 0,  -- for /runbook check",
+  "id": 311
+ },
+ {
+  "file": "Track.lua",
+  "line": 56,
+  "func": "UnitShortName",
+  "op": "ANDOR",
+  "orig": "if type(name) ~= \"string\" or name == \"\" or name == UNKNOWN then return nil end",
+  "mut": "if type(name) ~= \"string\" or name == \"\" and name == UNKNOWN then return nil end",
+  "_new": "  if type(name) ~= \"string\" or name == \"\" and name == UNKNOWN then return nil end",
+  "id": 312
+ },
+ {
+  "file": "Track.lua",
+  "line": 623,
+  "func": "ns.HasBossEntry",
+  "op": "IFFALSE",
+  "orig": "for _, b in ipairs(run.bosses) do if b == boss then return true end end",
+  "mut": "for _, b in ipairs(run.bosses) do if false then return true end end",
+  "_new": "  for _, b in ipairs(run.bosses) do if false then return true end end",
+  "id": 313
+ },
+ {
+  "file": "Track.lua",
+  "line": 1140,
+  "func": "Credit",
+  "op": "NUM",
+  "orig": "c = { n = 0, hidden = hidden }",
+  "mut": "c = { n = 1, hidden = hidden }",
+  "_new": "    c = { n = 1, hidden = hidden }",
+  "id": 314
+ },
+ {
+  "file": "Track.lua",
+  "line": 974,
+  "func": "AddLateValue",
+  "op": "IFTRUE",
+  "orig": "if snap and (p.v or 1) < snap.visit then",
+  "mut": "if true then",
+  "_new": "  if true then",
+  "id": 315
+ },
+ {
+  "file": "Track.lua",
+  "line": 214,
+  "func": "CopyKill",
+  "op": "ANDOR",
+  "orig": "for _, k in ipairs(type(run.copyKills) == \"table\" and run.copyKills or {}) do",
+  "mut": "for _, k in ipairs(type(run.copyKills) == \"table\" or run.copyKills or {}) do",
+  "_new": "  for _, k in ipairs(type(run.copyKills) == \"table\" or run.copyKills or {}) do",
+  "id": 316
+ },
+ {
+  "file": "Track.lua",
+  "line": 997,
+  "func": "ns.IsRunDuo",
+  "op": "ANDOR",
+  "orig": "if IsDuo(who) or who == nil then return who ~= nil end",
+  "mut": "if IsDuo(who) and who == nil then return who ~= nil end",
+  "_new": "  if IsDuo(who) and who == nil then return who ~= nil end",
+  "id": 317
+ },
+ {
+  "file": "Track.lua",
+  "line": 230,
+  "func": "NewCopyHere",
+  "op": "ASSDEL",
+  "orig": "run.counted = true",
+  "mut": "",
+  "_new": "",
+  "id": 318
+ },
+ {
+  "file": "Track.lua",
+  "line": 1007,
+  "func": "ns.KeepDrop",
+  "op": "ANDOR",
+  "orig": "local min = ns.DB.quality or 2",
+  "mut": "local min = ns.DB.quality and 2",
+  "_new": "  local min = ns.DB.quality and 2",
+  "id": 319
+ },
+ {
+  "file": "Track.lua",
+  "line": 43,
+  "func": "ns.GroupUnits",
+  "op": "NUM",
+  "orig": "for i = 1, n do units[#units + 1] = \"raid\" .. i end  -- one of these is you",
+  "mut": "for i = 1, n do units[#units + 0] = \"raid\" .. i end  -- one of these is you",
+  "_new": "    for i = 1, n do units[#units + 0] = \"raid\" .. i end  -- one of these is you",
+  "id": 320
+ },
+ {
+  "file": "Track.lua",
+  "line": 1065,
+  "func": "ns.ResolveItems",
+  "op": "IFNEG",
+  "orig": "elseif final or fromTick then",
+  "mut": "elseif not (final or fromTick) then",
+  "_new": "    elseif not (final or fromTick) then",
+  "id": 321
+ },
+ {
+  "file": "Track.lua",
+  "line": 1030,
+  "func": "NoteDrop",
+  "op": "REL",
+  "orig": "if mode == \"mark\" then return nil, false end",
+  "mut": "if mode ~= \"mark\" then return nil, false end",
+  "_new": "    if mode ~= \"mark\" then return nil, false end",
+  "id": 322
+ },
+ {
+  "file": "Track.lua",
+  "line": 520,
+  "func": "ns.AddBoss",
+  "op": "IFFALSE",
+  "orig": "if ns.SyncSplit then ns.SyncSplit(run, nil, ck.st) end",
+  "mut": "if false then ns.SyncSplit(run, nil, ck.st) end",
+  "_new": "    if false then ns.SyncSplit(run, nil, ck.st) end",
+  "id": 323
+ },
+ {
+  "file": "Track.lua",
+  "line": 246,
+  "func": "AfterNaming",
+  "op": "ANDOR",
+  "orig": "if snap and (b.v or 1) >= snap.visit and ns.SplitAtResume(\"boss killed again\") then",
+  "mut": "if snap and (b.v or 1) >= snap.visit or ns.SplitAtResume(\"boss killed again\") then",
+  "_new": "  if snap and (b.v or 1) >= snap.visit or ns.SplitAtResume(\"boss killed again\") then",
+  "id": 324
+ },
+ {
+  "file": "Track.lua",
+  "line": 170,
+  "func": "Unpaired",
+  "op": "ANDOR",
+  "orig": "if age and age <= ns.SYNC_MATCH_SECONDS and not paired[b] and not b.matched",
+  "mut": "if age or age <= ns.SYNC_MATCH_SECONDS and not paired[b] and not b.matched",
+  "_new": "    if age or age <= ns.SYNC_MATCH_SECONDS and not paired[b] and not b.matched",
+  "id": 325
+ },
+ {
+  "file": "Track.lua",
+  "line": 143,
+  "func": "NextNumber",
+  "op": "RETDEL",
+  "orig": "return n + 1",
+  "mut": "",
+  "_new": "",
+  "id": 326
+ },
+ {
+  "file": "Track.lua",
+  "line": 856,
+  "func": "ns.AnyoneDead",
+  "op": "IFTRUE",
+  "orig": "if UnitDead(unit, isSelf) and (isSelf or not OutsideWorld(unit)) then return true end",
+  "mut": "if true then return true end",
+  "_new": "    if true then return true end",
+  "id": 327
+ },
+ {
+  "file": "Track.lua",
+  "line": 67,
+  "func": "ns.SenderInGroup",
+  "op": "ANDOR",
+  "orig": "local mine = GetNormalizedRealmName and plain(GetNormalizedRealmName()) or nil",
+  "mut": "local mine = GetNormalizedRealmName or plain(GetNormalizedRealmName()) or nil",
+  "_new": "  local mine = GetNormalizedRealmName or plain(GetNormalizedRealmName()) or nil",
+  "id": 328
+ },
+ {
+  "file": "Track.lua",
+  "line": 1088,
+  "func": "ResolveNames",
+  "op": "NUM",
+  "orig": "for i = #run.drops, 1, -1 do",
+  "mut": "for i = #run.drops, 1, -0 do",
+  "_new": "  for i = #run.drops, 1, -0 do",
+  "id": 329
+ },
+ {
+  "file": "Track.lua",
+  "line": 1151,
+  "func": "Consume",
+  "op": "ANDOR",
+  "orig": "if not c or GetTime() - c.at > (c.hidden and 5 or ns.LOOT_MATCH_SECONDS) then return qty end",
+  "mut": "if not c and GetTime() - c.at > (c.hidden and 5 or ns.LOOT_MATCH_SECONDS) then return qty end",
+  "_new": "  if not c and GetTime() - c.at > (c.hidden and 5 or ns.LOOT_MATCH_SECONDS) then return qty end",
+  "id": 330
+ },
+ {
+  "file": "Track.lua",
+  "line": 644,
+  "func": "ns.RemoveLastBoss",
+  "op": "IFFALSE",
+  "orig": "if b.key then run.unbossed[b.key] = true end",
+  "mut": "if false then run.unbossed[b.key] = true end",
+  "_new": "      if false then run.unbossed[b.key] = true end",
+  "id": 331
+ },
+ {
+  "file": "Track.lua",
+  "line": 1110,
+  "func": "Waiting",
+  "op": "IFNEG",
+  "orig": "if d.id == itemID and (d.q == nil or (d.name and d.name:match(\"^item:%d+$\"))) then return true end",
+  "mut": "if not (d.id == itemID and (d.q == nil or (d.name and d.name:match(\"^item:%d+$\")))) then return true end",
+  "_new": "    if not (d.id == itemID and (d.q == nil or (d.name and d.name:match(\"^item:%d+$\")))) then return true end",
+  "id": 332
+ },
+ {
+  "file": "Track.lua",
+  "line": 806,
+  "func": "UnitDead",
+  "op": "IFTRUE",
+  "orig": "if not dead then selfDied = false end",
+  "mut": "if true then selfDied = false end",
+  "_new": "    if true then selfDied = false end",
+  "id": 333
+ },
+ {
+  "file": "Track.lua",
+  "line": 1335,
+  "func": "ns.MoneyBlocked",
+  "op": "ANDOR",
+  "orig": "return next(blockers) ~= nil or GetTime() < blockUntil",
+  "mut": "return next(blockers) ~= nil and GetTime() < blockUntil",
+  "_new": "  return next(blockers) ~= nil and GetTime() < blockUntil",
+  "id": 334
+ },
+ {
+  "file": "Track.lua",
+  "line": 1256,
+  "func": "ns.BagBaseline",
+  "op": "NUM",
+  "orig": "local BAG_DIP_SECONDS = 10",
+  "mut": "local BAG_DIP_SECONDS = 9",
+  "_new": "local BAG_DIP_SECONDS = 9",
+  "id": 335
+ },
+ {
+  "file": "Track.lua",
+  "line": 1330,
+  "func": "ns.SetMoneyWindow",
+  "op": "IFTRUE",
+  "orig": "if ns.InRun() then ns.BagBaseline() else bagCounts = nil end",
+  "mut": "if true then ns.BagBaseline() else bagCounts = nil end",
+  "_new": "    if true then ns.BagBaseline() else bagCounts = nil end",
+  "id": 336
+ },
+ {
+  "file": "Track.lua",
+  "line": 746,
+  "func": "AddWipe",
+  "op": "ANDOR",
+  "orig": "elseif success == 0 or success == false then",
+  "mut": "elseif success == 0 and success == false then",
+  "_new": "    elseif success == 0 and success == false then",
+  "id": 337
+ },
+ {
+  "file": "Track.lua",
+  "line": 27,
+  "func": "RunTime",
+  "op": "NUM",
+  "orig": "return math.floor((run and run.elapsed or 0) + 0.5)",
+  "mut": "return math.floor((run and run.elapsed or 0) + 0)",
+  "_new": "  return math.floor((run and run.elapsed or 0) + 0)",
+  "id": 338
+ },
+ {
+  "file": "Track.lua",
+  "line": 841,
+  "func": "OutsideWorld",
+  "op": "RETDEL",
+  "orig": "if mine == ui then return false end",
+  "mut": "if mine == ui then end",
+  "_new": "    if mine == ui then end",
+  "id": 339
+ },
+ {
+  "file": "Track.lua",
+  "line": 119,
+  "func": "FindBoss",
+  "op": "IFFALSE",
+  "orig": "if ns.SameBoss(b, boss) then return b, i end",
+  "mut": "if false then return b, i end",
+  "_new": "    if false then return b, i end",
+  "id": 340
+ },
+ {
+  "file": "Track.lua",
+  "line": 790,
+  "func": "AddDeath",
+  "op": "NUM",
+  "orig": "run.deaths[#run.deaths + 1] = { t = RunTime(run), who = name, v = run.visit, st = ns.ServerTime() }",
+  "mut": "run.deaths[#run.deaths + 2] = { t = RunTime(run), who = name, v = run.visit, st = ns.ServerTime() }",
+  "_new": "  run.deaths[#run.deaths + 2] = { t = RunTime(run), who = name, v = run.visit, st = ns.ServerTime() }",
+  "id": 341
+ },
+ {
+  "file": "Track.lua",
+  "line": 676,
+  "func": "ns.MarkBoss",
+  "op": "ANDOR",
+  "orig": "if not added and same and same.src == \"sync\" and ns.DB.quiet then",
+  "mut": "if not added or same and same.src == \"sync\" and ns.DB.quiet then",
+  "_new": "  if not added or same and same.src == \"sync\" and ns.DB.quiet then",
+  "id": 342
+ },
+ {
+  "file": "Track.lua",
+  "line": 1412,
+  "func": "ns.AddNote",
+  "op": "REL",
+  "orig": "local cut = #clean > max",
+  "mut": "local cut = #clean >= max",
+  "_new": "  local cut = #clean >= max",
+  "id": 343
+ },
+ {
+  "file": "Track.lua",
+  "line": 992,
+  "func": "IsDuo",
+  "op": "ASSDEL",
+  "orig": "ns.IsDuo = IsDuo",
+  "mut": "",
+  "_new": "",
+  "id": 344
+ },
+ {
+  "file": "Track.lua",
+  "line": 1081,
+  "func": "ns.FlushPending",
+  "op": "IFFALSE",
+  "orig": "ns.Listen(\"TICK\", function() if ns.run then ns.ResolveItems(ns.run, false, true) end end)",
+  "mut": "ns.Listen(\"TICK\", function() if false then ns.ResolveItems(ns.run, false, true) end end)",
+  "_new": "ns.Listen(\"TICK\", function() if false then ns.ResolveItems(ns.run, false, true) end end)",
+  "id": 345
+ },
+ {
+  "file": "Track.lua",
+  "line": 86,
+  "func": "ns.PartnerInGroup",
+  "op": "ANDOR",
+  "orig": "local partner = ns.DB and ns.DB.partner",
+  "mut": "local partner = ns.DB or ns.DB.partner",
+  "_new": "  local partner = ns.DB or ns.DB.partner",
+  "id": 346
+ },
+ {
+  "file": "Track.lua",
+  "line": 187,
+  "func": "ThisVisit",
+  "op": "NUM",
+  "orig": "local keyCount = 0",
+  "mut": "local keyCount = 1",
+  "_new": "local keyCount = 1",
+  "id": 347
+ },
+ {
+  "file": "Track.lua",
+  "line": 954,
+  "func": "AddValue",
+  "op": "ASSDEL",
+  "orig": "p = { id = itemID, n = 0, tries = 0, v = v }",
+  "mut": "",
+  "_new": "",
+  "id": 348
+ },
+ {
+  "file": "Track.lua",
+  "line": 1169,
+  "func": "OwnLoot",
+  "op": "RETDEL",
+  "orig": "if rest <= 0 or markOnly then return end",
+  "mut": "if rest <= 0 or markOnly then end",
+  "_new": "  if rest <= 0 or markOnly then end",
+  "id": 349
+ },
+ {
+  "file": "Track.lua",
+  "line": 268,
+  "func": "NameOrRedo",
+  "op": "REL",
+  "orig": "local mine = b.src ~= \"sync\"",
+  "mut": "local mine = b.src == \"sync\"",
+  "_new": "  local mine = b.src == \"sync\"",
+  "id": 350
+ },
+ {
+  "file": "Track.lua",
+  "line": 1217,
+  "func": "ScanBags",
+  "op": "NUM",
+  "orig": "local lastBag = (NUM_TOTAL_EQUIPPED_BAG_SLOTS or NUM_BAG_SLOTS or 4)",
+  "mut": "local lastBag = (NUM_TOTAL_EQUIPPED_BAG_SLOTS or NUM_BAG_SLOTS or 5)",
+  "_new": "  local lastBag = (NUM_TOTAL_EQUIPPED_BAG_SLOTS or NUM_BAG_SLOTS or 5)",
+  "id": 351
+ },
+ {
+  "file": "Track.lua",
+  "line": 198,
+  "func": "Longer",
+  "op": "RETDEL",
+  "orig": "return #fa > #fb and fa:find(fb, 1, true) ~= nil",
+  "mut": "",
+  "_new": "",
+  "id": 352
+ },
+ {
+  "file": "Track.lua",
+  "line": 32,
+  "func": "Watching",
+  "op": "ANDOR",
+  "orig": "return ns.InRun() or ns.GhostRunning()",
+  "mut": "return ns.InRun() and ns.GhostRunning()",
+  "_new": "  return ns.InRun() and ns.GhostRunning()",
+  "id": 353
+ },
+ {
+  "file": "Track.lua",
+  "line": 914,
+  "func": "ns.CheckDeaths",
+  "op": "ANDOR",
+  "orig": "AddWipe(ns.encounter and ns.encounter.name or nil)",
+  "mut": "AddWipe(ns.encounter and ns.encounter.name and nil)",
+  "_new": "    AddWipe(ns.encounter and ns.encounter.name and nil)",
+  "id": 354
+ },
+ {
+  "file": "Track.lua",
+  "line": 821,
+  "func": "ns.GroupReadability",
+  "op": "NUM",
+  "orig": "local names, deads = 0, 0",
+  "mut": "local names, deads = 1, 0",
+  "_new": "  local names, deads = 1, 0",
+  "id": 355
+ },
+ {
+  "file": "Track.lua",
+  "line": 939,
+  "func": "SellPrice",
+  "op": "ASSDEL",
+  "orig": "price = plain(price)",
+  "mut": "",
+  "_new": "",
+  "id": 356
+ },
+ {
+  "file": "Track.lua",
+  "line": 1265,
+  "func": "ProcessBags",
+  "op": "ASSDEL",
+  "orig": "bagCounts = new",
+  "mut": "",
+  "_new": "",
+  "id": 357
+ },
+ {
+  "file": "Track.lua",
+  "line": 1400,
+  "func": "ns.ResetBaselines",
+  "op": "NUM",
+  "orig": "ns.NOTE_MAX_BYTES = 180",
+  "mut": "ns.NOTE_MAX_BYTES = 360",
+  "_new": "ns.NOTE_MAX_BYTES = 360",
+  "id": 358
+ },
+ {
+  "file": "Track.lua",
+  "line": 159,
+  "func": "Pair",
+  "op": "ASSDEL",
+  "orig": "paired[b] = true",
+  "mut": "",
+  "_new": "",
+  "id": 359
+ },
+ {
+  "file": "Track.lua",
+  "line": 931,
+  "func": "ns.AuctionPrice",
+  "op": "NUM",
+  "orig": "if ok and type(price) == \"number\" and price > 0 then return price end",
+  "mut": "if ok and type(price) == \"number\" and price > 1 then return price end",
+  "_new": "  if ok and type(price) == \"number\" and price > 1 then return price end",
+  "id": 360
+ },
+ {
+  "file": "Track.lua",
+  "line": 109,
+  "func": "ns.SnapshotMembers",
+  "op": "IFFALSE",
+  "orig": "if ns.InRun() then ns.SnapshotMembers() end",
+  "mut": "if false then ns.SnapshotMembers() end",
+  "_new": "  if false then ns.SnapshotMembers() end",
+  "id": 361
+ },
+ {
+  "file": "Track.lua",
+  "line": 206,
+  "func": "NameKill",
+  "op": "IFFALSE",
+  "orig": "if name then b.name, b.anonymous = name, nil end",
+  "mut": "if false then b.name, b.anonymous = name, nil end",
+  "_new": "  if false then b.name, b.anonymous = name, nil end",
+  "id": 362
+ },
+ {
+  "file": "Track.lua",
+  "line": 16,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "ns.WIPE_MERGE_SECONDS = 60     -- a boss wipe and \"everyone's dead\" are one wipe",
+  "mut": "ns.WIPE_MERGE_SECONDS = 61     -- a boss wipe and \"everyone's dead\" are one wipe",
+  "_new": "ns.WIPE_MERGE_SECONDS = 61     -- a boss wipe and \"everyone's dead\" are one wipe",
+  "id": 363
+ },
+ {
+  "file": "Track.lua",
+  "line": 57,
+  "func": "UnitShortName",
+  "op": "RETDEL",
+  "orig": "return ns.ShortName(name)",
+  "mut": "",
+  "_new": "",
+  "id": 364
+ },
+ {
+  "file": "Track.lua",
+  "line": 623,
+  "func": "ns.HasBossEntry",
+  "op": "IFTRUE",
+  "orig": "for _, b in ipairs(run.bosses) do if b == boss then return true end end",
+  "mut": "for _, b in ipairs(run.bosses) do if true then return true end end",
+  "_new": "  for _, b in ipairs(run.bosses) do if true then return true end end",
+  "id": 365
+ },
+ {
+  "file": "Track.lua",
+  "line": 1143,
+  "func": "Credit",
+  "op": "ASSDEL",
+  "orig": "c.n, c.at = c.n + qty, GetTime()",
+  "mut": "",
+  "_new": "",
+  "id": 366
+ },
+ {
+  "file": "Track.lua",
+  "line": 974,
+  "func": "AddLateValue",
+  "op": "NUM",
+  "orig": "if snap and (p.v or 1) < snap.visit then",
+  "mut": "if snap and (p.v or 0) < snap.visit then",
+  "_new": "  if snap and (p.v or 0) < snap.visit then",
+  "id": 367
+ },
+ {
+  "file": "Track.lua",
+  "line": 215,
+  "func": "CopyKill",
+  "op": "IFNEG",
+  "orig": "if type(k) == \"table\" and type(k.st) == \"number\" and ns.SameBoss(k, boss) then found = k end",
+  "mut": "if not (type(k) == \"table\" and type(k.st) == \"number\" and ns.SameBoss(k, boss)) then found = k end",
+  "_new": "    if not (type(k) == \"table\" and type(k.st) == \"number\" and ns.SameBoss(k, boss)) then found = k end",
+  "id": 368
+ },
+ {
+  "file": "Track.lua",
+  "line": 998,
+  "func": "ns.IsRunDuo",
+  "op": "ANDOR",
+  "orig": "if run.char and ns.SameName(who, ns.ShortName(run.char) or run.char) then return true end",
+  "mut": "if run.char and ns.SameName(who, ns.ShortName(run.char) and run.char) then return true end",
+  "_new": "  if run.char and ns.SameName(who, ns.ShortName(run.char) and run.char) then return true end",
+  "id": 369
+ },
+ {
+  "file": "Track.lua",
+  "line": 228,
+  "func": "NewCopyHere",
+  "op": "IFFALSE",
+  "orig": "if not run.counted and not run.pendingEntry then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 370
+ },
+ {
+  "file": "Track.lua",
+  "line": 1006,
+  "func": "ns.KeepDrop",
+  "op": "IFTRUE",
+  "orig": "if q == nil then return true end  -- unknown yet; decided once it loads",
+  "mut": "if true then return true end  -- unknown yet; decided once it loads",
+  "_new": "  if true then return true end  -- unknown yet; decided once it loads",
+  "id": 371
+ },
+ {
+  "file": "Sync.lua",
+  "line": 86,
+  "func": "ns.FlushSync",
+  "op": "IFFALSE",
+  "orig": "if not CanSend() then return end",
+  "mut": "if false then return end",
+  "_new": "  if false then return end",
+  "id": 372
+ },
+ {
+  "file": "Sync.lua",
+  "line": 338,
+  "func": "LastSeen",
+  "op": "IFTRUE",
+  "orig": "if type(p) == \"table\" and type(p.rawv) == \"table\" then return p.rawv end",
+  "mut": "if true then return p.rawv end",
+  "_new": "    if true then return p.rawv end",
+  "id": 373
+ },
+ {
+  "file": "Sync.lua",
+  "line": 519,
+  "func": "EarlierRun",
+  "op": "IFTRUE",
+  "orig": "if not (run and t and ns.CopyBegan(run) and t < ns.CopyBegan(run) - 1) then return nil end",
+  "mut": "if true then return nil end",
+  "_new": "  if true then return nil end",
+  "id": 374
+ },
+ {
+  "file": "Sync.lua",
+  "line": 639,
+  "func": "HANDLERS.X",
+  "op": "IFFALSE",
+  "orig": "if wing ~= \"\" and run.wing and wing ~= run.wing then same = false end   -- another wing",
+  "mut": "if false then same = false end   -- another wing",
+  "_new": "  if false then same = false end   -- another wing",
+  "id": 375
+ },
+ {
+  "file": "Sync.lua",
+  "line": 504,
+  "func": "HANDLERS.N",
+  "op": "IFNEG",
+  "orig": "if note and wing then note.wing = wing end  -- (the wing it was written in)",
+  "mut": "if not (note and wing) then note.wing = wing end  -- (the wing it was written in)",
+  "_new": "    if not (note and wing) then note.wing = wing end  -- (the wing it was written in)",
+  "id": 376
+ },
+ {
+  "file": "Sync.lua",
+  "line": 512,
+  "func": "ns.CopyBegan",
+  "op": "ANDOR",
+  "orig": "return math.min(run.serverStart, tonumber(run.copyFrom) or math.huge)",
+  "mut": "return math.min(run.serverStart, tonumber(run.copyFrom) and math.huge)",
+  "_new": "  return math.min(run.serverStart, tonumber(run.copyFrom) and math.huge)",
+  "id": 377
+ },
+ {
+  "file": "Sync.lua",
+  "line": 556,
+  "func": "HANDLERS.D",
+  "op": "NUM",
+  "orig": "d.q = f[3]",
+  "mut": "d.q = f[4]",
+  "_new": "    d.q = f[4]",
+  "id": 378
+ },
+ {
+  "file": "Sync.lua",
+  "line": 319,
+  "func": "Totals",
+  "op": "REL",
+  "orig": "if totalsChecked ~= t then",
+  "mut": "if totalsChecked == t then",
+  "_new": "  if totalsChecked == t then",
+  "id": 379
+ },
+ {
+  "file": "Sync.lua",
+  "line": 466,
+  "func": "HANDLERS.S",
+  "op": "NUM",
+  "orig": "if final then finals[sender] = { from = start, v = { f[1], f[2], f[3], f[4], f[5] }, d = dungeon, at = time() } end",
+  "mut": "if final then finals[sender] = { from = start, v = { f[1], f[2], f[3], f[3], f[5] }, d = dungeon, at = time() } end",
+  "_new": "  if final then finals[sender] = { from = start, v = { f[1], f[2], f[3], f[3], f[5] }, d = dungeon, at = time() } end",
+  "id": 380
+ },
+ {
+  "file": "Sync.lua",
+  "line": 42,
+  "func": "Clean",
+  "op": "ANDOR",
+  "orig": "return (tostring(text or \"\"):gsub(\"|+\", \"/\"))",
+  "mut": "return (tostring(text and \"\"):gsub(\"|+\", \"/\"))",
+  "_new": "  return (tostring(text and \"\"):gsub(\"|+\", \"/\"))",
+  "id": 381
+ },
+ {
+  "file": "Sync.lua",
+  "line": 163,
+  "func": "ns.SyncSplit",
+  "op": "ANDOR",
+  "orig": "local h = Header(\"P\", at and { mapID = run.mapID, name = run.name, wing = run.wing, serverStart = at } or run)",
+  "mut": "local h = Header(\"P\", at or { mapID = run.mapID, name = run.name, wing = run.wing, serverStart = at } or run)",
+  "_new": "  local h = Header(\"P\", at or { mapID = run.mapID, name = run.name, wing = run.wing, serverStart = at } or run)",
+  "id": 382
+ },
+ {
+  "file": "Sync.lua",
+  "line": 46,
+  "func": "InGroup",
+  "op": "ANDOR",
+  "orig": "return IsInGroup and IsInGroup() or false",
+  "mut": "return IsInGroup or IsInGroup() or false",
+  "_new": "  return IsInGroup or IsInGroup() or false",
+  "id": 383
+ },
+ {
+  "file": "Sync.lua",
+  "line": 607,
+  "func": "HANDLERS.P",
+  "op": "ANDOR",
+  "orig": "if snap and once and ns.inside and (run.serverStart or 0) < start - 60 then",
+  "mut": "if snap and once and ns.inside and (run.serverStart and 0) < start - 60 then",
+  "_new": "  if snap and once and ns.inside and (run.serverStart and 0) < start - 60 then",
+  "id": 384
+ },
+ {
+  "file": "Sync.lua",
+  "line": 218,
+  "func": "Notice",
+  "op": "IFFALSE",
+  "orig": "if versionNoticed[name] then return end",
+  "mut": "if false then return end",
+  "_new": "  if false then return end",
+  "id": 385
+ },
+ {
+  "file": "Sync.lua",
+  "line": 50,
+  "func": "CanSend",
+  "op": "ANDOR",
+  "orig": "return registered and ns.DB and ns.DB.sync and ns.SendAddon and InGroup()",
+  "mut": "return registered and ns.DB and ns.DB.sync or ns.SendAddon and InGroup()",
+  "_new": "  return registered and ns.DB and ns.DB.sync or ns.SendAddon and InGroup()",
+  "id": 386
+ },
+ {
+  "file": "Sync.lua",
+  "line": 279,
+  "func": "RunFrom",
+  "op": "ANDOR",
+  "orig": "return find(tonumber(map), name, wing ~= \"\" and wing or nil, start, sender), rest, start, name,",
+  "mut": "return find(tonumber(map), name, wing ~= \"\" and wing and nil, start, sender), rest, start, name,",
+  "_new": "  return find(tonumber(map), name, wing ~= \"\" and wing and nil, start, sender), rest, start, name,",
+  "id": 387
+ },
+ {
+  "file": "Sync.lua",
+  "line": 292,
+  "func": "Numbers",
+  "op": "ANDOR",
+  "orig": "if type(x) ~= \"number\" or x ~= x or x < -1 or x > 2e9 or x ~= math.floor(x) then return nil end",
+  "mut": "if type(x) ~= \"number\" or x ~= x or x < -1 and x > 2e9 or x ~= math.floor(x) then return nil end",
+  "_new": "    if type(x) ~= \"number\" or x ~= x or x < -1 and x > 2e9 or x ~= math.floor(x) then return nil end",
+  "id": 388
+ },
+ {
+  "file": "Sync.lua",
+  "line": 82,
+  "func": "Queue",
+  "op": "NUM",
+  "orig": "queue[#queue + 1] = { kind = kind, key = key, msg = msg, at = time() }",
+  "mut": "queue[#queue + 0] = { kind = kind, key = key, msg = msg, at = time() }",
+  "_new": "  queue[#queue + 0] = { kind = kind, key = key, msg = msg, at = time() }",
+  "id": 389
+ },
+ {
+  "file": "Sync.lua",
+  "line": 169,
+  "func": "ns.SyncNewRun",
+  "op": "ANDOR",
+  "orig": "Queue(\"X\", nil, Header(\"X\", run) .. \"|\" .. (run.diffUnknown and \"\" or (run.diff or 0)))",
+  "mut": "Queue(\"X\", nil, Header(\"X\", run) .. \"|\" .. (run.diffUnknown and \"\" and (run.diff or 0)))",
+  "_new": "  Queue(\"X\", nil, Header(\"X\", run) .. \"|\" .. (run.diffUnknown and \"\" and (run.diff or 0)))",
+  "id": 390
+ },
+ {
+  "file": "Sync.lua",
+  "line": 19,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "local MATCH = 1800           -- your run and theirs started within this (server time)",
+  "mut": "local MATCH = 1799           -- your run and theirs started within this (server time)",
+  "_new": "local MATCH = 1799           -- your run and theirs started within this (server time)",
+  "id": 391
+ },
+ {
+  "file": "Sync.lua",
+  "line": 714,
+  "func": "HANDLERS.R",
+  "op": "IFFALSE",
+  "orig": "if size <= 5 and not otherNoticed[name] then",
+  "mut": "if false then",
+  "_new": "    if false then",
+  "id": 392
+ },
+ {
+  "file": "Sync.lua",
+  "line": 231,
+  "func": "Reached",
+  "op": "REL",
+  "orig": "local e = sender and type(r.partners) == \"table\" and r.partners[sender]",
+  "mut": "local e = sender and type(r.partners) ~= \"table\" and r.partners[sender]",
+  "_new": "    local e = sender and type(r.partners) ~= \"table\" and r.partners[sender]",
+  "id": 393
+ },
+ {
+  "file": "Sync.lua",
+  "line": 380,
+  "func": "UpdatePart",
+  "op": "ANDOR",
+  "orig": "for i = 1, 5 do at[i] = math.max(0, (was[i] or 0) - (fin.v[i] or 0)) end",
+  "mut": "for i = 1, 5 do at[i] = math.max(0, (was[i] or 0) - (fin.v[i] and 0)) end",
+  "_new": "          for i = 1, 5 do at[i] = math.max(0, (was[i] or 0) - (fin.v[i] and 0)) end",
+  "id": 394
+ },
+ {
+  "file": "Sync.lua",
+  "line": 451,
+  "func": "ns.SumPartner",
+  "op": "IFNEG",
+  "orig": "if type(p) == \"table\" then",
+  "mut": "if not (type(p) == \"table\") then",
+  "_new": "    if not (type(p) == \"table\") then",
+  "id": 395
+ },
+ {
+  "file": "Sync.lua",
+  "line": 198,
+  "func": "FindRun",
+  "op": "ANDOR",
+  "orig": "if not bestGap or gap < bestGap then best, bestGap = r, gap end",
+  "mut": "if not bestGap and gap < bestGap then best, bestGap = r, gap end",
+  "_new": "      if not bestGap and gap < bestGap then best, bestGap = r, gap end",
+  "id": 396
+ },
+ {
+  "file": "Sync.lua",
+  "line": 152,
+  "func": "ns.SyncBoss",
+  "op": "ANDOR",
+  "orig": "local entry = run.resumeSnap and run.resumeSnap.server or run.serverStart or 0",
+  "mut": "local entry = run.resumeSnap and run.resumeSnap.server or run.serverStart and 0",
+  "_new": "  local entry = run.resumeSnap and run.resumeSnap.server or run.serverStart and 0",
+  "id": 397
+ },
+ {
+  "file": "Sync.lua",
+  "line": 114,
+  "func": "ns.SyncStats",
+  "op": "ANDOR",
+  "orig": "run = run or ns.run",
+  "mut": "run = run and ns.run",
+  "_new": "  run = run and ns.run",
+  "id": 398
+ },
+ {
+  "file": "Sync.lua",
+  "line": 211,
+  "func": "TargetRun",
+  "op": "ANDOR",
+  "orig": "if mapID and cur.mapID then same = cur.mapID == mapID else same = cur.name == name end",
+  "mut": "if mapID or cur.mapID then same = cur.mapID == mapID else same = cur.name == name end",
+  "_new": "    if mapID or cur.mapID then same = cur.mapID == mapID else same = cur.name == name end",
+  "id": 399
+ },
+ {
+  "file": "Sync.lua",
+  "line": 489,
+  "func": "visit",
+  "op": "IFNEG",
+  "orig": "if target then",
+  "mut": "if not (target) then",
+  "_new": "  if not (target) then",
+  "id": 400
+ },
+ {
+  "file": "Sync.lua",
+  "line": 130,
+  "func": "ns.SyncNote",
+  "op": "ANDOR",
+  "orig": "Queue(\"N\", nil, ns.Truncate(Header(\"N\", run) .. \"|\" .. (run == ns.run and 1 or 0) .. \"|\" .. Clean(text), 255))",
+  "mut": "Queue(\"N\", nil, ns.Truncate(Header(\"N\", run) .. \"|\" .. (run == ns.run and 1 and 0) .. \"|\" .. Clean(text), 255))",
+  "_new": "  Queue(\"N\", nil, ns.Truncate(Header(\"N\", run) .. \"|\" .. (run == ns.run and 1 and 0) .. \"|\" .. Clean(text), 255))",
+  "id": 401
+ },
+ {
+  "file": "Sync.lua",
+  "line": 572,
+  "func": "HANDLERS.B",
+  "op": "ANDOR",
+  "orig": "local flags = key:match(\"!(%a*)$\") or \"\"",
+  "mut": "local flags = key:match(\"!(%a*)$\") and \"\"",
+  "_new": "  local flags = key:match(\"!(%a*)$\") and \"\"",
+  "id": 402
+ },
+ {
+  "file": "Sync.lua",
+  "line": 247,
+  "func": "try",
+  "op": "IFTRUE",
+  "orig": "if not goingGap or start - s < goingGap then going, goingGap = r, start - s end",
+  "mut": "if true then going, goingGap = r, start - s end",
+  "_new": "        if true then going, goingGap = r, start - s end",
+  "id": 403
+ },
+ {
+  "file": "Sync.lua",
+  "line": 125,
+  "func": "ns.SyncNoteRoom",
+  "op": "NUM",
+  "orig": "return 255 - #Header(\"N\", run) - 3",
+  "mut": "return 255 - #Header(\"N\", run) - 2",
+  "_new": "  return 255 - #Header(\"N\", run) - 2",
+  "id": 404
+ },
+ {
+  "file": "Sync.lua",
+  "line": 109,
+  "func": "Header",
+  "op": "NUM",
+  "orig": "Clean(run.wing or \"\"), run.serverStart or 0)",
+  "mut": "Clean(run.wing or \"\"), run.serverStart or 1)",
+  "_new": "    Clean(run.wing or \"\"), run.serverStart or 1)",
+  "id": 405
+ },
+ {
+  "file": "Sync.lua",
+  "line": 136,
+  "func": "ns.SyncDrop",
+  "op": "NUM",
+  "orig": "Queue(\"D\", nil, string.format(\"%s|%d|%d|%d|%d\", Header(\"D\", run), d.id, d.n or 1, d.q or -1,",
+  "mut": "Queue(\"D\", nil, string.format(\"%s|%d|%d|%d|%d\", Header(\"D\", run), d.id, d.n or 0, d.q or -1,",
+  "_new": "  Queue(\"D\", nil, string.format(\"%s|%d|%d|%d|%d\", Header(\"D\", run), d.id, d.n or 0, d.q or -1,",
+  "id": 406
+ },
+ {
+  "file": "Sync.lua",
+  "line": 58,
+  "func": "Channel",
+  "op": "RETDEL",
+  "orig": "return \"INSTANCE_CHAT\"",
+  "mut": "",
+  "_new": "",
+  "id": 407
+ },
+ {
+  "file": "Sync.lua",
+  "line": 89,
+  "func": "ns.FlushSync",
+  "op": "IFFALSE",
+  "orig": "if ok and (result == nil or result == true or result == 0) then",
+  "mut": "if false then",
+  "_new": "    if false then",
+  "id": 408
+ },
+ {
+  "file": "Sync.lua",
+  "line": 335,
+  "func": "LastSeen",
+  "op": "NUM",
+  "orig": "if i > 6 then break end",
+  "mut": "if i > 7 then break end",
+  "_new": "    if i > 7 then break end",
+  "id": 409
+ },
+ {
+  "file": "Sync.lua",
+  "line": 526,
+  "func": "EarlierRun",
+  "op": "IFNEG",
+  "orig": "if run.mapID and r.mapID then same = run.mapID == r.mapID else same = run.name == r.name end",
+  "mut": "if not (run.mapID and r.mapID) then same = run.mapID == r.mapID else same = run.name == r.name end",
+  "_new": "      if not (run.mapID and r.mapID) then same = run.mapID == r.mapID else same = run.name == r.name end",
+  "id": 410
+ },
+ {
+  "file": "Sync.lua",
+  "line": 639,
+  "func": "HANDLERS.X",
+  "op": "REL",
+  "orig": "if wing ~= \"\" and run.wing and wing ~= run.wing then same = false end   -- another wing",
+  "mut": "if wing == \"\" and run.wing and wing ~= run.wing then same = false end   -- another wing",
+  "_new": "  if wing == \"\" and run.wing and wing ~= run.wing then same = false end   -- another wing",
+  "id": 411
+ },
+ {
+  "file": "Sync.lua",
+  "line": 502,
+  "func": "HANDLERS.N",
+  "op": "ANDOR",
+  "orig": "if run and text and text ~= \"\" then",
+  "mut": "if run and text or text ~= \"\" then",
+  "_new": "  if run and text or text ~= \"\" then",
+  "id": 412
+ },
+ {
+  "file": "Sync.lua",
+  "line": 511,
+  "func": "ns.CopyBegan",
+  "op": "IFFALSE",
+  "orig": "if not run.serverStart then return nil end",
+  "mut": "if false then return nil end",
+  "_new": "  if false then return nil end",
+  "id": 413
+ },
+ {
+  "file": "Sync.lua",
+  "line": 539,
+  "func": "HANDLERS.D",
+  "op": "ANDOR",
+  "orig": "if not f or f[1] <= 0 or f[2] <= 0 then return end",
+  "mut": "if not f or f[1] <= 0 and f[2] <= 0 then return end",
+  "_new": "  if not f or f[1] <= 0 and f[2] <= 0 then return end",
+  "id": 414
+ },
+ {
+  "file": "Sync.lua",
+  "line": 317,
+  "func": "Totals",
+  "op": "IFNEG",
+  "orig": "if VulcanRunBookCharDB then VulcanRunBookCharDB.partnerTotals = t end",
+  "mut": "if not (VulcanRunBookCharDB) then VulcanRunBookCharDB.partnerTotals = t end",
+  "_new": "    if not (VulcanRunBookCharDB) then VulcanRunBookCharDB.partnerTotals = t end",
+  "id": 415
+ },
+ {
+  "file": "Sync.lua",
+  "line": 466,
+  "func": "HANDLERS.S",
+  "op": "NUM",
+  "orig": "if final then finals[sender] = { from = start, v = { f[1], f[2], f[3], f[4], f[5] }, d = dungeon, at = time() } end",
+  "mut": "if final then finals[sender] = { from = start, v = { f[1], f[2], f[4], f[4], f[5] }, d = dungeon, at = time() } end",
+  "_new": "  if final then finals[sender] = { from = start, v = { f[1], f[2], f[4], f[4], f[5] }, d = dungeon, at = time() } end",
+  "id": 416
+ },
+ {
+  "file": "Sync.lua",
+  "line": 42,
+  "func": "Clean",
+  "op": "RETDEL",
+  "orig": "return (tostring(text or \"\"):gsub(\"|+\", \"/\"))",
+  "mut": "",
+  "_new": "",
+  "id": 417
+ },
+ {
+  "file": "Sync.lua",
+  "line": 163,
+  "func": "ns.SyncSplit",
+  "op": "ANDOR",
+  "orig": "local h = Header(\"P\", at and { mapID = run.mapID, name = run.name, wing = run.wing, serverStart = at } or run)",
+  "mut": "local h = Header(\"P\", at and { mapID = run.mapID, name = run.name, wing = run.wing, serverStart = at } and run)",
+  "_new": "  local h = Header(\"P\", at and { mapID = run.mapID, name = run.name, wing = run.wing, serverStart = at } and run)",
+  "id": 418
+ },
+ {
+  "file": "Sync.lua",
+  "line": 46,
+  "func": "InGroup",
+  "op": "RETDEL",
+  "orig": "return IsInGroup and IsInGroup() or false",
+  "mut": "",
+  "_new": "",
+  "id": 419
+ },
+ {
+  "file": "Sync.lua",
+  "line": 607,
+  "func": "HANDLERS.P",
+  "op": "ANDOR",
+  "orig": "if snap and once and ns.inside and (run.serverStart or 0) < start - 60 then",
+  "mut": "if snap or once and ns.inside and (run.serverStart or 0) < start - 60 then",
+  "_new": "  if snap or once and ns.inside and (run.serverStart or 0) < start - 60 then",
+  "id": 420
+ },
+ {
+  "file": "Sync.lua",
+  "line": 218,
+  "func": "Notice",
+  "op": "IFNEG",
+  "orig": "if versionNoticed[name] then return end",
+  "mut": "if not (versionNoticed[name]) then return end",
+  "_new": "  if not (versionNoticed[name]) then return end",
+  "id": 421
+ },
+ {
+  "file": "Sync.lua",
+  "line": 50,
+  "func": "CanSend",
+  "op": "ANDOR",
+  "orig": "return registered and ns.DB and ns.DB.sync and ns.SendAddon and InGroup()",
+  "mut": "return registered or ns.DB and ns.DB.sync and ns.SendAddon and InGroup()",
+  "_new": "  return registered or ns.DB and ns.DB.sync and ns.SendAddon and InGroup()",
+  "id": 422
+ },
+ {
+  "file": "Sync.lua",
+  "line": 278,
+  "func": "RunFrom",
+  "op": "ANDOR",
+  "orig": "local find = closest and SameRun or TargetRun",
+  "mut": "local find = closest and SameRun and TargetRun",
+  "_new": "  local find = closest and SameRun and TargetRun",
+  "id": 423
+ },
+ {
+  "file": "Sync.lua",
+  "line": 288,
+  "func": "Numbers",
+  "op": "NUM",
+  "orig": "for v in rest:gmatch(\"[^|]+\") do f[#f + 1] = tonumber(v) end",
+  "mut": "for v in rest:gmatch(\"[^|]+\") do f[#f + 2] = tonumber(v) end",
+  "_new": "  for v in rest:gmatch(\"[^|]+\") do f[#f + 2] = tonumber(v) end",
+  "id": 424
+ },
+ {
+  "file": "Sync.lua",
+  "line": 69,
+  "func": "Queue",
+  "op": "REL",
+  "orig": "if q.kind == \"S\" and q.key == key then",
+  "mut": "if q.kind ~= \"S\" and q.key == key then",
+  "_new": "      if q.kind ~= \"S\" and q.key == key then",
+  "id": 425
+ },
+ {
+  "file": "Sync.lua",
+  "line": 169,
+  "func": "ns.SyncNewRun",
+  "op": "NUM",
+  "orig": "Queue(\"X\", nil, Header(\"X\", run) .. \"|\" .. (run.diffUnknown and \"\" or (run.diff or 0)))",
+  "mut": "Queue(\"X\", nil, Header(\"X\", run) .. \"|\" .. (run.diffUnknown and \"\" or (run.diff or 1)))",
+  "_new": "  Queue(\"X\", nil, Header(\"X\", run) .. \"|\" .. (run.diffUnknown and \"\" or (run.diff or 1)))",
+  "id": 426
+ },
+ {
+  "file": "Sync.lua",
+  "line": 38,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "local RETRY = { [3] = true, [8] = true, [11] = true }",
+  "mut": "local RETRY = { [3] = true, [16] = true, [11] = true }",
+  "_new": "local RETRY = { [3] = true, [16] = true, [11] = true }",
+  "id": 427
+ },
+ {
+  "file": "Sync.lua",
+  "line": 741,
+  "func": "HANDLERS.R",
+  "op": "NUM",
+  "orig": "registered = ok and (result == nil or result == true or result == 0 or result == 1) or false",
+  "mut": "registered = ok and (result == nil or result == true or result == 0 or result == 2) or false",
+  "_new": "    registered = ok and (result == nil or result == true or result == 0 or result == 2) or false",
+  "id": 428
+ },
+ {
+  "file": "Sync.lua",
+  "line": 232,
+  "func": "Reached",
+  "op": "REL",
+  "orig": "return type(e) == \"table\" and type(e.parts) == \"table\" and e.parts[key] ~= nil",
+  "mut": "return type(e) == \"table\" and type(e.parts) == \"table\" and e.parts[key] == nil",
+  "_new": "    return type(e) == \"table\" and type(e.parts) == \"table\" and e.parts[key] == nil",
+  "id": 429
+ },
+ {
+  "file": "Sync.lua",
+  "line": 390,
+  "func": "UpdatePart",
+  "op": "NUM",
+  "orig": "base = base or { f[1], f[2], f[3], f[4], f[5] }",
+  "mut": "base = base or { f[1], f[2], f[2], f[4], f[5] }",
+  "_new": "        base = base or { f[1], f[2], f[2], f[4], f[5] }",
+  "id": 430
+ },
+ {
+  "file": "Sync.lua",
+  "line": 450,
+  "func": "ns.SumPartner",
+  "op": "ANDOR",
+  "orig": "for _, p in pairs(entry.parts or {}) do",
+  "mut": "for _, p in pairs(entry.parts and {}) do",
+  "_new": "  for _, p in pairs(entry.parts and {}) do",
+  "id": 431
+ },
+ {
+  "file": "Sync.lua",
+  "line": 196,
+  "func": "FindRun",
+  "op": "ANDOR",
+  "orig": "if same and not endedBefore and start >= (r.serverStart or 0) - 4 * MATCH then",
+  "mut": "if same or not endedBefore and start >= (r.serverStart or 0) - 4 * MATCH then",
+  "_new": "    if same or not endedBefore and start >= (r.serverStart or 0) - 4 * MATCH then",
+  "id": 432
+ },
+ {
+  "file": "Sync.lua",
+  "line": 154,
+  "func": "ns.SyncBoss",
+  "op": "NUM",
+  "orig": "flags, b.id or 0, b.st or ns.ServerTime(), entry, name), 255))",
+  "mut": "flags, b.id or 0, b.st or ns.ServerTime(), entry, name), 510))",
+  "_new": "    flags, b.id or 0, b.st or ns.ServerTime(), entry, name), 510))",
+  "id": 433
+ },
+ {
+  "file": "Sync.lua",
+  "line": 115,
+  "func": "ns.SyncStats",
+  "op": "IFFALSE",
+  "orig": "if not run then return end",
+  "mut": "if false then return end",
+  "_new": "  if false then return end",
+  "id": 434
+ },
+ {
+  "file": "Sync.lua",
+  "line": 214,
+  "func": "TargetRun",
+  "op": "RETDEL",
+  "orig": "return FindRun(mapID, name, wing, start)",
+  "mut": "",
+  "_new": "",
+  "id": 435
+ },
+ {
+  "file": "Sync.lua",
+  "line": 485,
+  "func": "visit",
+  "op": "NUM",
+  "orig": "if i > 6 then break end",
+  "mut": "if i > 0 then break end",
+  "_new": "    if i > 0 then break end",
+  "id": 436
+ },
+ {
+  "file": "Sync.lua",
+  "line": 130,
+  "func": "ns.SyncNote",
+  "op": "NUM",
+  "orig": "Queue(\"N\", nil, ns.Truncate(Header(\"N\", run) .. \"|\" .. (run == ns.run and 1 or 0) .. \"|\" .. Clean(text), 255))",
+  "mut": "Queue(\"N\", nil, ns.Truncate(Header(\"N\", run) .. \"|\" .. (run == ns.run and 1 or 1) .. \"|\" .. Clean(text), 255))",
+  "_new": "  Queue(\"N\", nil, ns.Truncate(Header(\"N\", run) .. \"|\" .. (run == ns.run and 1 or 1) .. \"|\" .. Clean(text), 255))",
+  "id": 437
+ },
+ {
+  "file": "Sync.lua",
+  "line": 571,
+  "func": "HANDLERS.B",
+  "op": "IFTRUE",
+  "orig": "if not id or id > 2e9 then return end",
+  "mut": "if true then return end",
+  "_new": "  if true then return end",
+  "id": 438
+ },
+ {
+  "file": "Sync.lua",
+  "line": 256,
+  "func": "try",
+  "op": "IFNEG",
+  "orig": "if not onlyReached and after and afterGap > 600 then after = nil end",
+  "mut": "if not (not onlyReached and after and afterGap > 600) then after = nil end",
+  "_new": "    if not (not onlyReached and after and afterGap > 600) then after = nil end",
+  "id": 439
+ },
+ {
+  "file": "Sync.lua",
+  "line": 125,
+  "func": "ns.SyncNoteRoom",
+  "op": "RETDEL",
+  "orig": "return 255 - #Header(\"N\", run) - 3",
+  "mut": "",
+  "_new": "",
+  "id": 440
+ },
+ {
+  "file": "Sync.lua",
+  "line": 108,
+  "func": "Header",
+  "op": "ANDOR",
+  "orig": "return string.format(\"%s%d|%s|%s|%s|%s|%d\", kind, PROTOCOL, ns.token, Clean(run.mapID or \"\"), Clean(run.name),",
+  "mut": "return string.format(\"%s%d|%s|%s|%s|%s|%d\", kind, PROTOCOL, ns.token, Clean(run.mapID and \"\"), Clean(run.name),",
+  "_new": "  return string.format(\"%s%d|%s|%s|%s|%s|%d\", kind, PROTOCOL, ns.token, Clean(run.mapID and \"\"), Clean(run.name),",
+  "id": 441
+ },
+ {
+  "file": "Sync.lua",
+  "line": 136,
+  "func": "ns.SyncDrop",
+  "op": "ANDOR",
+  "orig": "Queue(\"D\", nil, string.format(\"%s|%d|%d|%d|%d\", Header(\"D\", run), d.id, d.n or 1, d.q or -1,",
+  "mut": "Queue(\"D\", nil, string.format(\"%s|%d|%d|%d|%d\", Header(\"D\", run), d.id, d.n and 1, d.q or -1,",
+  "_new": "  Queue(\"D\", nil, string.format(\"%s|%d|%d|%d|%d\", Header(\"D\", run), d.id, d.n and 1, d.q or -1,",
+  "id": 442
+ },
+ {
+  "file": "Sync.lua",
+  "line": 56,
+  "func": "Channel",
+  "op": "ANDOR",
+  "orig": "if IsInGroup and LE_PARTY_CATEGORY_INSTANCE and LE_PARTY_CATEGORY_HOME",
+  "mut": "if IsInGroup or LE_PARTY_CATEGORY_INSTANCE and LE_PARTY_CATEGORY_HOME",
+  "_new": "  if IsInGroup or LE_PARTY_CATEGORY_INSTANCE and LE_PARTY_CATEGORY_HOME",
+  "id": 443
+ },
+ {
+  "file": "Sync.lua",
+  "line": 89,
+  "func": "ns.FlushSync",
+  "op": "REL",
+  "orig": "if ok and (result == nil or result == true or result == 0) then",
+  "mut": "if ok and (result ~= nil or result == true or result == 0) then",
+  "_new": "    if ok and (result ~= nil or result == true or result == 0) then",
+  "id": 444
+ },
+ {
+  "file": "Sync.lua",
+  "line": 335,
+  "func": "LastSeen",
+  "op": "NUM",
+  "orig": "if i > 6 then break end",
+  "mut": "if i > 0 then break end",
+  "_new": "    if i > 0 then break end",
+  "id": 445
+ },
+ {
+  "file": "Sync.lua",
+  "line": 528,
+  "func": "EarlierRun",
+  "op": "NUM",
+  "orig": "and r.serverStart <= t + 1 and r.serverEnd >= t - 1 and r.serverEnd >= run.serverStart - 60 then",
+  "mut": "and r.serverStart <= t + 1 and r.serverEnd >= t - 1 and r.serverEnd >= run.serverStart - 0 then",
+  "_new": "          and r.serverStart <= t + 1 and r.serverEnd >= t - 1 and r.serverEnd >= run.serverStart - 0 then",
+  "id": 446
+ },
+ {
+  "file": "Sync.lua",
+  "line": 643,
+  "func": "HANDLERS.X",
+  "op": "IFTRUE",
+  "orig": "if not same or start - (run.serverStart or 0) < 60 then return end",
+  "mut": "if true then return end",
+  "_new": "  if true then return end",
+  "id": 447
+ },
+ {
+  "file": "Sync.lua",
+  "line": 504,
+  "func": "HANDLERS.N",
+  "op": "IFTRUE",
+  "orig": "if note and wing then note.wing = wing end  -- (the wing it was written in)",
+  "mut": "if true then note.wing = wing end  -- (the wing it was written in)",
+  "_new": "    if true then note.wing = wing end  -- (the wing it was written in)",
+  "id": 448
+ },
+ {
+  "file": "Sync.lua",
+  "line": 512,
+  "func": "ns.CopyBegan",
+  "op": "RETDEL",
+  "orig": "return math.min(run.serverStart, tonumber(run.copyFrom) or math.huge)",
+  "mut": "",
+  "_new": "",
+  "id": 449
+ },
+ {
+  "file": "Sync.lua",
+  "line": 538,
+  "func": "HANDLERS.D",
+  "op": "NUM",
+  "orig": "local f = run and (Numbers(rest, 4) or Numbers(rest, 3))",
+  "mut": "local f = run and (Numbers(rest, 4) or Numbers(rest, 2))",
+  "_new": "  local f = run and (Numbers(rest, 4) or Numbers(rest, 2))",
+  "id": 450
+ },
+ {
+  "file": "Sync.lua",
+  "line": 316,
+  "func": "Totals",
+  "op": "ASSDEL",
+  "orig": "t = {}",
+  "mut": "",
+  "_new": "",
+  "id": 451
+ },
+ {
+  "file": "Sync.lua",
+  "line": 463,
+  "func": "HANDLERS.S",
+  "op": "NUM",
+  "orig": "ns.partnerKills[sender] = { start = start, n = f[7], d = dungeon, at = GetTime(), final = f[6] == 1 }",
+  "mut": "ns.partnerKills[sender] = { start = start, n = f[14], d = dungeon, at = GetTime(), final = f[6] == 1 }",
+  "_new": "    ns.partnerKills[sender] = { start = start, n = f[14], d = dungeon, at = GetTime(), final = f[6] == 1 }",
+  "id": 452
+ },
+ {
+  "file": "Sync.lua",
+  "line": 164,
+  "func": "ns.SyncSplit",
+  "op": "ANDOR",
+  "orig": "Queue(\"P\", nil, h .. \"|\" .. ns.ServerTime() .. \"|\" .. (after or \"\"))  -- (and when it was sent)",
+  "mut": "Queue(\"P\", nil, h .. \"|\" .. ns.ServerTime() .. \"|\" .. (after and \"\"))  -- (and when it was sent)",
+  "_new": "  Queue(\"P\", nil, h .. \"|\" .. ns.ServerTime() .. \"|\" .. (after and \"\"))  -- (and when it was sent)",
+  "id": 453
+ },
+ {
+  "file": "Sync.lua",
+  "line": 46,
+  "func": "InGroup",
+  "op": "ANDOR",
+  "orig": "return IsInGroup and IsInGroup() or false",
+  "mut": "return IsInGroup and IsInGroup() and false",
+  "_new": "  return IsInGroup and IsInGroup() and false",
+  "id": 454
+ },
+ {
+  "file": "Sync.lua",
+  "line": 599,
+  "func": "HANDLERS.P",
+  "op": "IFNEG",
+  "orig": "if wing ~= \"\" and run.wing and wing ~= run.wing then same = false end",
+  "mut": "if not (wing ~= \"\" and run.wing and wing ~= run.wing) then same = false end",
+  "_new": "  if not (wing ~= \"\" and run.wing and wing ~= run.wing) then same = false end",
+  "id": 455
+ },
+ {
+  "file": "Sync.lua",
+  "line": 218,
+  "func": "Notice",
+  "op": "IFTRUE",
+  "orig": "if versionNoticed[name] then return end",
+  "mut": "if true then return end",
+  "_new": "  if true then return end",
+  "id": 456
+ },
+ {
+  "file": "Sync.lua",
+  "line": 50,
+  "func": "CanSend",
+  "op": "ANDOR",
+  "orig": "return registered and ns.DB and ns.DB.sync and ns.SendAddon and InGroup()",
+  "mut": "return registered and ns.DB or ns.DB.sync and ns.SendAddon and InGroup()",
+  "_new": "  return registered and ns.DB or ns.DB.sync and ns.SendAddon and InGroup()",
+  "id": 457
+ },
+ {
+  "file": "Sync.lua",
+  "line": 278,
+  "func": "RunFrom",
+  "op": "ANDOR",
+  "orig": "local find = closest and SameRun or TargetRun",
+  "mut": "local find = closest or SameRun or TargetRun",
+  "_new": "  local find = closest or SameRun or TargetRun",
+  "id": 458
+ },
+ {
+  "file": "Sync.lua",
+  "line": 292,
+  "func": "Numbers",
+  "op": "REL",
+  "orig": "if type(x) ~= \"number\" or x ~= x or x < -1 or x > 2e9 or x ~= math.floor(x) then return nil end",
+  "mut": "if type(x) ~= \"number\" or x == x or x < -1 or x > 2e9 or x ~= math.floor(x) then return nil end",
+  "_new": "    if type(x) ~= \"number\" or x == x or x < -1 or x > 2e9 or x ~= math.floor(x) then return nil end",
+  "id": 459
+ },
+ {
+  "file": "Sync.lua",
+  "line": 69,
+  "func": "Queue",
+  "op": "IFNEG",
+  "orig": "if q.kind == \"S\" and q.key == key then",
+  "mut": "if not (q.kind == \"S\" and q.key == key) then",
+  "_new": "      if not (q.kind == \"S\" and q.key == key) then",
+  "id": 460
+ },
+ {
+  "file": "Sync.lua",
+  "line": 169,
+  "func": "ns.SyncNewRun",
+  "op": "ANDOR",
+  "orig": "Queue(\"X\", nil, Header(\"X\", run) .. \"|\" .. (run.diffUnknown and \"\" or (run.diff or 0)))",
+  "mut": "Queue(\"X\", nil, Header(\"X\", run) .. \"|\" .. (run.diffUnknown and \"\" or (run.diff and 0)))",
+  "_new": "  Queue(\"X\", nil, Header(\"X\", run) .. \"|\" .. (run.diffUnknown and \"\" or (run.diff and 0)))",
+  "id": 461
+ },
+ {
+  "file": "Sync.lua",
+  "line": 18,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "local SEND_EVERY = 30        -- seconds between stats updates during a run",
+  "mut": "local SEND_EVERY = 29        -- seconds between stats updates during a run",
+  "_new": "local SEND_EVERY = 29        -- seconds between stats updates during a run",
+  "id": 462
+ },
+ {
+  "file": "Sync.lua",
+  "line": 815,
+  "func": "HANDLERS.R",
+  "op": "NUM",
+  "orig": "part.rawv = { now[1], now[2], now[3], now[4], now[5] }",
+  "mut": "part.rawv = { now[1], now[2], now[3], now[5], now[5] }",
+  "_new": "          part.rawv = { now[1], now[2], now[3], now[5], now[5] }",
+  "id": 463
+ },
+ {
+  "file": "Sync.lua",
+  "line": 232,
+  "func": "Reached",
+  "op": "ANDOR",
+  "orig": "return type(e) == \"table\" and type(e.parts) == \"table\" and e.parts[key] ~= nil",
+  "mut": "return type(e) == \"table\" and type(e.parts) == \"table\" or e.parts[key] ~= nil",
+  "_new": "    return type(e) == \"table\" and type(e.parts) == \"table\" or e.parts[key] ~= nil",
+  "id": 464
+ },
+ {
+  "file": "Sync.lua",
+  "line": 371,
+  "func": "UpdatePart",
+  "op": "ANDOR",
+  "orig": "if type(at) ~= \"table\" and run.serverStart and start < run.serverStart - 60 then at = f end",
+  "mut": "if type(at) ~= \"table\" or run.serverStart and start < run.serverStart - 60 then at = f end",
+  "_new": "      if type(at) ~= \"table\" or run.serverStart and start < run.serverStart - 60 then at = f end",
+  "id": 465
+ },
+ {
+  "file": "Sync.lua",
+  "line": 452,
+  "func": "ns.SumPartner",
+  "op": "ANDOR",
+  "orig": "for _, k in ipairs(FIELDS) do entry[k] = entry[k] + (tonumber(p[k]) or 0) end",
+  "mut": "for _, k in ipairs(FIELDS) do entry[k] = entry[k] + (tonumber(p[k]) and 0) end",
+  "_new": "      for _, k in ipairs(FIELDS) do entry[k] = entry[k] + (tonumber(p[k]) and 0) end",
+  "id": 466
+ },
+ {
+  "file": "Sync.lua",
+  "line": 185,
+  "func": "FindRun",
+  "op": "IFFALSE",
+  "orig": "if ns.run then candidates[#candidates + 1] = ns.run end",
+  "mut": "if false then candidates[#candidates + 1] = ns.run end",
+  "_new": "  if false then candidates[#candidates + 1] = ns.run end",
+  "id": 467
+ },
+ {
+  "file": "UI.lua",
+  "line": 328,
+  "func": "ns.UpdateVisibility",
+  "op": "REL",
+  "orig": "show = ns.DB.autoShow and (ns.InRun() or ns.GhostRunning() or type(VulcanRunBookCharDB.suppress) == \"table\") or false",
+  "mut": "show = ns.DB.autoShow and (ns.InRun() or ns.GhostRunning() or type(VulcanRunBookCharDB.suppress) ~= \"table\") or false",
+  "_new": "    show = ns.DB.autoShow and (ns.InRun() or ns.GhostRunning() or type(VulcanRunBookCharDB.suppress) ~= \"table\") or false",
+  "id": 468
+ },
+ {
+  "file": "UI.lua",
+  "line": 259,
+  "func": "SavePosition",
+  "op": "NUM",
+  "orig": "ns.DB.point = { point, relPoint, (x or 0) * s, (y or 0) * s }",
+  "mut": "ns.DB.point = { point, relPoint, (x or 0) * s, (y or 1) * s }",
+  "_new": "  ns.DB.point = { point, relPoint, (x or 0) * s, (y or 1) * s }",
+  "id": 469
+ },
+ {
+  "file": "UI.lua",
+  "line": 300,
+  "func": "ns.RenderLive",
+  "op": "IFNEG",
+  "orig": "if not frame or not frame:IsShown() then return end",
+  "mut": "if not (not frame or not frame:IsShown()) then return end",
+  "_new": "  if not (not frame or not frame:IsShown()) then return end",
+  "id": 470
+ },
+ {
+  "file": "UI.lua",
+  "line": 11,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "local MAX_BOSSES = 6         -- boss lines shown (the latest ones)",
+  "mut": "local MAX_BOSSES = 12         -- boss lines shown (the latest ones)",
+  "_new": "local MAX_BOSSES = 12         -- boss lines shown (the latest ones)",
+  "id": 471
+ },
+ {
+  "file": "UI.lua",
+  "line": 60,
+  "func": "DeathsLine",
+  "op": "IFNEG",
+  "orig": "if run.kind == \"raid\" then",
+  "mut": "if not (run.kind == \"raid\") then",
+  "_new": "  if not (run.kind == \"raid\") then",
+  "id": 472
+ },
+ {
+  "file": "UI.lua",
+  "line": 296,
+  "func": "ns.ApplyPosition",
+  "op": "NUM",
+  "orig": "frame:SetPoint(p[1] or \"CENTER\", UIParent, p[2] or \"CENTER\", (p[3] or 0) / s, (p[4] or 0) / s)",
+  "mut": "frame:SetPoint(p[1] or \"CENTER\", UIParent, p[2] or \"CENTER\", (p[2] or 0) / s, (p[4] or 0) / s)",
+  "_new": "  frame:SetPoint(p[1] or \"CENTER\", UIParent, p[2] or \"CENTER\", (p[2] or 0) / s, (p[4] or 0) / s)",
+  "id": 473
+ },
+ {
+  "file": "UI.lua",
+  "line": 29,
+  "func": "ns.CapLine",
+  "op": "NUM",
+  "orig": "local cap = ns.DB.cap or 0",
+  "mut": "local cap = ns.DB.cap or 1",
+  "_new": "  local cap = ns.DB.cap or 1",
+  "id": 474
+ },
+ {
+  "file": "UI.lua",
+  "line": 345,
+  "func": "ns.LiveShown",
+  "op": "ANDOR",
+  "orig": "function ns.LiveShown() return frame and frame:IsShown() or false end",
+  "mut": "function ns.LiveShown() return frame or frame:IsShown() or false end",
+  "_new": "function ns.LiveShown() return frame or frame:IsShown() or false end",
+  "id": 475
+ },
+ {
+  "file": "UI.lua",
+  "line": 224,
+  "func": "ns.LiveLines",
+  "op": "IFFALSE",
+  "orig": "if run.kind == \"raid\" then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 476
+ },
+ {
+  "file": "UI.lua",
+  "line": 278,
+  "func": "Build",
+  "op": "IFFALSE",
+  "orig": "if frame.SetBackdrop then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 477
+ },
+ {
+  "file": "UI.lua",
+  "line": 46,
+  "func": "AddStats",
+  "op": "NUM",
+  "orig": "lines[#lines + 1] = label .. (#parts > 0 and table.concat(parts, \" \u00b7 \") or (GREY .. \"nothing yet|r\"))",
+  "mut": "lines[#lines + 2] = label .. (#parts > 0 and table.concat(parts, \" \u00b7 \") or (GREY .. \"nothing yet|r\"))",
+  "_new": "  lines[#lines + 2] = label .. (#parts > 0 and table.concat(parts, \" \u00b7 \") or (GREY .. \"nothing yet|r\"))",
+  "id": 478
+ },
+ {
+  "file": "UI.lua",
+  "line": 24,
+  "func": "ns.DayCapLine",
+  "op": "REL",
+  "orig": "if day >= capDay and dayWait then text = text .. \" - next in \" .. ns.Clock(dayWait) end",
+  "mut": "if day > capDay and dayWait then text = text .. \" - next in \" .. ns.Clock(dayWait) end",
+  "_new": "  if day > capDay and dayWait then text = text .. \" - next in \" .. ns.Clock(dayWait) end",
+  "id": 479
+ },
+ {
+  "file": "UI.lua",
+  "line": 118,
+  "func": "Fit",
+  "op": "IFFALSE",
+  "orig": "if #deaths > 0 then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 480
+ },
+ {
+  "file": "UI.lua",
+  "line": 340,
+  "func": "ns.ToggleLive",
+  "op": "ASSDEL",
+  "orig": "ns.manualShown = not shown",
+  "mut": "",
+  "_new": "",
+  "id": 481
+ },
+ {
+  "file": "UI.lua",
+  "line": 322,
+  "func": "ns.UpdateVisibility",
+  "op": "IFNEG",
+  "orig": "if not frame then return end",
+  "mut": "if not (not frame) then return end",
+  "_new": "  if not (not frame) then return end",
+  "id": 482
+ },
+ {
+  "file": "UI.lua",
+  "line": 259,
+  "func": "SavePosition",
+  "op": "ASSDEL",
+  "orig": "ns.DB.point = { point, relPoint, (x or 0) * s, (y or 0) * s }",
+  "mut": "",
+  "_new": "",
+  "id": 483
+ },
+ {
+  "file": "UI.lua",
+  "line": 306,
+  "func": "ns.RenderLive",
+  "op": "NUM",
+  "orig": "fs:SetPoint(\"TOPLEFT\", 10, -8 - (i - 1) * LINE_H)",
+  "mut": "fs:SetPoint(\"TOPLEFT\", 0, -8 - (i - 1) * LINE_H)",
+  "_new": "      fs:SetPoint(\"TOPLEFT\", 0, -8 - (i - 1) * LINE_H)",
+  "id": 484
+ },
+ {
+  "file": "UI.lua",
+  "line": 10,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "local LINE_CHARS = 47        -- what fits on one line of the live window",
+  "mut": "local LINE_CHARS = 46        -- what fits on one line of the live window",
+  "_new": "local LINE_CHARS = 46        -- what fits on one line of the live window",
+  "id": 485
+ },
+ {
+  "file": "UI.lua",
+  "line": 75,
+  "func": "DeathsLine",
+  "op": "REL",
+  "orig": "if count[a] ~= count[b] then return count[a] > count[b] end",
+  "mut": "if count[a] == count[b] then return count[a] > count[b] end",
+  "_new": "    if count[a] == count[b] then return count[a] > count[b] end",
+  "id": 486
+ },
+ {
+  "file": "UI.lua",
+  "line": 296,
+  "func": "ns.ApplyPosition",
+  "op": "NUM",
+  "orig": "frame:SetPoint(p[1] or \"CENTER\", UIParent, p[2] or \"CENTER\", (p[3] or 0) / s, (p[4] or 0) / s)",
+  "mut": "frame:SetPoint(p[1] or \"CENTER\", UIParent, p[2] or \"CENTER\", (p[4] or 0) / s, (p[4] or 0) / s)",
+  "_new": "  frame:SetPoint(p[1] or \"CENTER\", UIParent, p[2] or \"CENTER\", (p[4] or 0) / s, (p[4] or 0) / s)",
+  "id": 487
+ },
+ {
+  "file": "UI.lua",
+  "line": 34,
+  "func": "ns.CapLine",
+  "op": "REL",
+  "orig": "if count >= cap and wait then text = text .. \" - next in \" .. ns.Clock(wait) end",
+  "mut": "if count > cap and wait then text = text .. \" - next in \" .. ns.Clock(wait) end",
+  "_new": "  if count > cap and wait then text = text .. \" - next in \" .. ns.Clock(wait) end",
+  "id": 488
+ },
+ {
+  "file": "UI.lua",
+  "line": 372,
+  "func": "ns.LiveShown",
+  "op": "REL",
+  "orig": "if ghost ~= wasGhost then",
+  "mut": "if ghost == wasGhost then",
+  "_new": "  if ghost == wasGhost then",
+  "id": 489
+ },
+ {
+  "file": "UI.lua",
+  "line": 229,
+  "func": "ns.LiveLines",
+  "op": "REL",
+  "orig": "lines[#lines + 1] = #drops > MAX_DROPS and string.format(\"Drops (latest %d of %d):\", MAX_DROPS, #drops)",
+  "mut": "lines[#lines + 1] = #drops >= MAX_DROPS and string.format(\"Drops (latest %d of %d):\", MAX_DROPS, #drops)",
+  "_new": "    lines[#lines + 1] = #drops >= MAX_DROPS and string.format(\"Drops (latest %d of %d):\", MAX_DROPS, #drops)",
+  "id": 490
+ },
+ {
+  "file": "UI.lua",
+  "line": 282,
+  "func": "Build",
+  "op": "NUM",
+  "orig": "tile = true, tileSize = 16, edgeSize = 12,",
+  "mut": "tile = true, tileSize = 32, edgeSize = 12,",
+  "_new": "      tile = true, tileSize = 32, edgeSize = 12,",
+  "id": 491
+ },
+ {
+  "file": "History.lua",
+  "line": 86,
+  "func": "Rates",
+  "op": "NUM",
+  "orig": "return #out > 0 and (GREY .. \"  (\" .. table.concat(out, \", \") .. \")|r\") or \"\"",
+  "mut": "return #out > 1 and (GREY .. \"  (\" .. table.concat(out, \", \") .. \")|r\") or \"\"",
+  "_new": "  return #out > 1 and (GREY .. \"  (\" .. table.concat(out, \", \") .. \")|r\") or \"\"",
+  "id": 492
+ },
+ {
+  "file": "History.lua",
+  "line": 302,
+  "func": "InHistory",
+  "op": "RETDEL",
+  "orig": "if run == ns.run then return true end",
+  "mut": "if run == ns.run then end",
+  "_new": "  if run == ns.run then end",
+  "id": 493
+ },
+ {
+  "file": "History.lua",
+  "line": 415,
+  "func": "ns.ShowHistory",
+  "op": "IFFALSE",
+  "orig": "if not frame then Build() end",
+  "mut": "if false then Build() end",
+  "_new": "  if false then Build() end",
+  "id": 494
+ },
+ {
+  "file": "History.lua",
+  "line": 321,
+  "func": "ns.HistoryContent",
+  "op": "NUM",
+  "orig": "lines[#lines + 1] = { \"|cff40ff40Now:|r  \" .. ns.Ellipsis(ns.run.label, 30) .. \"  \" .. ns.Clock(ns.run.elapsed)",
+  "mut": "lines[#lines + 1] = { \"|cff40ff40Now:|r  \" .. ns.Ellipsis(ns.run.label, 29) .. \"  \" .. ns.Clock(ns.run.elapsed)",
+  "_new": "    lines[#lines + 1] = { \"|cff40ff40Now:|r  \" .. ns.Ellipsis(ns.run.label, 29) .. \"  \" .. ns.Clock(ns.run.elapsed)",
+  "id": 495
+ },
+ {
+  "file": "History.lua",
+  "line": 71,
+  "func": "ns.RunRowText",
+  "op": "NUM",
+  "orig": "elseif gold > 0 then",
+  "mut": "elseif gold > 1 then",
+  "_new": "  elseif gold > 1 then",
+  "id": 496
+ },
+ {
+  "file": "History.lua",
+  "line": 30,
+  "func": "Wrap",
+  "op": "REL",
+  "orig": "if line ~= lead and #line + 1 + #word > width then",
+  "mut": "if line == lead and #line + 1 + #word > width then",
+  "_new": "    if line == lead and #line + 1 + #word > width then",
+  "id": 497
+ },
+ {
+  "file": "History.lua",
+  "line": 290,
+  "func": "Fill",
+  "op": "IFFALSE",
+  "orig": "if r.EnableMouse then r:EnableMouse(line[2] ~= nil) end",
+  "mut": "if false then r:EnableMouse(line[2] ~= nil) end",
+  "_new": "    if false then r:EnableMouse(line[2] ~= nil) end",
+  "id": 498
+ },
+ {
+  "file": "History.lua",
+  "line": 374,
+  "func": "Build",
+  "op": "NUM",
+  "orig": "title:SetPoint(\"TOPLEFT\", 12, -10)",
+  "mut": "title:SetPoint(\"TOPLEFT\", 24, -10)",
+  "_new": "  title:SetPoint(\"TOPLEFT\", 24, -10)",
+  "id": 499
+ },
+ {
+  "file": "History.lua",
+  "line": 45,
+  "func": "DiffText",
+  "op": "REL",
+  "orig": "if run.diff and run.diff ~= 0 and run.diff ~= 1 and dn and dn ~= \"\" then return \" (\" .. dn .. \")\" end",
+  "mut": "if run.diff and run.diff ~= 0 and run.diff == 1 and dn and dn ~= \"\" then return \" (\" .. dn .. \")\" end",
+  "_new": "  if run.diff and run.diff ~= 0 and run.diff == 1 and dn and dn ~= \"\" then return \" (\" .. dn .. \")\" end",
+  "id": 500
+ },
+ {
+  "file": "History.lua",
+  "line": 233,
+  "func": "ns.DungeonLines",
+  "op": "IFFALSE",
+  "orig": "elseif s.maxBosses > 0 then",
+  "mut": "elseif false then",
+  "_new": "    elseif false then",
+  "id": 501
+ },
+ {
+  "file": "History.lua",
+  "line": 443,
+  "func": "ns.HistoryShown",
+  "op": "NUM",
+  "orig": "if count % 5 == 0 and ns.run and frame and frame:IsShown() and view.tab == \"runs\"",
+  "mut": "if count % 5 == 1 and ns.run and frame and frame:IsShown() and view.tab == \"runs\"",
+  "_new": "  if count % 5 == 1 and ns.run and frame and frame:IsShown() and view.tab == \"runs\"",
+  "id": 502
+ },
+ {
+  "file": "History.lua",
+  "line": 273,
+  "func": "Row",
+  "op": "IFFALSE",
+  "orig": "if r.text.SetWordWrap then r.text:SetWordWrap(false) end",
+  "mut": "if false then r.text:SetWordWrap(false) end",
+  "_new": "  if false then r.text:SetWordWrap(false) end",
+  "id": 503
+ },
+ {
+  "file": "History.lua",
+  "line": 96,
+  "func": "EndText",
+  "op": "IFTRUE",
+  "orig": "if not run.ended then return \"in progress\" end",
+  "mut": "if true then return \"in progress\" end",
+  "_new": "  if true then return \"in progress\" end",
+  "id": 504
+ },
+ {
+  "file": "History.lua",
+  "line": 7,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "local W, H = 600, 420",
+  "mut": "local W, H = 600, 419",
+  "_new": "local W, H = 600, 419",
+  "id": 505
+ },
+ {
+  "file": "History.lua",
+  "line": 346,
+  "func": "ns.RenderHistory",
+  "op": "IFFALSE",
+  "orig": "if b.SetEnabled then b:SetEnabled(name ~= view.tab or view.detail ~= nil) end",
+  "mut": "if false then b:SetEnabled(name ~= view.tab or view.detail ~= nil) end",
+  "_new": "    if false then b:SetEnabled(name ~= view.tab or view.detail ~= nil) end",
+  "id": 506
+ },
+ {
+  "file": "History.lua",
+  "line": 146,
+  "func": "add",
+  "op": "NUM",
+  "orig": "others = others + 1",
+  "mut": "others = others + 0",
+  "_new": "        others = others + 0",
+  "id": 507
+ },
+ {
+  "file": "History.lua",
+  "line": 427,
+  "func": "ns.ToggleHistory",
+  "op": "IFTRUE",
+  "orig": "if frame and frame:IsShown() then",
+  "mut": "if true then",
+  "_new": "  if true then",
+  "id": 508
+ },
+ {
+  "file": "History.lua",
+  "line": 15,
+  "func": "When",
+  "op": "IFNEG",
+  "orig": "if not t or t <= 0 or not date then return \"?\" end",
+  "mut": "if not (not t or t <= 0 or not date) then return \"?\" end",
+  "_new": "  if not (not t or t <= 0 or not date) then return \"?\" end",
+  "id": 509
+ },
+ {
+  "file": "History.lua",
+  "line": 85,
+  "func": "Rates",
+  "op": "ANDOR",
+  "orig": "if x and xp > 0 then out[#out + 1] = ns.Short(x) .. \" XP/hr\" end",
+  "mut": "if x or xp > 0 then out[#out + 1] = ns.Short(x) .. \" XP/hr\" end",
+  "_new": "  if x or xp > 0 then out[#out + 1] = ns.Short(x) .. \" XP/hr\" end",
+  "id": 510
+ },
+ {
+  "file": "History.lua",
+  "line": 302,
+  "func": "InHistory",
+  "op": "REL",
+  "orig": "if run == ns.run then return true end",
+  "mut": "if run ~= ns.run then return true end",
+  "_new": "  if run ~= ns.run then return true end",
+  "id": 511
+ },
+ {
+  "file": "History.lua",
+  "line": 418,
+  "func": "ns.ShowHistory",
+  "op": "IFFALSE",
+  "orig": "if frame:IsShown() then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 512
+ },
+ {
+  "file": "History.lua",
+  "line": 321,
+  "func": "ns.HistoryContent",
+  "op": "NUM",
+  "orig": "lines[#lines + 1] = { \"|cff40ff40Now:|r  \" .. ns.Ellipsis(ns.run.label, 30) .. \"  \" .. ns.Clock(ns.run.elapsed)",
+  "mut": "lines[#lines + 0] = { \"|cff40ff40Now:|r  \" .. ns.Ellipsis(ns.run.label, 30) .. \"  \" .. ns.Clock(ns.run.elapsed)",
+  "_new": "    lines[#lines + 0] = { \"|cff40ff40Now:|r  \" .. ns.Ellipsis(ns.run.label, 30) .. \"  \" .. ns.Clock(ns.run.elapsed)",
+  "id": 513
+ },
+ {
+  "file": "History.lua",
+  "line": 61,
+  "func": "ns.RunRowText",
+  "op": "NUM",
+  "orig": "parts[#parts + 1] = #run.bosses .. \"/\" .. max",
+  "mut": "parts[#parts + 2] = #run.bosses .. \"/\" .. max",
+  "_new": "    parts[#parts + 2] = #run.bosses .. \"/\" .. max",
+  "id": 514
+ },
+ {
+  "file": "History.lua",
+  "line": 30,
+  "func": "Wrap",
+  "op": "NUM",
+  "orig": "if line ~= lead and #line + 1 + #word > width then",
+  "mut": "if line ~= lead and #line + 0 + #word > width then",
+  "_new": "    if line ~= lead and #line + 0 + #word > width then",
+  "id": 515
+ },
+ {
+  "file": "History.lua",
+  "line": 290,
+  "func": "Fill",
+  "op": "IFNEG",
+  "orig": "if r.EnableMouse then r:EnableMouse(line[2] ~= nil) end",
+  "mut": "if not (r.EnableMouse) then r:EnableMouse(line[2] ~= nil) end",
+  "_new": "    if not (r.EnableMouse) then r:EnableMouse(line[2] ~= nil) end",
+  "id": 516
+ },
+ {
+  "file": "History.lua",
+  "line": 389,
+  "func": "Build",
+  "op": "NUM",
+  "orig": "tabs[spec[1]] = b",
+  "mut": "tabs[spec[0]] = b",
+  "_new": "    tabs[spec[0]] = b",
+  "id": 517
+ },
+ {
+  "file": "History.lua",
+  "line": 45,
+  "func": "DiffText",
+  "op": "ANDOR",
+  "orig": "if run.diff and run.diff ~= 0 and run.diff ~= 1 and dn and dn ~= \"\" then return \" (\" .. dn .. \")\" end",
+  "mut": "if run.diff and run.diff ~= 0 and run.diff ~= 1 or dn and dn ~= \"\" then return \" (\" .. dn .. \")\" end",
+  "_new": "  if run.diff and run.diff ~= 0 and run.diff ~= 1 or dn and dn ~= \"\" then return \" (\" .. dn .. \")\" end",
+  "id": 518
+ },
+ {
+  "file": "History.lua",
+  "line": 242,
+  "func": "ns.DungeonLines",
+  "op": "REL",
+  "orig": "if s.duoGoldHr and (s.duoGold or 0) > s.gold then",
+  "mut": "if s.duoGoldHr and (s.duoGold or 0) >= s.gold then",
+  "_new": "    if s.duoGoldHr and (s.duoGold or 0) >= s.gold then",
+  "id": 519
+ },
+ {
+  "file": "History.lua",
+  "line": 443,
+  "func": "ns.HistoryShown",
+  "op": "ANDOR",
+  "orig": "if count % 5 == 0 and ns.run and frame and frame:IsShown() and view.tab == \"runs\"",
+  "mut": "if count % 5 == 0 or ns.run and frame and frame:IsShown() and view.tab == \"runs\"",
+  "_new": "  if count % 5 == 0 or ns.run and frame and frame:IsShown() and view.tab == \"runs\"",
+  "id": 520
+ },
+ {
+  "file": "History.lua",
+  "line": 271,
+  "func": "Row",
+  "op": "NUM",
+  "orig": "r.text:SetWidth(W - 68)",
+  "mut": "r.text:SetWidth(W - 136)",
+  "_new": "  r.text:SetWidth(W - 136)",
+  "id": 521
+ },
+ {
+  "file": "History.lua",
+  "line": 98,
+  "func": "EndText",
+  "op": "RETDEL",
+  "orig": "return END_REASONS[run.endReason] or \"ended\"",
+  "mut": "",
+  "_new": "",
+  "id": 522
+ },
+ {
+  "file": "History.lua",
+  "line": 8,
+  "func": "<top>",
+  "op": "NUM",
+  "orig": "local ROW_H = 16",
+  "mut": "local ROW_H = 17",
+  "_new": "local ROW_H = 17",
+  "id": 523
+ },
+ {
+  "file": "History.lua",
+  "line": 348,
+  "func": "ns.RenderHistory",
+  "op": "ANDOR",
+  "orig": "local key = view.tab .. \":\" .. tostring(view.detail and (view.detail.id or \"now\"))",
+  "mut": "local key = view.tab .. \":\" .. tostring(view.detail and (view.detail.id and \"now\"))",
+  "_new": "  local key = view.tab .. \":\" .. tostring(view.detail and (view.detail.id and \"now\"))",
+  "id": 524
+ },
+ {
+  "file": "History.lua",
+  "line": 186,
+  "func": "add",
+  "op": "NUM",
+  "orig": "if #names > 0 then add(\"  Together: \" .. ns.ShownMoneyText(duo, true) .. Rates(duo, 0, run.elapsed)) end",
+  "mut": "if #names > 0 then add(\"  Together: \" .. ns.ShownMoneyText(duo, true) .. Rates(duo, 1, run.elapsed)) end",
+  "_new": "  if #names > 0 then add(\"  Together: \" .. ns.ShownMoneyText(duo, true) .. Rates(duo, 1, run.elapsed)) end",
+  "id": 525
+ },
+ {
+  "file": "History.lua",
+  "line": 427,
+  "func": "ns.ToggleHistory",
+  "op": "IFNEG",
+  "orig": "if frame and frame:IsShown() then",
+  "mut": "if not (frame and frame:IsShown()) then",
+  "_new": "  if not (frame and frame:IsShown()) then",
+  "id": 526
+ },
+ {
+  "file": "History.lua",
+  "line": 15,
+  "func": "When",
+  "op": "ANDOR",
+  "orig": "if not t or t <= 0 or not date then return \"?\" end",
+  "mut": "if not t and t <= 0 or not date then return \"?\" end",
+  "_new": "  if not t and t <= 0 or not date then return \"?\" end",
+  "id": 527
+ },
+ {
+  "file": "Export.lua",
+  "line": 144,
+  "func": "ns.ReportLines",
+  "op": "IFFALSE",
+  "orig": "elseif prevT then",
+  "mut": "elseif false then",
+  "_new": "    elseif false then",
+  "id": 528
+ },
+ {
+  "file": "Export.lua",
+  "line": 79,
+  "func": "Minutes",
+  "op": "ANDOR",
+  "orig": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 60) or \"\" end",
+  "mut": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 60) and \"\" end",
+  "_new": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 60) and \"\" end",
+  "id": 529
+ },
+ {
+  "file": "Export.lua",
+  "line": 55,
+  "func": "ns.ShowCopy",
+  "op": "RETDEL",
+  "orig": "return text",
+  "mut": "",
+  "_new": "",
+  "id": 530
+ },
+ {
+  "file": "Export.lua",
+  "line": 25,
+  "func": "BuildCopyFrame",
+  "op": "NUM",
+  "orig": "f:SetBackdropColor(0, 0, 0, 0.92)",
+  "mut": "f:SetBackdropColor(0, 0, 1, 0.92)",
+  "_new": "    f:SetBackdropColor(0, 0, 1, 0.92)",
+  "id": 531
+ },
+ {
+  "file": "Export.lua",
+  "line": 89,
+  "func": "ns.CSVRow",
+  "op": "NUM",
+  "orig": "for _, d in ipairs(ns.NotableDrops(run, 3)) do",
+  "mut": "for _, d in ipairs(ns.NotableDrops(run, 4)) do",
+  "_new": "  for _, d in ipairs(ns.NotableDrops(run, 4)) do",
+  "id": 532
+ },
+ {
+  "file": "Export.lua",
+  "line": 62,
+  "func": "CSVField",
+  "op": "ANDOR",
+  "orig": "v = ns.StripColors(tostring(v == nil and \"\" or v))",
+  "mut": "v = ns.StripColors(tostring(v == nil and \"\" and v))",
+  "_new": "  v = ns.StripColors(tostring(v == nil and \"\" and v))",
+  "id": 533
+ },
+ {
+  "file": "Export.lua",
+  "line": 111,
+  "func": "ns.ExportLines",
+  "op": "IFFALSE",
+  "orig": "if what == \"debug\" then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 534
+ },
+ {
+  "file": "Export.lua",
+  "line": 139,
+  "func": "ns.ReportLines",
+  "op": "IFNEG",
+  "orig": "if clear then",
+  "mut": "if not (clear) then",
+  "_new": "  if not (clear) then",
+  "id": 535
+ },
+ {
+  "file": "Export.lua",
+  "line": 79,
+  "func": "Minutes",
+  "op": "NUM",
+  "orig": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 60) or \"\" end",
+  "mut": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 120) or \"\" end",
+  "_new": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 120) or \"\" end",
+  "id": 536
+ },
+ {
+  "file": "Export.lua",
+  "line": 48,
+  "func": "ns.ShowCopy",
+  "op": "IFFALSE",
+  "orig": "if not copyFrame then BuildCopyFrame() end",
+  "mut": "if false then BuildCopyFrame() end",
+  "_new": "  if false then BuildCopyFrame() end",
+  "id": 537
+ },
+ {
+  "file": "Export.lua",
+  "line": 25,
+  "func": "BuildCopyFrame",
+  "op": "NUM",
+  "orig": "f:SetBackdropColor(0, 0, 0, 0.92)",
+  "mut": "f:SetBackdropColor(0, 0, 0, 1.84)",
+  "_new": "    f:SetBackdropColor(0, 0, 0, 1.84)",
+  "id": 538
+ },
+ {
+  "file": "Export.lua",
+  "line": 105,
+  "func": "ns.CSVRow",
+  "op": "ANDOR",
+  "orig": "(gh and gold > 0) and string.format(\"%.0f\", gh) or \"\", (xh and run.xp > 0) and string.format(\"%.0f\", xh) or \"\",",
+  "mut": "(gh and gold > 0) or string.format(\"%.0f\", gh) or \"\", (xh and run.xp > 0) and string.format(\"%.0f\", xh) or \"\",",
+  "_new": "    (gh and gold > 0) or string.format(\"%.0f\", gh) or \"\", (xh and run.xp > 0) and string.format(\"%.0f\", xh) or \"\",",
+  "id": 539
+ },
+ {
+  "file": "Export.lua",
+  "line": 66,
+  "func": "CSVField",
+  "op": "IFNEG",
+  "orig": "if v:find('[,\"\\n]') then v = '\"' .. v:gsub('\"', '\"\"') .. '\"' end",
+  "mut": "if not (v:find('[,\"\\n]')) then v = '\"' .. v:gsub('\"', '\"\"') .. '\"' end",
+  "_new": "  if not (v:find('[,\"\\n]')) then v = '\"' .. v:gsub('\"', '\"\"') .. '\"' end",
+  "id": 540
+ },
+ {
+  "file": "Export.lua",
+  "line": 111,
+  "func": "ns.ExportLines",
+  "op": "IFNEG",
+  "orig": "if what == \"debug\" then",
+  "mut": "if not (what == \"debug\") then",
+  "_new": "  if not (what == \"debug\") then",
+  "id": 541
+ },
+ {
+  "file": "Export.lua",
+  "line": 162,
+  "func": "ns.ReportLines",
+  "op": "IFTRUE",
+  "orig": "if #lines >= ns.REPORT_DROP_LINES then  -- the summary + the drop lines so far",
+  "mut": "if true then  -- the summary + the drop lines so far",
+  "_new": "      if true then  -- the summary + the drop lines so far",
+  "id": 542
+ },
+ {
+  "file": "Export.lua",
+  "line": 79,
+  "func": "Minutes",
+  "op": "NUM",
+  "orig": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 60) or \"\" end",
+  "mut": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 61) or \"\" end",
+  "_new": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 61) or \"\" end",
+  "id": 543
+ },
+ {
+  "file": "Export.lua",
+  "line": 48,
+  "func": "ns.ShowCopy",
+  "op": "IFNEG",
+  "orig": "if not copyFrame then BuildCopyFrame() end",
+  "mut": "if not (not copyFrame) then BuildCopyFrame() end",
+  "_new": "  if not (not copyFrame) then BuildCopyFrame() end",
+  "id": 544
+ },
+ {
+  "file": "Export.lua",
+  "line": 10,
+  "func": "BuildCopyFrame",
+  "op": "NUM",
+  "orig": "f:SetSize(560, 360)",
+  "mut": "f:SetSize(559, 360)",
+  "_new": "  f:SetSize(559, 360)",
+  "id": 545
+ },
+ {
+  "file": "Export.lua",
+  "line": 83,
+  "func": "ns.CSVRow",
+  "op": "NUM",
+  "orig": "local partnerGold, partnerXP = 0, 0",
+  "mut": "local partnerGold, partnerXP = 0, 1",
+  "_new": "  local partnerGold, partnerXP = 0, 1",
+  "id": 546
+ },
+ {
+  "file": "Export.lua",
+  "line": 65,
+  "func": "CSVField",
+  "op": "ANDOR",
+  "orig": "if v:find(\"^[=+@\\t\\r]\") or v:find(\"^%-[^%d]\") then v = \"'\" .. v end",
+  "mut": "if v:find(\"^[=+@\\t\\r]\") and v:find(\"^%-[^%d]\") then v = \"'\" .. v end",
+  "_new": "  if v:find(\"^[=+@\\t\\r]\") and v:find(\"^%-[^%d]\") then v = \"'\" .. v end",
+  "id": 547
+ },
+ {
+  "file": "Export.lua",
+  "line": 129,
+  "func": "ns.ExportLines",
+  "op": "NUM",
+  "orig": "ns.REPORT_DROP_LINES = 2",
+  "mut": "ns.REPORT_DROP_LINES = 1",
+  "_new": "ns.REPORT_DROP_LINES = 1",
+  "id": 548
+ },
+ {
+  "file": "Export.lua",
+  "line": 171,
+  "func": "ns.ReportLines",
+  "op": "IFNEG",
+  "orig": "if line ~= \"Drops:\" then lines[#lines + 1] = line end",
+  "mut": "if not (line ~= \"Drops:\") then lines[#lines + 1] = line end",
+  "_new": "  if not (line ~= \"Drops:\") then lines[#lines + 1] = line end",
+  "id": 549
+ },
+ {
+  "file": "Export.lua",
+  "line": 79,
+  "func": "Minutes",
+  "op": "NUM",
+  "orig": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 60) or \"\" end",
+  "mut": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 59) or \"\" end",
+  "_new": "local function Minutes(sec) return sec and string.format(\"%.1f\", sec / 59) or \"\" end",
+  "id": 550
+ },
+ {
+  "file": "Export.lua",
+  "line": 48,
+  "func": "ns.ShowCopy",
+  "op": "IFTRUE",
+  "orig": "if not copyFrame then BuildCopyFrame() end",
+  "mut": "if true then BuildCopyFrame() end",
+  "_new": "  if true then BuildCopyFrame() end",
+  "id": 551
+ },
+ {
+  "file": "Commands.lua",
+  "line": 602,
+  "func": "SlashCmdList.VULCANRUNBOOK",
+  "op": "IFTRUE",
+  "orig": "if not ns.DB.welcomed then",
+  "mut": "if true then",
+  "_new": "  if true then",
+  "id": 552
+ },
+ {
+  "file": "Commands.lua",
+  "line": 207,
+  "func": "ns.HasAuctionator",
+  "op": "ANDOR",
+  "orig": "return (api and api.GetAuctionPriceByItemID) and true or false",
+  "mut": "return (api or api.GetAuctionPriceByItemID) and true or false",
+  "_new": "  return (api or api.GetAuctionPriceByItemID) and true or false",
+  "id": 553
+ },
+ {
+  "file": "Commands.lua",
+  "line": 51,
+  "func": "ChatLocked",
+  "op": "RETDEL",
+  "orig": "return C_ChatInfo and C_ChatInfo.InChatMessagingLockdown and ns.Call(C_ChatInfo.InChatMessagingLockdown) == true",
+  "mut": "",
+  "_new": "",
+  "id": 554
+ },
+ {
+  "file": "Commands.lua",
+  "line": 42,
+  "func": "Toggle",
+  "op": "IFTRUE",
+  "orig": "if arg == \"\" then return not current end",
+  "mut": "if true then return not current end",
+  "_new": "  if true then return not current end",
+  "id": 555
+ },
+ {
+  "file": "Commands.lua",
+  "line": 37,
+  "func": "OnOff",
+  "op": "ANDOR",
+  "orig": "local function OnOff(v) return v and \"on\" or \"off\" end",
+  "mut": "local function OnOff(v) return v and \"on\" and \"off\" end",
+  "_new": "local function OnOff(v) return v and \"on\" and \"off\" end",
+  "id": 556
+ },
+ {
+  "file": "Commands.lua",
+  "line": 254,
+  "func": "Note",
+  "op": "IFFALSE",
+  "orig": "if not target then",
+  "mut": "if false then",
+  "_new": "    if false then",
+  "id": 557
+ },
+ {
+  "file": "Commands.lua",
+  "line": 212,
+  "func": "RunNumber",
+  "op": "RETDEL",
+  "orig": "return tonumber((text or \"\"):match(\"^#?(%d+)$\"))",
+  "mut": "",
+  "_new": "",
+  "id": 558
+ },
+ {
+  "file": "Commands.lua",
+  "line": 130,
+  "func": "Check",
+  "op": "IFNEG",
+  "orig": "elseif state == \"unknown\" then",
+  "mut": "elseif not (state == \"unknown\") then",
+  "_new": "  elseif not (state == \"unknown\") then",
+  "id": 559
+ },
+ {
+  "file": "Commands.lua",
+  "line": 231,
+  "func": "Delete",
+  "op": "REL",
+  "orig": "local asked = deleteAsked and deleteAsked.id == id and GetTime() - deleteAsked.at <= 15",
+  "mut": "local asked = deleteAsked and deleteAsked.id == id and GetTime() - deleteAsked.at < 15",
+  "_new": "  local asked = deleteAsked and deleteAsked.id == id and GetTime() - deleteAsked.at < 15",
+  "id": 560
+ },
+ {
+  "file": "Commands.lua",
+  "line": 71,
+  "func": "Report",
+  "op": "RETDEL",
+  "orig": "return",
+  "mut": "",
+  "_new": "",
+  "id": 561
+ },
+ {
+  "file": "Commands.lua",
+  "line": 34,
+  "func": "VulcanRunBook_MarkBoss",
+  "op": "NUM",
+  "orig": "local QUALITY_NAMES = { [0] = \"poor (grey)\", \"common (white)\", \"uncommon (green)\", \"rare (blue)\", \"epic (purple)\",",
+  "mut": "local QUALITY_NAMES = { [1] = \"poor (grey)\", \"common (white)\", \"uncommon (green)\", \"rare (blue)\", \"epic (purple)\",",
+  "_new": "local QUALITY_NAMES = { [1] = \"poor (grey)\", \"common (white)\", \"uncommon (green)\", \"rare (blue)\", \"epic (purple)\",",
+  "id": 562
+ },
+ {
+  "file": "Commands.lua",
+  "line": 303,
+  "func": "Handle",
+  "op": "ANDOR",
+  "orig": "local name = rest ~= \"\" and ns.Truncate(ns.CleanText(rest), 40) or nil",
+  "mut": "local name = rest ~= \"\" and ns.Truncate(ns.CleanText(rest), 40) and nil",
+  "_new": "      local name = rest ~= \"\" and ns.Truncate(ns.CleanText(rest), 40) and nil",
+  "id": 563
+ },
+ {
+  "file": "Commands.lua",
+  "line": 598,
+  "func": "SlashCmdList.VULCANRUNBOOK",
+  "op": "IFNEG",
+  "orig": "if not ok then ns.ReportError(\"command\", err) end",
+  "mut": "if not (not ok) then ns.ReportError(\"command\", err) end",
+  "_new": "  if not (not ok) then ns.ReportError(\"command\", err) end",
+  "id": 564
+ },
+ {
+  "file": "Commands.lua",
+  "line": 207,
+  "func": "ns.HasAuctionator",
+  "op": "ANDOR",
+  "orig": "return (api and api.GetAuctionPriceByItemID) and true or false",
+  "mut": "return (api and api.GetAuctionPriceByItemID) or true or false",
+  "_new": "  return (api and api.GetAuctionPriceByItemID) or true or false",
+  "id": 565
+ },
+ {
+  "file": "Commands.lua",
+  "line": 51,
+  "func": "ChatLocked",
+  "op": "REL",
+  "orig": "return C_ChatInfo and C_ChatInfo.InChatMessagingLockdown and ns.Call(C_ChatInfo.InChatMessagingLockdown) == true",
+  "mut": "return C_ChatInfo and C_ChatInfo.InChatMessagingLockdown and ns.Call(C_ChatInfo.InChatMessagingLockdown) ~= true",
+  "_new": "  return C_ChatInfo and C_ChatInfo.InChatMessagingLockdown and ns.Call(C_ChatInfo.InChatMessagingLockdown) ~= true",
+  "id": 566
+ },
+ {
+  "file": "Commands.lua",
+  "line": 44,
+  "func": "Toggle",
+  "op": "IFNEG",
+  "orig": "if arg == \"off\" then return false end",
+  "mut": "if not (arg == \"off\") then return false end",
+  "_new": "  if not (arg == \"off\") then return false end",
+  "id": 567
+ },
+ {
+  "file": "Commands.lua",
+  "line": 37,
+  "func": "OnOff",
+  "op": "ANDOR",
+  "orig": "local function OnOff(v) return v and \"on\" or \"off\" end",
+  "mut": "local function OnOff(v) return v or \"on\" or \"off\" end",
+  "_new": "local function OnOff(v) return v or \"on\" or \"off\" end",
+  "id": 568
+ },
+ {
+  "file": "Commands.lua",
+  "line": 254,
+  "func": "Note",
+  "op": "IFTRUE",
+  "orig": "if not target then",
+  "mut": "if true then",
+  "_new": "    if true then",
+  "id": 569
+ },
+ {
+  "file": "Commands.lua",
+  "line": 212,
+  "func": "RunNumber",
+  "op": "ANDOR",
+  "orig": "return tonumber((text or \"\"):match(\"^#?(%d+)$\"))",
+  "mut": "return tonumber((text and \"\"):match(\"^#?(%d+)$\"))",
+  "_new": "  return tonumber((text and \"\"):match(\"^#?(%d+)$\"))",
+  "id": 570
+ },
+ {
+  "file": "Commands.lua",
+  "line": 202,
+  "func": "Check",
+  "op": "ANDOR",
+  "orig": "or \" (|cffff5050Auctionator not found|r, using vendor)\") or \"\"))",
+  "mut": "and \" (|cffff5050Auctionator not found|r, using vendor)\") or \"\"))",
+  "_new": "      and \" (|cffff5050Auctionator not found|r, using vendor)\") or \"\"))",
+  "id": 571
+ },
+ {
+  "file": "Commands.lua",
+  "line": 226,
+  "func": "Delete",
+  "op": "IFFALSE",
+  "orig": "if not run then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 572
+ },
+ {
+  "file": "Commands.lua",
+  "line": 88,
+  "func": "Report",
+  "op": "REL",
+  "orig": "if chatType == \"WHISPER\" and target == \"\" then",
+  "mut": "if chatType == \"WHISPER\" and target ~= \"\" then",
+  "_new": "  if chatType == \"WHISPER\" and target ~= \"\" then",
+  "id": 573
+ },
+ {
+  "file": "Commands.lua",
+  "line": 476,
+  "func": "Handle",
+  "op": "ANDOR",
+  "orig": "elseif n and n >= 1 and n <= 200 and n == math.floor(n) then",
+  "mut": "elseif n and n >= 1 or n <= 200 and n == math.floor(n) then",
+  "_new": "    elseif n and n >= 1 or n <= 200 and n == math.floor(n) then",
+  "id": 574
+ },
+ {
+  "file": "Commands.lua",
+  "line": 596,
+  "func": "SlashCmdList.VULCANRUNBOOK",
+  "op": "IFNEG",
+  "orig": "if not ns.DB then return end",
+  "mut": "if not (not ns.DB) then return end",
+  "_new": "  if not (not ns.DB) then return end",
+  "id": 575
+ },
+ {
+  "file": "Commands.lua",
+  "line": 206,
+  "func": "ns.HasAuctionator",
+  "op": "ANDOR",
+  "orig": "local api = Auctionator and Auctionator.API and Auctionator.API.v1",
+  "mut": "local api = Auctionator or Auctionator.API and Auctionator.API.v1",
+  "_new": "  local api = Auctionator or Auctionator.API and Auctionator.API.v1",
+  "id": 576
+ },
+ {
+  "file": "Commands.lua",
+  "line": 51,
+  "func": "ChatLocked",
+  "op": "ANDOR",
+  "orig": "return C_ChatInfo and C_ChatInfo.InChatMessagingLockdown and ns.Call(C_ChatInfo.InChatMessagingLockdown) == true",
+  "mut": "return C_ChatInfo or C_ChatInfo.InChatMessagingLockdown and ns.Call(C_ChatInfo.InChatMessagingLockdown) == true",
+  "_new": "  return C_ChatInfo or C_ChatInfo.InChatMessagingLockdown and ns.Call(C_ChatInfo.InChatMessagingLockdown) == true",
+  "id": 577
+ },
+ {
+  "file": "Commands.lua",
+  "line": 44,
+  "func": "Toggle",
+  "op": "IFTRUE",
+  "orig": "if arg == \"off\" then return false end",
+  "mut": "if true then return false end",
+  "_new": "  if true then return false end",
+  "id": 578
+ },
+ {
+  "file": "Commands.lua",
+  "line": 277,
+  "func": "Note",
+  "op": "IFNEG",
+  "orig": "if ns.SyncNote then ns.SyncNote(run, note.text) end",
+  "mut": "if not (ns.SyncNote) then ns.SyncNote(run, note.text) end",
+  "_new": "  if not (ns.SyncNote) then ns.SyncNote(run, note.text) end",
+  "id": 579
+ },
+ {
+  "file": "Commands.lua",
+  "line": 135,
+  "func": "Check",
+  "op": "IFNEG",
+  "orig": "if ns.run then",
+  "mut": "if not (ns.run) then",
+  "_new": "  if not (ns.run) then",
+  "id": 580
+ },
+ {
+  "file": "Commands.lua",
+  "line": 241,
+  "func": "Delete",
+  "op": "IFTRUE",
+  "orig": "if ns.lastRun == run then ns.lastRun = nil end",
+  "mut": "if true then ns.lastRun = nil end",
+  "_new": "  if true then ns.lastRun = nil end",
+  "id": 581
+ },
+ {
+  "file": "Commands.lua",
+  "line": 88,
+  "func": "Report",
+  "op": "IFFALSE",
+  "orig": "if chatType == \"WHISPER\" and target == \"\" then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 582
+ },
+ {
+  "file": "Commands.lua",
+  "line": 375,
+  "func": "Handle",
+  "op": "IFTRUE",
+  "orig": "if b.name and not b.anonymous and ns.Fold(b.name) == ns.Fold(exactName) then found = b end",
+  "mut": "if true then found = b end",
+  "_new": "        if true then found = b end",
+  "id": 583
+ },
+ {
+  "file": "Commands.lua",
+  "line": 603,
+  "func": "SlashCmdList.VULCANRUNBOOK",
+  "op": "ASSDEL",
+  "orig": "ns.DB.welcomed = true",
+  "mut": "",
+  "_new": "",
+  "id": 584
+ },
+ {
+  "file": "Commands.lua",
+  "line": 207,
+  "func": "ns.HasAuctionator",
+  "op": "RETDEL",
+  "orig": "return (api and api.GetAuctionPriceByItemID) and true or false",
+  "mut": "",
+  "_new": "",
+  "id": 585
+ },
+ {
+  "file": "Commands.lua",
+  "line": 51,
+  "func": "ChatLocked",
+  "op": "ANDOR",
+  "orig": "return C_ChatInfo and C_ChatInfo.InChatMessagingLockdown and ns.Call(C_ChatInfo.InChatMessagingLockdown) == true",
+  "mut": "return C_ChatInfo and C_ChatInfo.InChatMessagingLockdown or ns.Call(C_ChatInfo.InChatMessagingLockdown) == true",
+  "_new": "  return C_ChatInfo and C_ChatInfo.InChatMessagingLockdown or ns.Call(C_ChatInfo.InChatMessagingLockdown) == true",
+  "id": 586
+ },
+ {
+  "file": "Commands.lua",
+  "line": 43,
+  "func": "Toggle",
+  "op": "IFFALSE",
+  "orig": "if arg == \"on\" then return true end",
+  "mut": "if false then return true end",
+  "_new": "  if false then return true end",
+  "id": 587
+ },
+ {
+  "file": "Commands.lua",
+  "line": 253,
+  "func": "Note",
+  "op": "ANDOR",
+  "orig": "target = (ns.run and ns.run.id == id) and ns.run or ns.FindRunById(id)",
+  "mut": "target = (ns.run or ns.run.id == id) and ns.run or ns.FindRunById(id)",
+  "_new": "    target = (ns.run or ns.run.id == id) and ns.run or ns.FindRunById(id)",
+  "id": 588
+ },
+ {
+  "file": "Commands.lua",
+  "line": 122,
+  "func": "Check",
+  "op": "IFFALSE",
+  "orig": "if not inst.mapID then P(\"  Map ID unreadable: using the dungeon name instead.\") end",
+  "mut": "if false then P(\"  Map ID unreadable: using the dungeon name instead.\") end",
+  "_new": "    if false then P(\"  Map ID unreadable: using the dungeon name instead.\") end",
+  "id": 589
+ },
+ {
+  "file": "Commands.lua",
+  "line": 231,
+  "func": "Delete",
+  "op": "REL",
+  "orig": "local asked = deleteAsked and deleteAsked.id == id and GetTime() - deleteAsked.at <= 15",
+  "mut": "local asked = deleteAsked and deleteAsked.id ~= id and GetTime() - deleteAsked.at <= 15",
+  "_new": "  local asked = deleteAsked and deleteAsked.id ~= id and GetTime() - deleteAsked.at <= 15",
+  "id": 590
+ },
+ {
+  "file": "Commands.lua",
+  "line": 98,
+  "func": "Report",
+  "op": "IFTRUE",
+  "orig": "if not ok then",
+  "mut": "if true then",
+  "_new": "    if true then",
+  "id": 591
+ },
+ {
+  "file": "Commands.lua",
+  "line": 537,
+  "func": "Handle",
+  "op": "REL",
+  "orig": "elseif (cmd == \"auto\" or cmd == \"sync\") and arg == \"\" then",
+  "mut": "elseif (cmd == \"auto\" or cmd ~= \"sync\") and arg == \"\" then",
+  "_new": "  elseif (cmd == \"auto\" or cmd ~= \"sync\") and arg == \"\" then",
+  "id": 592
+ },
+ {
+  "file": "Commands.lua",
+  "line": 598,
+  "func": "SlashCmdList.VULCANRUNBOOK",
+  "op": "IFFALSE",
+  "orig": "if not ok then ns.ReportError(\"command\", err) end",
+  "mut": "if false then ns.ReportError(\"command\", err) end",
+  "_new": "  if false then ns.ReportError(\"command\", err) end",
+  "id": 593
+ },
+ {
+  "file": "Commands.lua",
+  "line": 207,
+  "func": "ns.HasAuctionator",
+  "op": "ANDOR",
+  "orig": "return (api and api.GetAuctionPriceByItemID) and true or false",
+  "mut": "return (api and api.GetAuctionPriceByItemID) and true and false",
+  "_new": "  return (api and api.GetAuctionPriceByItemID) and true and false",
+  "id": 594
+ },
+ {
+  "file": "Commands.lua",
+  "line": 43,
+  "func": "Toggle",
+  "op": "IFNEG",
+  "orig": "if arg == \"on\" then return true end",
+  "mut": "if not (arg == \"on\") then return true end",
+  "_new": "  if not (arg == \"on\") then return true end",
+  "id": 595
+ },
+ {
+  "file": "Commands.lua",
+  "line": 277,
+  "func": "Note",
+  "op": "IFFALSE",
+  "orig": "if ns.SyncNote then ns.SyncNote(run, note.text) end",
+  "mut": "if false then ns.SyncNote(run, note.text) end",
+  "_new": "  if false then ns.SyncNote(run, note.text) end",
+  "id": 596
+ },
+ {
+  "file": "Commands.lua",
+  "line": 178,
+  "func": "Check",
+  "op": "IFFALSE",
+  "orig": "elseif GetTime() - k.at > 90 or math.abs(k.start - (run.serverStart or 0)) > 120 then",
+  "mut": "elseif false then",
+  "_new": "      elseif false then",
+  "id": 597
+ },
+ {
+  "file": "Commands.lua",
+  "line": 221,
+  "func": "Delete",
+  "op": "IFFALSE",
+  "orig": "if not id then",
+  "mut": "if false then",
+  "_new": "  if false then",
+  "id": 598
+ },
+ {
+  "file": "Commands.lua",
+  "line": 86,
+  "func": "Report",
+  "op": "RETDEL",
+  "orig": "return",
+  "mut": "",
+  "_new": "",
+  "id": 599
+ }
+]

@@ -1,0 +1,11 @@
+<Bindings>
+  <Binding name="VULCANRUNBOOK_TOGGLE" header="VULCANRUNBOOK" category="ADDONS">
+    VulcanRunBook_ToggleLive()
+  </Binding>
+  <Binding name="VULCANRUNBOOK_HISTORY" category="ADDONS">
+    VulcanRunBook_ToggleHistory()
+  </Binding>
+  <Binding name="VULCANRUNBOOK_BOSS" category="ADDONS">
+    VulcanRunBook_MarkBoss()
+  </Binding>
+</Bindings>

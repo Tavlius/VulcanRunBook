@@ -1,0 +1,600 @@
+{"id": 0, "status": "killed", "killer": "tests_round25.lua", "detail": "FAIL [a newer short copy wins over an older full one] one boss (the unboss kept)  [got 2, want 1]", "secs": 8.2}
+{"id": 1, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [the dungeon finder's 'too many instances' isn't the cap] the cap, no strings", "secs": 2.0}
+{"id": 2, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [the live window's gold adds up] under a silver  [Deadmines  6:42", "secs": 3.6}
+{"id": 3, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [alts: whose run, and clear says all characters] row shows the alt  [#1  Nov 14 22:13  Deadmines  1:40]", "secs": 2.0}
+{"id": 4, "status": "survived", "killer": null, "detail": "", "secs": 19.9}
+{"id": 5, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [together gold on the run's end line and in the stats] end line", "secs": 2.0}
+{"id": 6, "status": "killed", "killer": "tests.lua", "detail": "ua:65: in function 'Listen'\n\t/tmp/runbook_sweep_work/m6/Track.lua:778: in function 'chunk'\n\t./harness.lua:293: in function 'boot'\n\ttests.lua:7: in function 'fresh'\n\ttests.lua:36: in main chunk\n\t[C]: ?\n", "secs": 0.0}
+{"id": 7, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] partner set by first sync  [got nil, want Mirel]", "secs": 0.8}
+{"id": 8, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [the live window's gold adds up] you  [Deadmines  6:42", "secs": 3.4}
+{"id": 9, "status": "killed", "killer": "tests_round6.lua", "detail": "FAIL [the game's kill right after your key press names the mark] id added to the mark  [got nil, want 643]", "secs": 9.9}
+{"id": 10, "status": "survived", "killer": null, "detail": "", "secs": 20.0}
+{"id": 11, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [formatting] delta ahead  [got |cff40ff40-0:42|r, want -0:42]", "secs": 10.8}
+{"id": 12, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 13, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 14, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a damaged saved run doesn't stop the history] export works  [/tmp/runbook_sweep_work/m14/Export.lua:65: attempt to index local 'v' (a nil value)]", "secs": 2.0}
+{"id": 15, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] no errors  [|cffe8792bRunBook|r: error in DROP: /tmp/runbook_sweep_work/m15/Util.lua:284: bad argument #3 to 'format' (string expected, got nil); |cff66ccffRunBook", "secs": 0.7}
+{"id": 16, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] auto kill takes over the manual one  [got 4, want 3]", "secs": 0.7}
+{"id": 17, "status": "killed", "killer": "tests.lua", "detail": "lua:49: in function 'ServerTime'\n\t/tmp/runbook_sweep_work/m17/Data.lua:1129: in function 'PruneEntries'\n\t/tmp/runbook_sweep_work/m17/Data.lua:1145: in function '?'\n\ttests.lua:818: in main chunk\n\t[C]: ?\n", "secs": 0.7}
+{"id": 18, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 19, "status": "survived", "killer": null, "detail": "", "secs": 18.8}
+{"id": 20, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 21, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] welcome printed", "secs": 0.0}
+{"id": 22, "status": "killed", "killer": "tests.lua", "detail": "weep_work/m22/Util.lua:103: in function 'OnEvent'\n\t./harness.lua:299: in function 'fire'\n\t./harness.lua:318: in function 'login'\n\ttests.lua:8: in function 'fresh'\n\ttests.lua:36: in main chunk\n\t[C]: ?\n", "secs": 0.0}
+{"id": 23, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 24, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] loot value counted (yours only)  [got 5007, want 5052]", "secs": 0.6}
+{"id": 25, "status": "survived", "killer": null, "detail": "", "secs": 18.7}
+{"id": 26, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [Korean reset messages] English again  [got nil, want Deadmines]", "secs": 2.0}
+{"id": 27, "status": "killed", "killer": "tests_round18.lua", "detail": "FAIL [one kill, named differently by each of you] one kill, the fuller name  [got Roccor,Lord Roccor, want Lord Roccor]", "secs": 6.3}
+{"id": 28, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] no errors  [|cffe8792bRunBook|r: error in DEATH: /tmp/runbook_sweep_work/m28/Util.lua:367: bad argument #1 to 'select' (index out of range)]", "secs": 0.6}
+{"id": 29, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [raid deaths: you two's] live  [Molten Core  1:52", "secs": 1.9}
+{"id": 30, "status": "survived", "killer": null, "detail": "", "secs": 18.6}
+{"id": 31, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 32, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [commands] report sent", "secs": 10.6}
+{"id": 33, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [his /runbook end and back into the same copy isn't a new copy (his entry is)] your run ended (reset)", "secs": 1.9}
+{"id": 34, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] drop list  [got Cruel Barb/You,Smite's Hammer/Mirel,Lucky Charm/Mirel,Cruel Barb/Pug, want Cruel Barb/Tavlius,Smite's Hammer/Mirel,Lucky Charm/Mirel,Cruel Barb/Pug]", "secs": 0.6}
+{"id": 35, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a partner's boss name is cleaned and capped] 100 bytes at most  [107]", "secs": 1.9}
+{"id": 36, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] live shows dungeon and clock  [Deadmines  -9223372036854775808:00", "secs": 0.7}
+{"id": 37, "status": "killed", "killer": "tests_round13.lua", "detail": "FAIL [raid drops: you two's in the details and the export] details: duo only  [Molten Core  Nov 14 22:13  (Tavlius)", "secs": 5.6}
+{"id": 38, "status": "killed", "killer": "tests_round6.lua", "detail": "FAIL [display text] short label  [got Scarlet Monastery - Cathedral, want SM Cathedral]", "secs": 9.3}
+{"id": 39, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] welcome printed", "secs": 0.0}
+{"id": 40, "status": "killed", "killer": "tests_round16.lua", "detail": "FAIL [your own raid slot, when unit comparison is hidden] one death  [got 2, want 1]", "secs": 6.1}
+{"id": 41, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] live shows dungeon and clock  [Deadmines...  1:00", "secs": 0.8}
+{"id": 42, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [Korean reset messages] name  [got \ub370\ub4dc\ub9c8\uc778\uc774, want \ub370\ub4dc\ub9c8\uc778]", "secs": 2.0}
+{"id": 43, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 44, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 45, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [secret values] no errors  [|cffe8792bRunBook|r: error in UI_ERROR_MESSAGE: /tmp/runbook_sweep_work/m45/Util.lua:527: attempt to index local 'msg' (a nil value)]", "secs": 10.8}
+{"id": 46, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [the live window's gold adds up] rates to the silver  [Deadmines  6:42", "secs": 3.5}
+{"id": 47, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 48, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a damaged saved run doesn't stop the history] details render  [/tmp/runbook_sweep_work/m48/History.lua:15: attempt to compare string with number]", "secs": 2.1}
+{"id": 49, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 50, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [raid deaths: you two's] count  [got 3, want 1]", "secs": 2.0}
+{"id": 51, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [a short-form run can be deleted, and note or unboss on one says why not] note explains", "secs": 4.6}
+{"id": 52, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [saved data backup and damaged data] bad rows dropped  [got 3, want 2]", "secs": 10.9}
+{"id": 53, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] one cap entry  [got 0, want 1]", "secs": 0.7}
+{"id": 54, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a typed boss name matches how you wrote it before] canonical  [got VanCleef, want Edwin VanCleef]", "secs": 2.0}
+{"id": 55, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [a failed account load says what the backup brought back, each time] told again", "secs": 4.6}
+{"id": 56, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] no errors  [|cffe8792bRunBook|r: error in RUN_START: /tmp/runbook_sweep_work/m56/Data.lua:1155: attempt to perform arithmetic on field", "secs": 0.6}
+{"id": 57, "status": "killed", "killer": "tests_il1.lua", "detail": "ction 'SameBoss'\n\t/tmp/runbook_sweep_work/m57/Data.lua:1031: in function 'ClearTime'\n\t/tmp/runbook_sweep_work/m57/History.lua:106: in function 'RunDetailLines'\n\ttests_il1.lua:486: in main chunk\n\t[C]: ?\n", "secs": 1.2}
+{"id": 58, "status": "killed", "killer": "tests_il2.lua", "detail": "lua5.1: tests_il2.lua:317: attempt to concatenate local 'id' (a nil value)\nstack traceback:\n\ttests_il2.lua:317: in main chunk\n\t[C]: ?\n", "secs": 2.7}
+{"id": 59, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 60, "status": "killed", "killer": "tests_round4.lua", "detail": "FAIL [best comparisons use the dungeon's final boss] report: new best, was 15:00  [RunBook: Deadmines 13:20, 3 bosses. Cleared at 13:20.]", "secs": 8.8}
+{"id": 61, "status": "killed", "killer": "tests_round25.lua", "detail": "FAIL [a newer short copy wins over an older full one] one boss (the unboss kept)  [got 0, want 1]", "secs": 8.1}
+{"id": 62, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 63, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [alts: whose run, and clear says all characters] row shows the alt  [#1  Nov 14 22:13  ?  Deadmines  1:40]", "secs": 1.9}
+{"id": 64, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a clear that began after a break isn't a best time] no new best said", "secs": 3.5}
+{"id": 65, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 66, "status": "survived", "killer": null, "detail": "", "secs": 19.9}
+{"id": 67, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] split into a new run", "secs": 0.1}
+{"id": 68, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a damaged saved run doesn't stop the history] details render  [/tmp/runbook_sweep_work/m68/History.lua:104: attempt to index local 'run' (a nil value)]", "secs": 1.2}
+{"id": 69, "status": "killed", "killer": "tests_round10.lua", "detail": "lua5.1: tests_round10.lua:150: attempt to index field 'Mirel' (a nil value)\nstack traceback:\n\ttests_round10.lua:150: in main chunk\n\t[C]: ?\n", "secs": 5.0}
+{"id": 70, "status": "killed", "killer": "tests.lua", "detail": "FAIL [unreadable instance info] same run with wing hidden", "secs": 0.8}
+{"id": 71, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] live shows dungeon and clock  []", "secs": 0.1}
+{"id": 72, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a typed boss name matches how you wrote it before] final lists bosses", "secs": 2.0}
+{"id": 73, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [alts: whose run, and clear says all characters] row shows the alt  [#1  Nov 14 22:13  Deadmines  1:40]", "secs": 2.0}
+{"id": 74, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] manual boss  [got 2, want 3]", "secs": 0.0}
+{"id": 75, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [sync: receiving] partner line in window  [Deadmines  1:10", "secs": 10.6}
+{"id": 76, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 77, "status": "survived", "killer": null, "detail": "", "secs": 18.5}
+{"id": 78, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] live says nothing yet  [Deadmines  1:00", "secs": 0.7}
+{"id": 79, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [auctionator prices] gold uses ah  [got 5300, want 8850]", "secs": 10.6}
+{"id": 80, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [short-form partner gold follows the price setting] vendor  [got 5100, want 150]", "secs": 4.7}
+{"id": 81, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 82, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a typed boss name matches how you wrote it before] no errors  [|cffe8792bRunBook|r: error in CHAT_MSG_SYSTEM: /tmp/runbook_sweep_work/m82/Data.lua:840: attempt to concatenate field 'id' (a nil va", "secs": 1.1}
+{"id": 83, "status": "survived", "killer": null, "detail": "", "secs": 19.8}
+{"id": 84, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] one cap entry  [got 0, want 1]", "secs": 0.6}
+{"id": 85, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [a short-form run can be deleted, and note or unboss on one says why not] note explains", "secs": 4.5}
+{"id": 86, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 87, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [a deletion is kept while the run could come back from a backup] an old one goes once the list is full", "secs": 4.5}
+{"id": 88, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [alts: whose run, and clear says all characters] row shows the alt  [#1  Nov 14 22:13  Deadmines  1:40]", "secs": 1.9}
+{"id": 89, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 90, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 91, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [a short-form run can be deleted, and note or unboss on one says why not] note explains", "secs": 4.5}
+{"id": 92, "status": "killed", "killer": "tests.lua", "detail": "lua5.1: tests.lua:739: attempt to index a nil value\nstack traceback:\n\ttests.lua:739: in main chunk\n\t[C]: ?\n", "secs": 0.5}
+{"id": 93, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 94, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 95, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 96, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 97, "status": "killed", "killer": "tests_round4.lua", "detail": "FAIL [a reopened run keeps its number] same number  [got 2, want 1]", "secs": 8.7}
+{"id": 98, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 99, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] split into a new run", "secs": 0.1}
+{"id": 100, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [alts: whose run, and clear says all characters] row shows the alt  [#1  Nov 14 22:13  ?  Deadmines  1:40]", "secs": 2.0}
+{"id": 101, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 102, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 103, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a clear that began after a break isn't a best time] no new best said", "secs": 3.4}
+{"id": 104, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [an ambiguous name stays as typed] as typed  [got Lord Alexei Barov, want Barov]", "secs": 2.0}
+{"id": 105, "status": "killed", "killer": "tests_il1_duo.lua", "detail": "FAIL [kills your partner's split moves over are numbered in order] Tavlius's run  [Boss 1,Rhahk'Zor]", "secs": 2.2}
+{"id": 106, "status": "killed", "killer": "tests.lua", "detail": "FAIL [clears, best times and splits] split vs best printed", "secs": 0.6}
+{"id": 107, "status": "killed", "killer": "tests.lua", "detail": "FAIL [reload and relog] no new entry on reload  [got 0, want 1]", "secs": 0.7}
+{"id": 108, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a damaged saved run doesn't stop the history] details render  [/tmp/runbook_sweep_work/m108/History.lua:15: attempt to compare string with number]", "secs": 2.0}
+{"id": 109, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] manual boss  [got 2, want 3]", "secs": 0.0}
+{"id": 110, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [raid deaths: you two's] count  [got 3, want 1]", "secs": 2.2}
+{"id": 111, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 112, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [saved data backup and damaged data] bad rows dropped  [got 3, want 2]", "secs": 10.9}
+{"id": 113, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a typed boss name matches how you wrote it before] canonical  [got VanCleef, want Edwin VanCleef]", "secs": 2.0}
+{"id": 114, "status": "killed", "killer": "tests_il1.lua", "detail": "lua5.1: tests_il1.lua:986: attempt to index field 'mirror' (a nil value)\nstack traceback:\n\ttests_il1.lua:986: in main chunk\n\t[C]: ?\n", "secs": 1.9}
+{"id": 115, "status": "killed", "killer": "tests.lua", "detail": "FAIL [instance cap] 5 entries  [got 0, want 5]", "secs": 0.6}
+{"id": 116, "status": "killed", "killer": "tests.lua", "detail": "FAIL [clears, best times and splits] skip-a-boss run is a clear  [got 250, want 700]", "secs": 0.6}
+{"id": 117, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [history window] row text  [#5  Nov 14 22:20  Deadmines  5:30  1/1  50 silver  1 blue]", "secs": 11.1}
+{"id": 118, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 119, "status": "survived", "killer": null, "detail": "", "secs": 22.2}
+{"id": 120, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [together gold on the run's end line and in the stats] stats  [Deadmines  1 run, last Nov 14 22:13", "secs": 1.9}
+{"id": 121, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [alts: whose run, and clear says all characters] row shows the alt  [#1  Nov 14 22:13  ?  Deadmines  1:40]", "secs": 1.9}
+{"id": 122, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 123, "status": "killed", "killer": "tests_round6.lua", "detail": "FAIL [final boss: farm runs that stop early don't vote] final is the full clear's last boss  [got C, want E]", "secs": 9.1}
+{"id": 124, "status": "survived", "killer": null, "detail": "", "secs": 19.9}
+{"id": 125, "status": "killed", "killer": "tests.lua", "detail": "lua5.1: tests.lua:739: attempt to index a nil value\nstack traceback:\n\ttests.lua:739: in main chunk\n\t[C]: ?\n", "secs": 0.5}
+{"id": 126, "status": "killed", "killer": "tests_round18.lua", "detail": "FAIL [two saved copies of a run: notes from both are kept] both notes  [got 1, want 2]", "secs": 6.2}
+{"id": 127, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 128, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 129, "status": "survived", "killer": null, "detail": "", "secs": 18.3}
+{"id": 130, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 131, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 132, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] live shows dungeon and clock  []", "secs": 0.1}
+{"id": 133, "status": "survived", "killer": null, "detail": "", "secs": 18.6}
+{"id": 134, "status": "killed", "killer": "tests_round5.lua", "detail": "FAIL [a cleared run stays cleared after a second clear] stays cleared  [got 1, want 0]", "secs": 9.0}
+{"id": 135, "status": "survived", "killer": null, "detail": "", "secs": 18.8}
+{"id": 136, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 137, "status": "killed", "killer": "tests.lua", "detail": "p/runlog_sweep_work/m137/Data.lua:1087: attempt to perform arithmetic on a nil value\nstack traceback:\n\t/tmp/runbook_sweep_work/m137/Data.lua:1087: in function '?'\n\ttests.lua:759: in main chunk\n\t[C]: ?\n", "secs": 0.6}
+{"id": 138, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [together gold on the run's end line and in the stats] stats  [Deadmines  1 run, last Nov 14 22:13", "secs": 1.9}
+{"id": 139, "status": "killed", "killer": "tests_round22.lua", "detail": "FAIL [report: stack counts] x3  [RunBook: Molten Core 1:10 (in progress).]", "secs": 7.3}
+{"id": 140, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a typed boss name matches how you wrote it before] no errors  [|cffe8792bRunBook|r: error in CHAT_MSG_SYSTEM: /tmp/runbook_sweep_work/m140/Data.lua:947: table index is nil]", "secs": 1.2}
+{"id": 141, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 142, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 143, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 144, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 145, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [send results 5 and 9 are retried for a while, then dropped] kept  [got 2, want 1]", "secs": 4.4}
+{"id": 146, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 147, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a boss that died in this copy in an earlier run dies again: new copy] now a new instance  [got 1, want 2]", "secs": 1.9}
+{"id": 148, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 149, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a note you write outside stays on your run when his kill shows a reset] note on the old run", "secs": 3.3}
+{"id": 150, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 151, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 152, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 153, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 154, "status": "killed", "killer": "tests.lua", "detail": "FAIL [instance cap] 5th start warns", "secs": 0.6}
+{"id": 155, "status": "killed", "killer": "tests.lua", "detail": "FAIL [unreadable instance info] end holds with map hidden", "secs": 0.7}
+{"id": 156, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] another wing is a new run", "secs": 0.7}
+{"id": 157, "status": "killed", "killer": "tests.lua", "detail": "FAIL [unreadable instance info] same run with map hidden", "secs": 0.7}
+{"id": 158, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] run started", "secs": 0.0}
+{"id": 159, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 160, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 161, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a note or report after his start-over while you're outside is for your last run] note on the last run", "secs": 3.5}
+{"id": 162, "status": "killed", "killer": "tests_round10.lua", "detail": "FAIL [wing reading: outdoor map, unreadable, name only] no errors  [|cffe8792bRunBook|r: error in PLAYER_ENTERING_WORLD: /tmp/runbook_sweep_work/m162/Run.lua:112: attempt to concatenate local 'wingName", "secs": 4.6}
+{"id": 163, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 164, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 165, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] start printed", "secs": 0.8}
+{"id": 166, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 167, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] boss outside ignored  [got 5, want 4]", "secs": 0.9}
+{"id": 168, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 169, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] wing label  [got Scarlet Monastery, want Scarlet Monastery - Graveyard]", "secs": 0.6}
+{"id": 170, "status": "killed", "killer": "tests_round4.lua", "detail": "FAIL [check text, cap countdown, notes, quiet, clear, report] new in quiet mode says so", "secs": 9.0}
+{"id": 171, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 172, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] no errors  [|cffe8792bRunBook|r: error in PLAYER_ENTERING_WORLD: /tmp/runbook_sweep_work/m172/Run.lua:339: bad argument #1 to 'ipairs' (table expected, got no value)]", "secs": 0.0}
+{"id": 173, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] another wing is a new run", "secs": 0.6}
+{"id": 174, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a boss that died in this copy in an earlier run dies again: new copy] not counted yet  [got 2, want 1]", "secs": 1.9}
+{"id": 175, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] split into a new run", "secs": 0.7}
+{"id": 176, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] all entries counted  [got 2, want 5]", "secs": 0.6}
+{"id": 177, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a damaged list of copies doesn't stop /runbook start] a run", "secs": 3.3}
+{"id": 178, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] no errors  [|cffe8792bRunBook|r: error in LOGIN: /tmp/runbook_sweep_work/m178/Run.lua:172: attempt to index local 'run' (a nil value)]", "secs": 0.5}
+{"id": 179, "status": "survived", "killer": null, "detail": "", "secs": 18.8}
+{"id": 180, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] another wing is a new run", "secs": 0.6}
+{"id": 181, "status": "survived", "killer": null, "detail": "", "secs": 18.8}
+{"id": 182, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 183, "status": "killed", "killer": "tests.lua", "detail": "FAIL [leave, resume, ghost run, timeout] timed out", "secs": 0.4}
+{"id": 184, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] old run ended at the resume  [got 290, want 230]", "secs": 0.7}
+{"id": 185, "status": "killed", "killer": "tests_round12.lua", "detail": "FAIL [a new copy found by your partner: his gold goes with it, and the entry says so] his new-copy gold in the new run  [got nil, want 300]", "secs": 5.4}
+{"id": 186, "status": "survived", "killer": null, "detail": "", "secs": 18.5}
+{"id": 187, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [two clients: a kill only one log can place still reaches the other] Tavlius's new run  [got Boss 1, want Rhahk'Zor]", "secs": 2.0}
+{"id": 188, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 189, "status": "killed", "killer": "tests.lua", "detail": "FAIL [leave, resume, ghost run, timeout] timed out", "secs": 0.4}
+{"id": 190, "status": "survived", "killer": null, "detail": "", "secs": 19.8}
+{"id": 191, "status": "killed", "killer": "tests_round10.lua", "detail": "FAIL [wing reading: outdoor map, unreadable, name only] no false hint", "secs": 4.7}
+{"id": 192, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] split into a new run", "secs": 0.1}
+{"id": 193, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 194, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 195, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] live window shown in dungeon", "secs": 0.6}
+{"id": 196, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a boss that died in this copy in an earlier run dies again: new copy] now a new instance  [got 1, want 2]", "secs": 1.9}
+{"id": 197, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 198, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a note you write outside stays on your run when his kill shows a reset] note on the old run", "secs": 3.4}
+{"id": 199, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [the live window's gold adds up] you  [Deadmines  6:42", "secs": 3.3}
+{"id": 200, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] short SFK run not kept  [got Shadowfang Keep,Wailing Caverns,Deadmines,Deadmines, want Wailing Caverns,Deadmines,Deadmines]", "secs": 0.7}
+{"id": 201, "status": "killed", "killer": "tests_round9.lua", "detail": "FAIL [your partner's reset of a copy you ended (too short to save)] reset copy counts  [got 1, want 2]", "secs": 10.0}
+{"id": 202, "status": "killed", "killer": "tests_round9.lua", "detail": "FAIL [/runbook end while the instance can't be read] no restart", "secs": 10.7}
+{"id": 203, "status": "killed", "killer": "tests.lua", "detail": "FAIL [instance cap] 5th start warns", "secs": 0.6}
+{"id": 204, "status": "killed", "killer": "tests.lua", "detail": "FAIL [unreadable instance info] end holds with map hidden", "secs": 0.7}
+{"id": 205, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] another wing is a new run", "secs": 0.7}
+{"id": 206, "status": "killed", "killer": "tests_round20.lua", "detail": "FAIL [a map ID unreadable at the start is filled in] map ID  [got nil, want 36]", "secs": 6.5}
+{"id": 207, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 208, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 209, "status": "killed", "killer": "tests_round10.lua", "detail": "FAIL [/runbook new twice in a row counts one instance] one entry  [got 3, want 1]", "secs": 4.7}
+{"id": 210, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a note or report after his start-over while you're outside is for your last run] note on the last run", "secs": 3.6}
+{"id": 211, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] run started", "secs": 0.0}
+{"id": 212, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] all entries counted  [got 4, want 5]", "secs": 0.7}
+{"id": 213, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [/runbook check: resets, group, last message] resets", "secs": 2.1}
+{"id": 214, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] start printed", "secs": 0.7}
+{"id": 215, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 216, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] live window shown in dungeon", "secs": 0.0}
+{"id": 217, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 218, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 219, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] one cap entry  [got 0, want 1]", "secs": 0.6}
+{"id": 220, "status": "survived", "killer": null, "detail": "", "secs": 20.1}
+{"id": 221, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] no errors  [|cffe8792bRunBook|r: error in PLAYER_ENTERING_WORLD: /tmp/runbook_sweep_work/m221/Run.lua:339: bad argument #1 to 'ipairs' (table expected, got nil)]", "secs": 0.0}
+{"id": 222, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] wing label  [got Scarlet Monastery, want Scarlet Monastery - Graveyard]", "secs": 0.6}
+{"id": 223, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 224, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] split into a new run", "secs": 0.7}
+{"id": 225, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a boss that died in this copy in an earlier run dies again: new copy] not counted yet  [got 2, want 1]", "secs": 2.0}
+{"id": 226, "status": "killed", "killer": "tests_round12.lua", "detail": "FAIL [end, start, then a repeat kill still shows the reset] split", "secs": 5.4}
+{"id": 227, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] no errors  [|cffe8792bRunBook|r: error in LOGIN: /tmp/runbook_sweep_work/m227/Run.lua:171: attempt to index local 'run' (a nil value)]", "secs": 1.0}
+{"id": 228, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 229, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] another wing is a new run", "secs": 0.6}
+{"id": 230, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 231, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 232, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a boss that died in this copy in an earlier run dies again: new copy] not counted yet  [got 2, want 1]", "secs": 1.9}
+{"id": 233, "status": "killed", "killer": "tests.lua", "detail": "FAIL [leave, resume, ghost run, timeout] window stays up on a ghost run", "secs": 0.7}
+{"id": 234, "status": "killed", "killer": "tests_il2_duo.lua", "detail": "FAIL [unnamed kills moved by a reset your partner found are numbered in order] Mirel's new run  [-]", "secs": 4.1}
+{"id": 235, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 236, "status": "killed", "killer": "tests_il1_duo.lua", "detail": "FAIL [kills your partner's split moves over are numbered in order] Tavlius's run  [Boss 2,Boss 3,Boss 4,Rhahk'Zor]", "secs": 2.1}
+{"id": 237, "status": "killed", "killer": "tests_round9.lua", "detail": "FAIL [wing names, short labels, Dire Maul check and hint] fallback wing name  [got Scarlet Monastery - map 305, want Scarlet Monastery - Cathedral]", "secs": 10.1}
+{"id": 238, "status": "killed", "killer": "tests.lua", "detail": "FAIL [leave, resume, ghost run, timeout] timed out", "secs": 0.4}
+{"id": 239, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 240, "status": "killed", "killer": "tests_round3.lua", "detail": "FAIL [Scarlet Monastery: stale map at the start, reload on another floor] hint once per run  [got 2, want 1]", "secs": 8.3}
+{"id": 241, "status": "killed", "killer": "tests.lua", "detail": "FAIL [new run: reset, other dungeon, wing, difficulty, short runs] all entries counted  [got 4, want 5]", "secs": 0.7}
+{"id": 242, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] drop moved to new run  [got 0, want 1]", "secs": 0.1}
+{"id": 243, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 244, "status": "killed", "killer": "tests_round10.lua", "detail": "FAIL [/runbook new twice in a row counts one instance] one entry  [got 3, want 1]", "secs": 4.8}
+{"id": 245, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 246, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 247, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a note you write outside stays on your run when his kill shows a reset] note on the old run", "secs": 3.5}
+{"id": 248, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [the live window's gold adds up] you  [Deadmines  6:42", "secs": 3.4}
+{"id": 249, "status": "killed", "killer": "tests_round5.lua", "detail": "FAIL [a mistaken zone-in with your partner isn't saved] not saved  [got 1, want 0]", "secs": 9.3}
+{"id": 250, "status": "killed", "killer": "tests_round9.lua", "detail": "FAIL [your partner's reset of a copy you ended (too short to save)] reset copy counts  [got 1, want 2]", "secs": 10.5}
+{"id": 251, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 252, "status": "killed", "killer": "tests.lua", "detail": "FAIL [instance cap] 5th start warns", "secs": 0.6}
+{"id": 253, "status": "killed", "killer": "tests.lua", "detail": "FAIL [unreadable instance info] end holds with map hidden", "secs": 0.6}
+{"id": 254, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 255, "status": "killed", "killer": "tests_round20.lua", "detail": "FAIL [a map ID unreadable at the start is filled in] map ID  [got nil, want 36]", "secs": 6.9}
+{"id": 256, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] split into a new run", "secs": 0.1}
+{"id": 257, "status": "survived", "killer": null, "detail": "", "secs": 19.8}
+{"id": 258, "status": "killed", "killer": "tests.lua", "detail": "FAIL [deaths and wipes] both dead = wipe  [got 0, want 1]", "secs": 0.7}
+{"id": 259, "status": "killed", "killer": "tests_round3.lua", "detail": "FAIL [an Unknown group member isn't logged] no Unknown member  [Tavlius,Unknown,Mirel]", "secs": 8.4}
+{"id": 260, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] unreadable second event is the same kill  [got 2, want 1]", "secs": 0.7}
+{"id": 261, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bags as a second loot source] chat + bags = one drop  [got 3, want 2]", "secs": 0.7}
+{"id": 262, "status": "killed", "killer": "tests_round3.lua", "detail": "FAIL [slow-loading loot value goes to the right run after a split] old run: its one ring  [got 30000, want 10000]", "secs": 8.7}
+{"id": 263, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a boss that died in this copy in an earlier run dies again: new copy] now a new instance  [got 1, want 2]", "secs": 2.1}
+{"id": 264, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [raid deaths: you two's] count  [got 3, want 1]", "secs": 2.1}
+{"id": 265, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [the instance a kill counted goes with that kill only] taken back with it  [got 2, want 1]", "secs": 2.0}
+{"id": 266, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] drop list  [got Cruel Barb/Tavlius,Linen Cloth/Tavlius,Broken Tooth/Tavlius,Smite's Hammer/Mirel,Lucky Charm/Mirel,Lucky Charm/Pug,Cruel Barb/Pug, want Cruel Barb/Tavlius,Smite", "secs": 0.6}
+{"id": 267, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] failed encounter with a death = wipe  [got 0, want 1]", "secs": 0.0}
+{"id": 268, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 269, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 270, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] one boss  [got 0, want 1]", "secs": 0.0}
+{"id": 271, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 272, "status": "killed", "killer": "tests.lua", "detail": "lua5.1: tests.lua:104: attempt to index field '?' (a nil value)\nstack traceback:\n\ttests.lua:104: in main chunk\n\t[C]: ?\n", "secs": 0.0}
+{"id": 273, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] unnamed manual boss  [got Boss 5, want Boss 4]", "secs": 0.6}
+{"id": 274, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 275, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 276, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 277, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] drop moved to new run  [got 0, want 1]", "secs": 0.1}
+{"id": 278, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 279, "status": "killed", "killer": "tests_round2.lua", "detail": "FAIL [events before the addon loads] no errors  [|cffe8792bRunBook|r: error in ITEM_DATA_LOAD_RESULT: /tmp/runbook_sweep_work/m279/Track.lua:1126: attempt to index field 'DB' (a nil value)]", "secs": 19.3}
+{"id": 280, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 281, "status": "killed", "killer": "tests_round11.lua", "detail": "FAIL [the naming tip and its window] named  [got Boss 1,Rhahk'Zor, want Rhahk'Zor]", "secs": 4.8}
+{"id": 282, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bags as a second loot source] hidden loot found in bags  [got 0, want 1]", "secs": 0.6}
+{"id": 283, "status": "survived", "killer": null, "detail": "", "secs": 18.8}
+{"id": 284, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 285, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 286, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 287, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 288, "status": "survived", "killer": null, "detail": "", "secs": 20.1}
+{"id": 289, "status": "survived", "killer": null, "detail": "", "secs": 20.5}
+{"id": 290, "status": "killed", "killer": "tests_il1.lua", "detail": " nil value)\nstack traceback:\n\t/tmp/runbook_sweep_work/m290/Track.lua:681: in function 'MarkBoss'\n\t/tmp/runbook_sweep_work/m290/Commands.lua:14: in function '?'\n\ttests_il1.lua:799: in main chunk\n\t[C]: ?\n", "secs": 1.7}
+{"id": 291, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [commands] note without a run", "secs": 11.2}
+{"id": 292, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] hex link quality  [got 3, want 2]", "secs": 0.8}
+{"id": 293, "status": "survived", "killer": null, "detail": "", "secs": 20.1}
+{"id": 294, "status": "killed", "killer": "tests_round8.lua", "detail": "FAIL [unboss partner note only with him in the group] no note without him", "secs": 10.2}
+{"id": 295, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] split into a new run", "secs": 0.7}
+{"id": 296, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [auctionator prices] ah value (95%, at least vendor)  [got 0, want 8850]", "secs": 11.0}
+{"id": 297, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] drop list  [got Cruel Barb/Tavlius,Smite's Hammer/Mirel,Lucky Charm/Mirel,Cruel Barb/Pug-OtherRealm, want Cruel Barb/Tavlius,Smite's Hammer/Mirel,Lucky Charm/Mirel,Cruel Barb", "secs": 0.6}
+{"id": 298, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a mark the fight's end names is the game's kill] sent without the hand flag", "secs": 2.0}
+{"id": 299, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] no errors  [|cffe8792bRunBook|r: error in LOGIN: /tmp/runbook_sweep_work/m299/Track.lua:1223: attempt to index local 'info' (a nil value)]", "secs": 0.6}
+{"id": 300, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [his fuller name for a kill you have takes over] one kill, fuller name  [got Roccor, want Lord Roccor]", "secs": 3.3}
+{"id": 301, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] failed encounter with a death = wipe  [got 0, want 1]", "secs": 0.0}
+{"id": 302, "status": "killed", "killer": "tests.lua", "detail": "FAIL [deaths and wipes] both dead = wipe  [got 0, want 1]", "secs": 0.7}
+{"id": 303, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 304, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] loot value moved  [got 0, want 5000]", "secs": 0.7}
+{"id": 305, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bags as a second loot source] purchase isn't loot  [got 25380, want 25345]", "secs": 0.6}
+{"id": 306, "status": "killed", "killer": "tests.lua", "detail": "FAIL [coin and XP] xp across level-up  [got 9100, want 4200]", "secs": 0.6}
+{"id": 307, "status": "killed", "killer": "tests_il2_duo.lua", "detail": "FAIL [a /reload just after an unnamed kill doesn't make it two] his second kill is a second kill  [Boss 1]", "secs": 4.1}
+{"id": 308, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [auctionator prices] ah value (95%, at least vendor)  [got 5300, want 8850]", "secs": 10.8}
+{"id": 309, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [someone who joins mid-run is in the group list] listed", "secs": 4.6}
+{"id": 310, "status": "killed", "killer": "tests_round6.lua", "detail": "FAIL [the game's kill right after your key press names the mark] now the game's kill", "secs": 9.5}
+{"id": 311, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [secret values] secret loot counted  [got 2, want 1]", "secs": 10.8}
+{"id": 312, "status": "killed", "killer": "tests_round3.lua", "detail": "FAIL [an Unknown group member isn't logged] no Unknown member  [Tavlius,Unknown,Mirel]", "secs": 8.3}
+{"id": 313, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] unreadable second event is the same kill  [got 2, want 1]", "secs": 0.7}
+{"id": 314, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 315, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] no errors  [|cffe8792bRunBook|r: error in ITEM_DATA_LOAD_RESULT: /tmp/runbook_sweep_work/m315/Track.lua:975: attempt to index local 'snap' (a nil value)]", "secs": 0.7}
+{"id": 316, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a boss that died in this copy in an earlier run dies again: new copy] now a new instance  [got 1, want 2]", "secs": 1.9}
+{"id": 317, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [raid deaths: you two's] count  [got 0, want 1]", "secs": 2.0}
+{"id": 318, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 319, "status": "killed", "killer": "tests.lua", "detail": "FAIL [raid drop filter and quality setting] your green skipped at quality 3  [got 3, want 2]", "secs": 0.6}
+{"id": 320, "status": "killed", "killer": "tests.lua", "detail": "FAIL [raid: units, deaths] raid units: you once  [got 0, want 6]", "secs": 0.6}
+{"id": 321, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] given up  [got 0, want 1]", "secs": 0.7}
+{"id": 322, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] drop list  [got Cruel Barb/Tavlius, want Cruel Barb/Tavlius,Smite's Hammer/Mirel,Lucky Charm/Mirel,Cruel Barb/Pug]", "secs": 0.6}
+{"id": 323, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [your repeat kill that shows a reset tells your partner to split] split message, copy kill", "secs": 4.6}
+{"id": 324, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 325, "status": "killed", "killer": "tests.lua", "detail": "lua5.1: tests.lua:104: attempt to index field '?' (a nil value)\nstack traceback:\n\ttests.lua:104: in main chunk\n\t[C]: ?\n", "secs": 0.0}
+{"id": 326, "status": "killed", "killer": "tests.lua", "detail": "lua5.1: tests.lua:104: attempt to index field '?' (a nil value)\nstack traceback:\n\ttests.lua:104: in main chunk\n\t[C]: ?\n", "secs": 0.0}
+{"id": 327, "status": "killed", "killer": "tests_round3.lua", "detail": "FAIL [your Feign Death after a reload in a boss fight isn't a wipe] no wipe  [got 1, want 0]", "secs": 8.3}
+{"id": 328, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [only from your group, on your group's channel] nor a Mirel from another realm", "secs": 2.0}
+{"id": 329, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 330, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] drop moved to new run  [got 0, want 1]", "secs": 0.1}
+{"id": 331, "status": "killed", "killer": "tests_round19.lua", "detail": "FAIL [a kill taken back stays gone when two copies merge] bosses  [got Rhahk'Zor,Oops, want Rhahk'Zor]", "secs": 6.5}
+{"id": 332, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 333, "status": "killed", "killer": "tests.lua", "detail": "FAIL [deaths and wipes] both dead = wipe  [got 0, want 1]", "secs": 0.6}
+{"id": 334, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bags as a second loot source] purchase isn't loot  [got 25380, want 25345]", "secs": 0.7}
+{"id": 335, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 336, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 337, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] failed encounter with a death = wipe  [got 0, want 1]", "secs": 0.1}
+{"id": 338, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 339, "status": "killed", "killer": "tests_round22.lua", "detail": "FAIL [a dungeon whose map is a zone: deaths on your map still count] counted  [got 0, want 1]", "secs": 7.5}
+{"id": 340, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] duplicate kill ignored  [got 3, want 1]", "secs": 0.7}
+{"id": 341, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] failed encounter with a death = wipe  [got 0, want 1]", "secs": 0.1}
+{"id": 342, "status": "killed", "killer": "tests_round13.lua", "detail": "FAIL [mark key messages] plain note", "secs": 5.6}
+{"id": 343, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 344, "status": "killed", "killer": "tests.lua", "detail": "FAIL [deaths and wipes] no errors  [|cffe8792bRunBook|r: error in DEATH: /tmp/runbook_sweep_work/m344/UI.lua:73: attempt to call field 'IsDuo' (a nil value)]", "secs": 0.7}
+{"id": 345, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] dropped once known to be white", "secs": 0.7}
+{"id": 346, "status": "killed", "killer": "tests_round7.lua", "detail": "FAIL [unboss says your partner's log keeps it] mentions partner", "secs": 9.8}
+{"id": 347, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 348, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] load requested", "secs": 0.7}
+{"id": 349, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bags as a second loot source] chat + bags = one drop  [got 3, want 2]", "secs": 0.7}
+{"id": 350, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a partner's kill named in a second message gets the usual checks] old run ended", "secs": 2.0}
+{"id": 351, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 352, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [his fuller name for a kill you have takes over] one kill, fuller name  [got Roccor, want Lord Roccor]", "secs": 3.6}
+{"id": 353, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] failed encounter with a death = wipe  [got 0, want 1]", "secs": 0.0}
+{"id": 354, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 355, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [/runbook check: resets, group, last message] group", "secs": 2.0}
+{"id": 356, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 357, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bags as a second loot source] chat + bags = one drop  [got 3, want 2]", "secs": 0.7}
+{"id": 358, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 359, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 360, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 361, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [someone who joins mid-run is in the group list] listed", "secs": 4.6}
+{"id": 362, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [the key, then the name: a boss that died here before still shows the reset] new instance  [got 1, want 2]", "secs": 2.0}
+{"id": 363, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 364, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] failed encounter with a death = wipe  [got 0, want 1]", "secs": 0.1}
+{"id": 365, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 366, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bags as a second loot source] no errors  [|cffe8792bRunBook|r: error in TICK: /tmp/runbook_sweep_work/m366/Track.lua:1151: attempt to perform arithmetic on field 'at' (a nil value)]", "secs": 0.7}
+{"id": 367, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 368, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a boss that died in this copy in an earlier run dies again: new copy] now a new instance  [got 1, want 2]", "secs": 1.9}
+{"id": 369, "status": "killed", "killer": "tests_round14.lua", "detail": "FAIL [an alt's raid drops count for that alt's runs] epic counted on Tavlius  [got 0, want 1]", "secs": 5.5}
+{"id": 370, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a boss that died in this copy in an earlier run dies again: new copy] now a new instance  [got 1, want 2]", "secs": 1.9}
+{"id": 371, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] drop list  [got Cruel Barb/Tavlius,Linen Cloth/Tavlius,Broken Tooth/Tavlius,Smite's Hammer/Mirel,Lucky Charm/Mirel,Lucky Charm/Pug,Cruel Barb/Pug, want Cruel Barb/Tavlius,Smite", "secs": 0.7}
+{"id": 372, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 373, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [two clients: a kill only one log can place still reaches the other] no errors  [|cffe8792bRunBook|r: error in CHAT_MSG_ADDON: /tmp/runbook_sweep_work/m373/Sync.lua:338: attempt to index local 'p'", "secs": 2.0}
+{"id": 374, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a kill or drop from before your run began isn't put in it] the drop is in the old run  [got 0, want 1]", "secs": 3.4}
+{"id": 375, "status": "killed", "killer": "tests_round7.lua", "detail": "FAIL [your partner's /runbook new: wing, difficulty, and you outside] another wing's: ignored", "secs": 10.0}
+{"id": 376, "status": "killed", "killer": "tests_il2_duo.lua", "detail": "FAIL [his kill and drop in the wing you just left stay with that wing's run] and his drop and note", "secs": 4.1}
+{"id": 377, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [his late message for the same kill isn't a reset] no errors  [|cffe8792bRunBook|r: error in CHAT_MSG_ADDON: /tmp/runbook_sweep_work/m377/Sync.lua:512: bad argument #2 to 'min' (number expected, g", "secs": 1.9}
+{"id": 378, "status": "killed", "killer": "tests_round2.lua", "detail": "FAIL [synced drop quality obeys your setting] partner green dropped at quality 3  [got 1, want 0]", "secs": 19.5}
+{"id": 379, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 380, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 381, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [two clients: a kill only one log can place still reaches the other] Tavlius's new run  [got Sneed,Rhahk'Zor, want Rhahk'Zor]", "secs": 2.0}
+{"id": 382, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [his kill minutes after yours, after you both came back in: a reset] new run  [got , want Rhahk'Zor]", "secs": 2.0}
+{"id": 383, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [sync: sending] solo note not queued  [got 1, want 0]", "secs": 11.3}
+{"id": 384, "status": "killed", "killer": "tests_round23.lua", "detail": "FAIL [a partner's split from long ago, or another dungeon, changes nothing] not split (came back in at another time)", "secs": 7.6}
+{"id": 385, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [sync: receiving] one version notice  [got 2, want 1]", "secs": 10.7}
+{"id": 386, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 387, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 388, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [partner numbers: only finite whole numbers] no infinite gold", "secs": 2.0}
+{"id": 389, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [two clients: a kill only one log can place still reaches the other] Tavlius's new run  [got Sneed,Rhahk'Zor, want Rhahk'Zor]", "secs": 1.8}
+{"id": 390, "status": "killed", "killer": "tests.lua", "detail": "FAIL [manual end, start, new] new starts fresh", "secs": 0.7}
+{"id": 391, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 392, "status": "killed", "killer": "tests_round2.lua", "detail": "FAIL [partner identity] told once that Pug isn't the partner", "secs": 19.3}
+{"id": 393, "status": "killed", "killer": "tests_round24.lua", "detail": "FAIL [his note finds the run his numbers reached, even if he began long before] on your raid  [got 0, want 1]", "secs": 7.6}
+{"id": 394, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [his log split his earlier run: only what he made since you began counts] his gold in your run  [got 0, want 100]", "secs": 3.4}
+{"id": 395, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [together gold on the run's end line and in the stats] end line", "secs": 2.0}
+{"id": 396, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a drop for your ended run is taken only a few seconds after it ended] no errors  [|cffe8792bRunBook|r: error in CHAT_MSG_ADDON: /tmp/runbook_sweep_work/m396/Sync.lua:198: attempt to compare numbe", "secs": 3.5}
+{"id": 397, "status": "killed", "killer": "tests_il2_duo.lua", "detail": "FAIL [unnamed kills moved by a reset your partner found are numbered in order] Mirel's new run  [Rhahk'Zor,Sneed,Boss 3]", "secs": 4.2}
+{"id": 398, "status": "killed", "killer": "tests_il2_duo.lua", "detail": "FAIL [/runbook check shows whether the two logs agree on kills] agree", "secs": 4.3}
+{"id": 399, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 400, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] no errors  [|cffe8792bRunBook|r: error in CHAT_MSG_ADDON: /tmp/runbook_sweep_work/m400/Sync.lua:490: table index is nil]", "secs": 0.7}
+{"id": 401, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a note or report after his start-over while you're outside is for your last run] no errors  [|cffe8792bRunBook|r: error in command: /tmp/runbook_sweep_work/m401/Sync.lua:130: attempt to concatena", "secs": 3.5}
+{"id": 402, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [his late message for the same kill isn't a reset] no errors  [|cffe8792bRunBook|r: error in CHAT_MSG_ADDON: /tmp/runbook_sweep_work/m402/Sync.lua:581: attempt to index local 'flags' (a nil value)", "secs": 2.0}
+{"id": 403, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 404, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [your note fits one message, so both logs keep the same text] whole in the message", "secs": 2.0}
+{"id": 405, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 406, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 407, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [sync: partner joins late, clock differences, channel] instance channel  [got PARTY, want INSTANCE_CHAT]", "secs": 11.5}
+{"id": 408, "status": "survived", "killer": null, "detail": "", "secs": 20.1}
+{"id": 409, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 410, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 411, "status": "killed", "killer": "tests_round7.lua", "detail": "FAIL [your partner's /runbook new: wing, difficulty, and you outside] another wing's: ignored", "secs": 9.8}
+{"id": 412, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a message for a run that ended before theirs began isn't put on it] no note on your ended run  [got 1, want 0]", "secs": 3.3}
+{"id": 413, "status": "survived", "killer": null, "detail": "", "secs": 18.8}
+{"id": 414, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 415, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [his log split his earlier run: only what he made since you began counts] his gold in your run  [got 500, want 100]", "secs": 3.3}
+{"id": 416, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 417, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] no errors  [|cffe8792bRunBook|r: error in RUN_START: /tmp/runbook_sweep_work/m417/Sync.lua:108: bad argument #5 to 'format' (string expected, got nil)]", "secs": 0.1}
+{"id": 418, "status": "killed", "killer": "tests.lua", "detail": "FAIL [same boss again = unseen reset] new run has the boss  [got 0, want 1]", "secs": 0.1}
+{"id": 419, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [two clients: a kill only one log can place still reaches the other] Tavlius's new run  [got Sneed,Rhahk'Zor, want Rhahk'Zor]", "secs": 1.8}
+{"id": 420, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a partner's split message while you're outside doesn't split your run] same run", "secs": 2.1}
+{"id": 421, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a different version: both get the notice] told", "secs": 2.0}
+{"id": 422, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 423, "status": "killed", "killer": "tests.lua", "detail": "FAIL [drops and loot value] no errors  [|cffe8792bRunBook|r: error in CHAT_MSG_ADDON: /tmp/runbook_sweep_work/m423/Sync.lua:279: attempt to call local 'find' (a nil value)]", "secs": 0.6}
+{"id": 424, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [his /runbook end and back into the same copy isn't a new copy (his entry is)] and his drop from the old copy  [got 0, want 1]", "secs": 2.0}
+{"id": 425, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [a newer stats update replaces the waiting one] one stats message  [got 2, want 1]", "secs": 4.7}
+{"id": 426, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 427, "status": "survived", "killer": null, "detail": "", "secs": 20.1}
+{"id": 428, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 429, "status": "killed", "killer": "tests_round24.lua", "detail": "FAIL [his note finds the run his numbers reached, even if he began long before] on your raid  [got 0, want 1]", "secs": 7.8}
+{"id": 430, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 431, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [together gold on the run's end line and in the stats] end line", "secs": 2.0}
+{"id": 432, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a message for a run that ended before theirs began isn't put on it] no note on your ended run  [got 1, want 0]", "secs": 3.5}
+{"id": 433, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 434, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 435, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [a drop looted before your run ended counts, even arriving late] counted  [got 0, want 1]", "secs": 4.5}
+{"id": 436, "status": "killed", "killer": "tests_round14.lua", "detail": "FAIL [your partner's log splits a run: his gold moves to his new run, not lost] the 841 in your new run  [got 0, want 841]", "secs": 5.5}
+{"id": 437, "status": "survived", "killer": null, "detail": "", "secs": 18.7}
+{"id": 438, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [his kill minutes after yours, after you both came back in: a reset] split", "secs": 2.0}
+{"id": 439, "status": "killed", "killer": "tests_round18.lua", "detail": "FAIL [a note added after the run, with entries 7 minutes apart] note arrives  [got 0, want 1]", "secs": 6.4}
+{"id": 440, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [your note fits one message, so both logs keep the same text] whole in the message", "secs": 2.0}
+{"id": 441, "status": "killed", "killer": "tests_round10.lua", "detail": "FAIL [a mark named later reaches your partner's copy of the kill] one boss on his side, named  [got , want Sneed]", "secs": 4.8}
+{"id": 442, "status": "survived", "killer": null, "detail": "", "secs": 18.7}
+{"id": 443, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [sync: sending] party channel  [got INSTANCE_CHAT, want PARTY]", "secs": 10.6}
+{"id": 444, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [an older client's 'not now' is retried] sent once it could", "secs": 2.0}
+{"id": 445, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 446, "status": "survived", "killer": null, "detail": "", "secs": 18.7}
+{"id": 447, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [only from your group, on your group's channel] your partner can", "secs": 2.0}
+{"id": 448, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [sync: receiving] no errors  [|cffe8792bRunBook|r: error in CHAT_MSG_ADDON: /tmp/runbook_sweep_work/m448/Sync.lua:504: attempt to index local 'note' (a nil value)]", "secs": 10.6}
+{"id": 449, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a kill or drop from before your run began isn't put in it] no kill in the new run  [got 1, want 0]", "secs": 3.5}
+{"id": 450, "status": "killed", "killer": "tests_round15.lua", "detail": "FAIL [a second drop of the same item later isn't taken for the first] two barbs  [got 1, want 2]", "secs": 5.6}
+{"id": 451, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] no errors  [|cffe8792bRunBook|r: error in RUN_START: /tmp/runbook_sweep_work/m451/Sync.lua:784: bad argument #1 to 'pairs' (table expected, got nil)]", "secs": 0.6}
+{"id": 452, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [check doesn't compare with a partner's ended or old run] old numbers", "secs": 3.4}
+{"id": 453, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 454, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [two clients: a kill only one log can place still reaches the other] Tavlius's new run  [got Sneed,Rhahk'Zor, want Rhahk'Zor]", "secs": 1.8}
+{"id": 455, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [two clients: a kill only one log can place still reaches the other] Tavlius's new run  [got Sneed,Rhahk'Zor, want Rhahk'Zor]", "secs": 2.1}
+{"id": 456, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a different version: both get the notice] told", "secs": 2.0}
+{"id": 457, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 458, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a kill recorded again under its name doesn't pair with another kill] two kills, his named  [got Boss 1, want Rhahk'Zor,Boss 2]", "secs": 1.9}
+{"id": 459, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [his /runbook end and back into the same copy isn't a new copy (his entry is)] and his drop from the old copy  [got 0, want 1]", "secs": 2.0}
+{"id": 460, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a kill recorded again keeps its tag, so your partner's copy gets the name] sent unnamed, then named", "secs": 2.1}
+{"id": 461, "status": "killed", "killer": "tests_round24.lua", "detail": "FAIL [his /runbook new while you're outside: his kills until you're back still count] your new run  [got Rhahk'Zor,Gilnid,Van Cleef, want Gilnid,Van Cleef]", "secs": 7.2}
+{"id": 462, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 463, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 464, "status": "killed", "killer": "tests_round12.lua", "detail": "FAIL [a partner's note on an earlier run goes there] on the earlier run  [got 0, want 1]", "secs": 5.4}
+{"id": 465, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [together gold on the run's end line and in the stats] end line", "secs": 2.0}
+{"id": 466, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [together gold on the run's end line and in the stats] end line", "secs": 2.0}
+{"id": 467, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 468, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] live window hidden outside", "secs": 1.0}
+{"id": 469, "status": "survived", "killer": null, "detail": "", "secs": 19.9}
+{"id": 470, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] live shows dungeon and clock  [RunBook - not in a dungeon", "secs": 0.7}
+{"id": 471, "status": "killed", "killer": "tests_round3.lua", "detail": "FAIL [raid views] boss list capped  [Molten Core  13:30", "secs": 8.3}
+{"id": 472, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [raid deaths: you two's] live  [Molten Core  1:52", "secs": 1.9}
+{"id": 473, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] no errors  [|cffe8792bRunBook|r: error in READY: /tmp/runbook_sweep_work/m473/UI.lua:296: attempt to perform arithmetic on a string value]", "secs": 0.6}
+{"id": 474, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 475, "status": "killed", "killer": "tests_round14.lua", "detail": "FAIL [live window: your show/hide holds through end/start/new] hidden after leaving (auto off)", "secs": 5.7}
+{"id": 476, "status": "killed", "killer": "tests_round3.lua", "detail": "FAIL [raid views] live drops: your two's only  [Molten Core  0:00", "secs": 8.6}
+{"id": 477, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 478, "status": "killed", "killer": "tests_il1.lua", "detail": "lua5.1: tests_il1.lua:472: invalid value (nil) at index 3 in table for 'concat'\nstack traceback:\n\t[C]: in function '?'\n\ttests_il1.lua:472: in main chunk\n\t[C]: ?\n", "secs": 1.1}
+{"id": 479, "status": "survived", "killer": null, "detail": "", "secs": 19.0}
+{"id": 480, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [raid deaths: you two's] live  [Molten Core  1:52", "secs": 2.1}
+{"id": 481, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 482, "status": "killed", "killer": "tests.lua", "detail": "FAIL [start and time] live window shown in dungeon", "secs": 0.5}
+{"id": 483, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 484, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 485, "status": "killed", "killer": "tests_round17.lua", "detail": "FAIL [line fitting counts characters] full name kept  [RunBook - not in a dungeon", "secs": 6.1}
+{"id": 486, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 487, "status": "killed", "killer": "tests_round23.lua", "detail": "FAIL [scale keeps the window's place] offsets halved at scale 2  [60,60]", "secs": 7.5}
+{"id": 488, "status": "killed", "killer": "tests.lua", "detail": "FAIL [instance cap] cap line at cap  [Instances 5/5 this hour]", "secs": 0.7}
+{"id": 489, "status": "survived", "killer": null, "detail": "", "secs": 28.6}
+{"id": 490, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 491, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 492, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 493, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 494, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a damaged saved run doesn't stop the history] no errors  [|cffe8792bRunBook|r: error in command: /tmp/runbook_sweep_work/m494/History.lua:418: attempt to index upvalue 'frame' (a nil value)]", "secs": 2.1}
+{"id": 495, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 496, "status": "survived", "killer": null, "detail": "", "secs": 18.6}
+{"id": 497, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 498, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 499, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 500, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 501, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 502, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 503, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 504, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [details say how a run ended] by hand  [Deadmines  Nov 14 22:13  (Tavlius)", "secs": 4.5}
+{"id": 505, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 506, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 507, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 508, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 509, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 510, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 511, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [history window] deleted run closes its details  [Run #2]", "secs": 10.7}
+{"id": 512, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 513, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [history window] current run listed  [#4  Nov 14 22:26  Wailing Caverns  1:40]", "secs": 10.5}
+{"id": 514, "status": "killed", "killer": "tests_il3.lua", "detail": "alue (nil) at index 5 in table for 'concat'\nstack traceback:\n\t[C]: in function 'concat'\n\t/tmp/runbook_sweep_work/m514/History.lua:77: in function 'RunRowText'\n\ttests_il3.lua:470: in main chunk\n\t[C]: ?\n", "secs": 4.4}
+{"id": 515, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 516, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 517, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a damaged saved run doesn't stop the history] no errors  [|cffe8792bRunBook|r: error in command: /tmp/runbook_sweep_work/m517/History.lua:389: table index is nil]", "secs": 1.9}
+{"id": 518, "status": "survived", "killer": null, "detail": "", "secs": 18.7}
+{"id": 519, "status": "survived", "killer": null, "detail": "", "secs": 18.7}
+{"id": 520, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 521, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 522, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a damaged saved run doesn't stop the history] details render  [/tmp/runbook_sweep_work/m522/History.lua:110: attempt to concatenate a nil value]", "secs": 2.0}
+{"id": 523, "status": "survived", "killer": null, "detail": "", "secs": 18.9}
+{"id": 524, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 525, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 526, "status": "survived", "killer": null, "detail": "", "secs": 19.7}
+{"id": 527, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a damaged saved run doesn't stop the history] details render  [/tmp/runbook_sweep_work/m527/History.lua:15: attempt to compare nil with number]", "secs": 2.1}
+{"id": 528, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a report doesn't call a clear that began after a break a new best] best shown  [RunBook: Deadmines 4:35, 3 bosses (in progress). Cleared at 4:35.]", "secs": 3.6}
+{"id": 529, "status": "killed", "killer": "tests_il3.lua", "detail": " in function 'concat'\n\t/tmp/runbook_sweep_work/m529/Export.lua:99: in function 'CSVRow'\n\t/tmp/runbook_sweep_work/m529/Export.lua:118: in function 'ExportLines'\n\ttests_il3.lua:386: in main chunk\n\t[C]: ?\n", "secs": 4.6}
+{"id": 530, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 531, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 532, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 533, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [CSV cells that look like formulas stay text] prefixed  [1,false,false,false,false,false,1.7,1.7,1,false,0,0,0,0,0,0,,,0,0,false,false]", "secs": 3.4}
+{"id": 534, "status": "killed", "killer": "tests_round19.lua", "detail": "FAIL [debug export header] 1 entry  [got run,date,character,dungeon,difficulty,status,minutes,clear_minutes,bosses,boss_splits,deaths,wipes,coin_copper,loot_vendor_copper,loot_ah_copper,xp,gold_per_ho", "secs": 6.7}
+{"id": 535, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [a report doesn't call a clear that began after a break a new best] best shown  [RunBook: Deadmines 4:35, 3 bosses (in progress).]", "secs": 3.3}
+{"id": 536, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [the CSV has your partner's gold and the minutes] minutes  [1,2023-11-14 22:13,Tavlius-Realm,Deadmines,Normal,ended by hand,5.0,,0,,0,0,0,0,0,0,,,12345,0,,]", "secs": 4.4}
+{"id": 537, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [commands] copy frame built", "secs": 10.8}
+{"id": 538, "status": "survived", "killer": null, "detail": "", "secs": 19.6}
+{"id": 539, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a damaged saved run doesn't stop the history] export works  [/tmp/runbook_sweep_work/m539/Export.lua:105: bad argument #2 to 'format' (number expected, got nil)]", "secs": 1.9}
+{"id": 540, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [CSV cells that look like formulas stay text] prefixed  [1,\"2023-11-14 22:13\",\"Tavlius-Realm\",\"Deadmines\",\"Normal\",\"ended by hand\",1.7,1.7,1,\"'=HYPERLINK(1) 1:40\",0,0,0,0,0,0,,,0,0,\"\",\"\"]", "secs": 3.5}
+{"id": 541, "status": "killed", "killer": "tests_il2.lua", "detail": "lua5.1: tests_il2.lua:335: attempt to index field '?' (a nil value)\nstack traceback:\n\ttests_il2.lua:335: in main chunk\n\t[C]: ?\n", "secs": 2.8}
+{"id": 542, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 543, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [the CSV has your partner's gold and the minutes] minutes  [1,2023-11-14 22:13,Tavlius-Realm,Deadmines,Normal,ended by hand,9.8,,0,,0,0,0,0,0,0,,,12345,0,,]", "secs": 4.3}
+{"id": 544, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [commands] copy frame built", "secs": 10.7}
+{"id": 545, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 546, "status": "survived", "killer": null, "detail": "", "secs": 19.3}
+{"id": 547, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [CSV cells that look like formulas stay text] prefixed  [1,2023-11-14 22:13,Tavlius-Realm,Deadmines,Normal,ended by hand,1.7,1.7,1,=HYPERLINK(1) 1:40,0,0,0,0,0,0,,,0,0,,]", "secs": 3.4}
+{"id": 548, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 549, "status": "killed", "killer": "tests_round22.lua", "detail": "FAIL [report: stack counts] x3  [RunBook: Molten Core 1:10 (in progress).]", "secs": 6.7}
+{"id": 550, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [the CSV has your partner's gold and the minutes] minutes  [1,2023-11-14 22:13,Tavlius-Realm,Deadmines,Normal,ended by hand,10.2,,0,,0,0,0,0,0,0,,,12345,0,,]", "secs": 4.5}
+{"id": 551, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 552, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] welcome only once", "secs": 0.7}
+{"id": 553, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [short-form partner gold follows the price setting] no errors  [|cffe8792bRunBook|r: error in command: /tmp/runbook_sweep_work/m553/Commands.lua:207: attempt to index local 'api' (a nil value)]", "secs": 4.6}
+{"id": 554, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [commands] lockdown explained", "secs": 10.8}
+{"id": 555, "status": "killed", "killer": "tests_round8.lua", "detail": "FAIL [settings take on/off] sync stays on", "secs": 9.9}
+{"id": 556, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [damaged settings are put right at load] no errors  [|cffe8792bRunBook|r: error in command: /tmp/runbook_sweep_work/m556/Commands.lua:584: bad argument #2 to 'format' (string expected, got boolean", "secs": 2.1}
+{"id": 557, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [a short-form run can be deleted, and note or unboss on one says why not] note explains", "secs": 4.6}
+{"id": 558, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [delete asks first] says how", "secs": 3.2}
+{"id": 559, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 560, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
+{"id": 561, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 562, "status": "survived", "killer": null, "detail": "", "secs": 18.7}
+{"id": 563, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a typed boss name matches how you wrote it before] canonical  [got Boss 1, want Edwin VanCleef]", "secs": 1.9}
+{"id": 564, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] no errors  [|cffe8792bRunBook|r: error in command: nil]", "secs": 0.6}
+{"id": 565, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 566, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [report takes the channel in any case] sent", "secs": 4.4}
+{"id": 567, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [bare sync and auto show the setting] sync unchanged", "secs": 3.3}
+{"id": 568, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [/runbook check: resets, group, last message] last message", "secs": 1.9}
+{"id": 569, "status": "killed", "killer": "tests_round13.lua", "detail": "FAIL [a reopened run and a partner run that began while it was ended] note #id reaches the reopened run  [got 0, want 1]", "secs": 5.5}
+{"id": 570, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [delete asks first] says how", "secs": 3.4}
+{"id": 571, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 572, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [commands] delete bad number", "secs": 11.1}
+{"id": 573, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [commands] whisper needs a name", "secs": 10.6}
+{"id": 574, "status": "survived", "killer": null, "detail": "", "secs": 19.2}
+{"id": 575, "status": "killed", "killer": "tests.lua", "detail": "FAIL [bosses] manual boss  [got 2, want 3]", "secs": 0.0}
+{"id": 576, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [short-form partner gold follows the price setting] no errors  [|cffe8792bRunBook|r: error in command: /tmp/runbook_sweep_work/m576/Commands.lua:206: attempt to index global 'Auctionator' (a nil v", "secs": 4.4}
+{"id": 577, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [report takes the channel in any case] sent", "secs": 4.7}
+{"id": 578, "status": "killed", "killer": "tests_round8.lua", "detail": "FAIL [settings take on/off] usage shown", "secs": 10.2}
+{"id": 579, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [your note fits one message, so both logs keep the same text] whole in the message", "secs": 2.2}
+{"id": 580, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [/runbook check: resets, group, last message] resets", "secs": 2.0}
+{"id": 581, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 582, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [commands] whisper needs a name", "secs": 10.9}
+{"id": 583, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [a typed boss name matches how you wrote it before] final lists bosses", "secs": 1.9}
+{"id": 584, "status": "killed", "killer": "tests.lua", "detail": "FAIL [login] welcome only once", "secs": 0.6}
+{"id": 585, "status": "survived", "killer": null, "detail": "", "secs": 19.5}
+{"id": 586, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [report takes the channel in any case] sent", "secs": 4.5}
+{"id": 587, "status": "killed", "killer": "tests_round15.lua", "detail": "FAIL [boss names fold case beyond ASCII; quiet partner mark reply; realm] quiet reply", "secs": 6.0}
+{"id": 588, "status": "killed", "killer": "tests_il3.lua", "detail": "FAIL [a short-form run can be deleted, and note or unboss on one says why not] note explains", "secs": 4.3}
+{"id": 589, "status": "survived", "killer": null, "detail": "", "secs": 19.4}
+{"id": 590, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [delete asks first] deleted on the second  [got 1, want 0]", "secs": 3.4}
+{"id": 591, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [commands] report sent", "secs": 10.7}
+{"id": 592, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [/runbook check: resets, group, last message] resets", "secs": 1.9}
+{"id": 593, "status": "survived", "killer": null, "detail": "", "secs": 18.8}
+{"id": 594, "status": "survived", "killer": null, "detail": "", "secs": 18.6}
+{"id": 595, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [bare sync and auto show the setting] sync unchanged", "secs": 3.3}
+{"id": 596, "status": "killed", "killer": "tests_il1.lua", "detail": "FAIL [your note fits one message, so both logs keep the same text] whole in the message", "secs": 1.9}
+{"id": 597, "status": "killed", "killer": "tests_il2.lua", "detail": "FAIL [check doesn't compare with a partner's ended or old run] old numbers", "secs": 3.3}
+{"id": 598, "status": "killed", "killer": "tests_sync.lua", "detail": "FAIL [commands] delete usage", "secs": 10.7}
+{"id": 599, "status": "survived", "killer": null, "detail": "", "secs": 19.1}
