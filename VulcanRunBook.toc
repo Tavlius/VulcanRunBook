@@ -2,6 +2,8 @@
 ## Title: Vulcan RunBook
 ## Notes: Dungeon run log: clear times, boss splits, deaths, drops, gold and XP per run, instance cap, duo sync. Display only - no automation.
 ## Author: Tavlius
+## X-Curse-Project-ID: 1765658
+## X-Wago-ID: 96EXePNg
 ## Version: @project-version@
 ## IconTexture: Interface\AddOns\VulcanRunBook\Media\icon
 ## AddonCompartmentFunc: VulcanRunBook_OnAddonCompartmentClick
